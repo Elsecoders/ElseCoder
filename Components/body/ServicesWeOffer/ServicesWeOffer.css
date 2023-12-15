@@ -14,11 +14,14 @@
 }
 
 .Services-Box{
-
- display: flex;
- 
- gap: 20px;
-justify-content: center;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+ justify-content: center;
+  }
+  .seo-div{
+    margin-bottom: 40px;
+    margin-right: 155px
   }
   .serviceBox1{
     display: flex;
@@ -28,9 +31,11 @@ justify-content: center;
   }
   .platform-div{
     text-decoration: none;
-    align-items: end;
+    /* align-items: end; */
     color: black;
     cursor: pointer;
+    font-size: 1rem;
+    padding-left: 80px;
   }
 
   @media screen and (max-width: 768px) {
@@ -38,6 +43,11 @@ justify-content: center;
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 10px;
+    }
+    .platform-div {
+      padding-left: 0;
+      text-align: center;
     }
   
 }

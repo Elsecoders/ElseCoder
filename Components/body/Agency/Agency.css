@@ -1,0 +1,70 @@
+.agency {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  background-color: rgb(255, 248, 248);
+  font-family: "Inter";
+}
+.paragraph-agency {
+  color: #777;
+  font-size: 20px;
+}
+
+.heading-agency {
+  color: black;
+}
+.service-box{
+  margin: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+border-radius: 10px;
+
+}
+.shopify-div{
+  color: #111;
+  font-size: 2rem;
+  text-decoration: none !important; 
+  text-align: start;
+  margin-top: 10px;
+}
+.shopify-bar{
+  font-weight: 900;
+  color: #111;
+  margin-right: 180px;
+}
+.shopify-rm{
+  color: #111;
+  margin-right: 180px;
+}
+.card-1,
+.card-2,
+.card-3 
+{
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(246, 77, 77, 0.5);;
+  outline-color: aqua;
+}
+
+.service-box .card-1,
+.service-box .card-2,
+.service-box .card-3 {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Styles on hover */
+.service-box .card-1:hover {
+  background-color: #ea5a1b; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+.service-box .card-2:hover {
+  background-color: #ea5a1b; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+.service-box .card-3:hover {
+  background-color: #ea5a1b; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}

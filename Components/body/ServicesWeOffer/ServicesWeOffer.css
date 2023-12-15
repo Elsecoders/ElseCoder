@@ -1,0 +1,43 @@
+.ServiceWeOffer{
+    margin: 40px;
+    font-family: "Inter";
+}
+.Serviceheading{
+    color: black;
+    font-weight: 600;
+}
+.service-div{
+    text-decoration:none !important;
+    color: #111;
+    font-size: 35px;
+    
+}
+
+.Services-Box{
+
+ display: flex;
+ 
+ gap: 20px;
+justify-content: center;
+  }
+  .serviceBox1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+  }
+  .platform-div{
+    text-decoration: none;
+    align-items: end;
+    color: black;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .serviceBox1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+}

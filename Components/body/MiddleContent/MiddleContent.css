@@ -1,0 +1,36 @@
+.MiddleContent{
+    display: flex;
+    gap: 20px;
+    background-color: rgba(255, 248, 248, 0.784);
+    font-family: "Inter";
+    
+    
+}
+.ContentHeading{
+    color: #111;
+    text-align: center;
+    margin: 40px;
+    
+}
+.ContentWriting{
+    font-size: 15px;
+    text-align: center;
+    margin: 40px;
+}
+.breakLine{
+    text-align: center;
+    color: #d1cbcb;
+}
+@media screen and (max-width: 768px) {
+    .MiddleContent {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+}
+   
+    
+
+  
+  
+ 

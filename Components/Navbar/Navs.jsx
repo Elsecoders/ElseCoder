@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "./Navbar.css";
+import Button from '../body/Button/Button';
 //import Button from 'react-bootstrap/Button';
 const Navs = () => {
   return (
@@ -31,7 +32,7 @@ const Navs = () => {
               <Nav.Link className='nav2' to="#pricing">CONTACT US</Nav.Link>
             </Nav>
             <Nav>
-              <button  className="inqury-btn" >GET INQUIRY </button>
+              <Button/>
               
             </Nav>
           </Navbar.Collapse>

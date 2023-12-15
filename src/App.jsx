@@ -7,6 +7,7 @@ import Agency from '../Components/body/Agency/Agency';
 import MiddleContent from '../Components/body/MiddleContent/MiddleContent';
 import ServicesWeOffer from '../Components/body/ServicesWeOffer/ServicesWeOffer';
 import InformationalBolg from '../Components/body/InformationalBlog/InformationalBolg';
+import Footer from '../Components/footer/Footer';
 
   const App = () => {
     return (
@@ -18,6 +19,7 @@ import InformationalBolg from '../Components/body/InformationalBlog/Informationa
         <MiddleContent/>
         <ServicesWeOffer/>
         <InformationalBolg/>
+        <Footer/>
       </div>
     );
   }

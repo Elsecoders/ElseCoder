@@ -25,37 +25,34 @@ const ServicesWeOffer = () => {
                   marginRight: "220px",
                   height: "2.5rem",
                 }}
-<<<<<<< HEAD
-              /> 
-=======
               />
->>>>>>> 2cbc2d6a3a84e1a252b65dc707a49a2ae56eed83
+
               <div className="serviceBox1">
-              <p className="service-div">
-                Solution <br></br> Implementation
-              </p>
-              <div className="platform-div">
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/wordpress"
-                >
-                  Wordpress
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/customreactcms"
-                >
-                  Custom React CMS
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/shopify"
-                >
-                  Shopify
-                </Link>
-              </div>
+                <p className="service-div">
+                  Solution <br></br> Implementation
+                </p>
+                <div className="platform-div">
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/wordpress"
+                  >
+                    Wordpress
+                  </Link>
+                  <br></br>
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/customreactcms"
+                  >
+                    Custom React CMS
+                  </Link>
+                  <br></br>
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/shopify"
+                  >
+                    Shopify
+                  </Link>
+                </div>
               </div>
             </Card.Body>
           </Card>
@@ -107,49 +104,40 @@ const ServicesWeOffer = () => {
                   marginRight: "220px",
                   height: "2.5rem",
                 }}
-              /><div className="serviceBox1">
+              />
+              <div className="serviceBox1">
                 <div className="seo-div">
-              <p className="service-div ">SEO</p>
-              </div>
-              <div className="platform-div">
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/wordpress"
-                >
-                  Keyword Research
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/customreactcms"
-                >
-                  Content Creation
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/shopify"
-                >
-                  Onsite Optimization
-<<<<<<< HEAD
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/shopify"
-                >
-                  Backlink Building
-=======
->>>>>>> 2cbc2d6a3a84e1a252b65dc707a49a2ae56eed83
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/shopify"
-                >
-                  Backlink Building
-                </Link>
-              </div>
+                  <p className="service-div ">SEO</p>
+                </div>
+                <div className="platform-div">
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/wordpress"
+                  >
+                    Keyword Research
+                  </Link>
+                  <br></br>
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/customreactcms"
+                  >
+                    Content Creation
+                  </Link>
+                  <br></br>
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/shopify"
+                  >
+                    Onsite Optimization
+                  </Link>
+                  <br></br>
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/shopify"
+                  >
+                    Backlink Building
+                  </Link>
+                </div>
               </div>
             </Card.Body>
           </Card>
@@ -163,48 +151,32 @@ const ServicesWeOffer = () => {
                 }}
               />
               <div className="serviceBox1">
-              <p className="service-div">
-                Social Media <br></br> Management{" "}
-              </p>
-              <div className="platform-div">
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/wordpress"
-                >
-                  Social Media Strategy
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/customreactcms"
-                >
-                  Social Media Content
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/shopify"
-                >
-                  Copywriting
-<<<<<<< HEAD
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/shopify"
-                >
-                  Graphic Designing
-=======
->>>>>>> 2cbc2d6a3a84e1a252b65dc707a49a2ae56eed83
-                </Link>
-                <br></br>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/shopify"
-                >
-                  Graphic Designing
-                </Link>
-              </div>
+                <p className="service-div">
+                  Social Media <br></br> Management{" "}
+                </p>
+                <div className="platform-div">
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/wordpress"
+                  >
+                    Social Media Strategy
+                  </Link>
+                  <br></br>
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/customreactcms"
+                  >
+                    Social Media Content
+                  </Link>
+                  <br></br>
+
+                  <Link
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/shopify"
+                  >
+                    Graphic Designing
+                  </Link>
+                </div>
               </div>
             </Card.Body>
           </Card>

@@ -2,7 +2,8 @@ import React from 'react';
 import './informationalBlog.css';
 
 import Card from 'react-bootstrap/Card';
-import Button from '../Button/Button';
+import ReadMoreButton from '../ReadMoreButton/ReadMoreButton';
+
 
 const InformationalBolg = () => {
   return (
@@ -21,7 +22,7 @@ const InformationalBolg = () => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-       <Button/>
+      <ReadMoreButton/>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }} className="fles">
@@ -32,7 +33,7 @@ const InformationalBolg = () => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button/>
+        <ReadMoreButton/>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }}>
@@ -43,7 +44,7 @@ const InformationalBolg = () => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button/>
+        <ReadMoreButton/>
       </Card.Body>
     </Card>
 

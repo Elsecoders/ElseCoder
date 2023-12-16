@@ -25,7 +25,8 @@ const ServicesWeOffer = () => {
                   marginRight: "220px",
                   height: "2.5rem",
                 }}
-              />
+              /> 
+              <div className="serviceBox1">
               <p className="service-div">
                 Solution <br></br> Implementation
               </p>
@@ -51,6 +52,7 @@ const ServicesWeOffer = () => {
                   Shopify
                 </Link>
               </div>
+              </div>
             </Card.Body>
           </Card>
           <Card style={{ width: "35rem", height: "18rem" }}>
@@ -71,21 +73,21 @@ const ServicesWeOffer = () => {
                     style={{ color: "black", textDecoration: "none" }}
                     to="/wordpress"
                   >
-                    Wordpress
+                    UI/UX Design
                   </Link>
                   <br></br>
                   <Link
                     style={{ color: "black", textDecoration: "none" }}
                     to="/customreactcms"
                   >
-                    Custom React CMS
+                    Custom Software Development
                   </Link>
                   <br></br>
                   <Link
                     style={{ color: "black", textDecoration: "none" }}
                     to="/shopify"
                   >
-                    Shopify
+                    Mobile Application
                   </Link>
                 </div>
               </div>
@@ -108,21 +110,28 @@ const ServicesWeOffer = () => {
                   style={{ color: "black", textDecoration: "none" }}
                   to="/wordpress"
                 >
-                  Wordpress
+                  Keyword Research
                 </Link>
                 <br></br>
                 <Link
                   style={{ color: "black", textDecoration: "none" }}
                   to="/customreactcms"
                 >
-                  Custom React CMS
+                  Content Creation
                 </Link>
                 <br></br>
                 <Link
                   style={{ color: "black", textDecoration: "none" }}
                   to="/shopify"
                 >
-                  Shopify
+                  Onsite Optimization
+                </Link>
+                <br></br>
+                <Link
+                  style={{ color: "black", textDecoration: "none" }}
+                  to="/shopify"
+                >
+                  Backlink Building
                 </Link>
               </div>
             </Card.Body>
@@ -144,21 +153,28 @@ const ServicesWeOffer = () => {
                   style={{ color: "black", textDecoration: "none" }}
                   to="/wordpress"
                 >
-                  Wordpress
+                  Social Media Strategy
                 </Link>
                 <br></br>
                 <Link
                   style={{ color: "black", textDecoration: "none" }}
                   to="/customreactcms"
                 >
-                  Custom React CMS
+                  Social Media Content
                 </Link>
                 <br></br>
                 <Link
                   style={{ color: "black", textDecoration: "none" }}
                   to="/shopify"
                 >
-                  Shopify
+                  Copywriting
+                </Link>
+                <br></br>
+                <Link
+                  style={{ color: "black", textDecoration: "none" }}
+                  to="/shopify"
+                >
+                  Graphic Designing
                 </Link>
               </div>
             </Card.Body>

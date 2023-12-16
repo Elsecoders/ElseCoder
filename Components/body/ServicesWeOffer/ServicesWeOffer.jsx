@@ -25,7 +25,11 @@ const ServicesWeOffer = () => {
                   marginRight: "220px",
                   height: "2.5rem",
                 }}
+<<<<<<< HEAD
               /> 
+=======
+              />
+>>>>>>> 2cbc2d6a3a84e1a252b65dc707a49a2ae56eed83
               <div className="serviceBox1">
               <p className="service-div">
                 Solution <br></br> Implementation
@@ -103,8 +107,10 @@ const ServicesWeOffer = () => {
                   marginRight: "220px",
                   height: "2.5rem",
                 }}
-              />
-              <p className="service-div">SEO</p>
+              /><div className="serviceBox1">
+                <div className="seo-div">
+              <p className="service-div ">SEO</p>
+              </div>
               <div className="platform-div">
                 <Link
                   style={{ color: "black", textDecoration: "none" }}
@@ -125,6 +131,16 @@ const ServicesWeOffer = () => {
                   to="/shopify"
                 >
                   Onsite Optimization
+<<<<<<< HEAD
+                </Link>
+                <br></br>
+                <Link
+                  style={{ color: "black", textDecoration: "none" }}
+                  to="/shopify"
+                >
+                  Backlink Building
+=======
+>>>>>>> 2cbc2d6a3a84e1a252b65dc707a49a2ae56eed83
                 </Link>
                 <br></br>
                 <Link
@@ -133,6 +149,7 @@ const ServicesWeOffer = () => {
                 >
                   Backlink Building
                 </Link>
+              </div>
               </div>
             </Card.Body>
           </Card>
@@ -145,6 +162,7 @@ const ServicesWeOffer = () => {
                   height: "2.5rem",
                 }}
               />
+              <div className="serviceBox1">
               <p className="service-div">
                 Social Media <br></br> Management{" "}
               </p>
@@ -168,6 +186,16 @@ const ServicesWeOffer = () => {
                   to="/shopify"
                 >
                   Copywriting
+<<<<<<< HEAD
+                </Link>
+                <br></br>
+                <Link
+                  style={{ color: "black", textDecoration: "none" }}
+                  to="/shopify"
+                >
+                  Graphic Designing
+=======
+>>>>>>> 2cbc2d6a3a84e1a252b65dc707a49a2ae56eed83
                 </Link>
                 <br></br>
                 <Link
@@ -176,6 +204,7 @@ const ServicesWeOffer = () => {
                 >
                   Graphic Designing
                 </Link>
+              </div>
               </div>
             </Card.Body>
           </Card>

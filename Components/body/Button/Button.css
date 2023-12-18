@@ -72,4 +72,35 @@
     border-radius: 10px;
   }
 
-  
+  .form-box{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .transparent-modal {
+    background-color: rgba(255, 165, 0, 0.5); /* Orange color with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow effect */
+    padding: 20px; /* Adjust padding as needed */
+    /* Add other styles as per your requirement */
+  }
+
+
+  /* In your CSS file, e.g., custom-modal.css */
+
+
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+  background-color: orange;
+}
+
+.custom-modal .modal-title {
+  color: white;
+}
+
+/* Add more custom styles as needed */

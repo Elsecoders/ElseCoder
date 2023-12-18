@@ -1,0 +1,12 @@
+.GetInTouch{
+    margin: 40px;
+    background-image: url("/ElseCoder/public/Images/2.png");
+    background-size: cover; /* Adjust the size of the background image */
+    background-position: center;
+}
+
+
+.HeadingGIT{
+    font-family: "Inter";
+    color: black;
+}

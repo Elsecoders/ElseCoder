@@ -1,10 +1,11 @@
 import React from 'react';
-import { useEffect } from 'react';
+import './SliderSection.css';
 
 const SliderSection = () => {
  
  
   return (
+    <>
     <div className="containerSlider mt-2">
       <div className="img2">
         <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
@@ -23,9 +24,9 @@ const SliderSection = () => {
         </p>
 
       </div>
-   
+
     </div>
-    
+    </>
   );
 };
 

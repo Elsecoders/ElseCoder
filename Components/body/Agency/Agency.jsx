@@ -8,11 +8,11 @@ const Agency = () => {
     <>
       <div className="agency mt-5 ">
         <div className="heading-agency">
-          <h1>ElseCoder is a top-rated eCommerce development agency</h1>
+          <h1>
+          Collaborate with the Finest eCommerce Development Agency{" "}
+          </h1>
           <p className="paragraph-agency">
-            With certified Shopify experts we can assist in expanding your
-            business. We offer exceptional support and services to ensure the
-            best possible results.
+          Shopify, WordPress, and Wix are just a few to name; we can help you build your eCommerce business without any trouble. 
           </p>
         </div>
         <div className="service-box">

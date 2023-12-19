@@ -1,10 +1,14 @@
-import React from 'react';
-import Navs from '../../../Components/Navbar/Navs';
+import React from "react";
+import Navs from "../../../Components/Navbar/Navs";
+import Footer from "../../../Components/footer/Footer";
 
 const Services = () => {
   return (
-   <Navs/>
+    <>
+      <Navs />
+      <Footer />
+    </>
   );
-}
+};
 
 export default Services;

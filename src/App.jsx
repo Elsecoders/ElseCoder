@@ -1,24 +1,35 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import Navs from "../Components/Navbar/Navs";
-import SliderSection from "../Components/body/SliderSection/SliderSection";
-import Introduction from "../Components/body/Introduction/Introduction";
-import Agency from "../Components/body/Agency/Agency";
-import MiddleContent from "../Components/body/MiddleContent/MiddleContent";
-import ServicesWeOffer from "../Components/body/ServicesWeOffer/ServicesWeOffer";
-import InformationalBolg from "../Components/body/InformationalBlog/InformationalBolg";
 
-const App = () => {
-  return (
-    <div>
-      <Navs />
-      <SliderSection />
-      <Introduction />
-      <Agency />
-      <MiddleContent />
-      <ServicesWeOffer />
-      <InformationalBolg />
-    </div>
-  );
-};
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Aboutus from './Pages/AboutUs/Aboutus';
+import MainBody from '../Components/MainBody/MainBody';
+import Services from './Pages/ServicesE/Services';
+import Contactus from './Pages/ContactUs/Contactus';
 
-export default App;
+  const App = () => {
+    return (
+      
+      <>
+      <BrowserRouter>
+      <Routes>
+      <Route path="*" element={<Navigate to="/home" />} />
+        <Route path='/home' element={<MainBody/>}/>
+        <Route path='/aboutus' element={<Aboutus/>}/>
+        <Route path='/services' element={<Services/>}/>
+        <Route path='/contactus' element={<Contactus/>}/>
+      </Routes>
+      </BrowserRouter>
+
+      
+      </>
+    );
+  }
+  
+  export default App;
+  
+
+
+
+
+

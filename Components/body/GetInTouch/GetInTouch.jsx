@@ -27,8 +27,25 @@ const GetInTouch = () => {
   return (
     <div className="GetInTouch">
       <h1 className="HeadingGIT">Get In Touch</h1>
-      <form className="form-box" onSubmit={handleSubmit}>
-        <div className="mb-3">
+      <form className="form-box1" onSubmit={handleSubmit}>
+      <div className='input-container'>
+        <input type='text' id='name' className='input-field' placeholder=" " required/>
+        <label for='name' className='input-label'>Name<span style={{color:'red'}}> *</span></label>
+        </div>
+        <div className='input-container'>
+        <input type='text' id='email' className='input-field' placeholder='' required/>
+        <label for='username' className='input-label'>Email<span style={{color:'red'}}> *</span></label>
+        </div>
+        <div className='input-container'>
+        <input type='text' id='text' className='input-field' placeholder='' required/>
+        <label for='text' className='input-label'>Enquire For ?<span style={{color:'red'}}> *</span></label>
+        </div>
+        <div className='input-container'>
+        <input type='text' id='email' className='input-field' placeholder='' required/>
+        <label for='username' className='input-label'>Message<span style={{color:'red'}}> *</span></label>
+        
+        </div>
+        {/* <div className="mb-3">
           <label htmlFor="name" className="form-label">
             Name <span style={{ color: 'red' }}>*</span>
           </label>
@@ -51,7 +68,7 @@ const GetInTouch = () => {
             Message <span style={{ color: 'red' }}>*</span>
           </label>
           <textarea type="textarea" className="form-control" id="name" required />
-        </div>
+        </div> */}
        
 
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}

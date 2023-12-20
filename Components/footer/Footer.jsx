@@ -7,6 +7,15 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
+import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <>
@@ -21,28 +30,44 @@ const Footer = () => {
             </div>
 
             <div>
-              <Link to="" className="me-4 text-reset">
-                <MDBIcon fab icon="facebook-f" />
-              </Link>
-              <Link to="" className="me-4 text-reset">
-                <MDBIcon fab icon="twitter" />
-              </Link>
-              <Link to="" className="me-4 text-reset">
-                <MDBIcon fab icon="google" />
-              </Link>
-              <Link to="" className="me-4 text-reset">
-                <MDBIcon fab icon="instagram" />
-              </Link>
-              <Link to="" className="me-4 text-reset">
-                <MDBIcon fab icon="linkedin" />
-              </Link>
-              <Link to="" className="me-4 text-reset">
-                <MDBIcon fab icon="github" />
-              </Link>
+              <ul className="wrapper">
+                <li className="icon facebook">
+                  <span className="tooltip">Facebook</span>
+                  <span>
+                    <FontAwesomeIcon icon={faFacebookF} />
+                  </span>
+                </li>
+                <li className="icon twitter">
+                  <span className="tooltip">Twitter</span>
+                  <span>
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </span>
+                </li>
+                <li className="icon instagram">
+                  <span className="tooltip">Instagram</span>
+                  <span>
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </span>
+                </li>
+                <li className="icon github">
+                  <span className="tooltip">Github</span>
+                  <span>
+                    <FontAwesomeIcon icon={faGithub} />
+                  </span>
+                </li>
+
+                <li className="icon linkedin">
+                  <span className="tooltip">LinkedIn</span>
+
+                  <span>
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </span>
+                </li>
+              </ul>
             </div>
           </section>
 
-          <section className="footer" style={{fontFamily:"Inter"}}>
+          <section className="footer" style={{ fontFamily: "Inter" }}>
             <MDBContainer className="text-center text-md-start mt-5">
               <MDBRow className="mt-3">
                 <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
@@ -59,30 +84,6 @@ const Footer = () => {
                     top-notch websites.
                   </p>
                 </MDBCol>
-
-                {/* <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-                  <p>
-                    <Link to="#!" className="text-reset">
-                      Angular
-                    </Link>
-                  </p>
-                  <p>
-                    <Link to="#!" className="text-reset">
-                      React
-                    </Link>
-                  </p>
-                  <p>
-                    <Link to="#!" className="text-reset">
-                      Vue
-                    </Link>
-                  </p>
-                  <p>
-                    <Link to="#!" className="text-reset">
-                      Laravel
-                    </Link>
-                  </p>
-                </MDBCol> */}
 
                 <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
                   <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
@@ -101,7 +102,6 @@ const Footer = () => {
                       CONTACT US
                     </Link>
                   </p>
-                 
                 </MDBCol>
 
                 <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
@@ -129,9 +129,9 @@ const Footer = () => {
             className="text-center p-4"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
           >
-            © 2018 Copyright:
+            © 2018 Copyright: 
             <Link className="text-reset fw-bold" to="https://elsecoder.com/">
-              ElseCoder.com
+                ElseCoder.com
             </Link>
           </div>
         </MDBFooter>

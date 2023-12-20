@@ -129,9 +129,9 @@ const Footer = () => {
             className="text-center p-4"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
           >
-            © 2018 Copyright:
+            © 2018 Copyright: 
             <Link className="text-reset fw-bold" to="https://elsecoder.com/">
-              ElseCoder.com
+                ElseCoder.com
             </Link>
           </div>
         </MDBFooter>

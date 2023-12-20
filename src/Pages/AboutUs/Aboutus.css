@@ -1,0 +1,222 @@
+.about-container {
+  height: 100%;
+  font-family: "Inter";
+}
+.aboutus-page {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  padding-bottom: 40px;
+  height: 80%;
+}
+
+.about-img {
+  width: 150%; /* Adjust width as needed */
+  overflow: hidden;
+  border-radius: 0 50% 0 50%;
+  object-fit: cover;
+  padding-left: 10px;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-content {
+  width: 100%; /* Adjust width as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.about-content-head {
+  font-size: 55px;
+}
+.about-content-para {
+  font-size: 20px;
+  color: #777;
+}
+
+.about-tag {
+  z-index: 99;
+  background-color: #2ca3cc;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  padding: 2rem 4rem 4rem 4rem;
+  justify-content: center;
+  margin: -7vw 15rem 0 15rem;
+  display: flex;
+  color: white;
+}
+.about-head {
+  font-size: 2.8vw;
+  font-weight: 500;
+}
+.about-para {
+  font-weight: lighter !important;
+  color: white;
+}
+.mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  padding: 50px;
+  height: 80%;
+  margin: 5%;
+  border-radius: 20px;
+  border: 1px #777;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.container-img {
+  width: 100%; /* Adjust width as needed */
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10%;
+}
+.container-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.moto-vision {
+  padding: 20px;
+}
+.moto-vision h4 {
+  color: #444;
+}
+.mission-head {
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 45px;
+  margin-top: 20px;
+  color: #444;
+}
+
+/* Media query for tablet and larger screens */
+@media screen and (min-width: 768px) {
+  .about-content-head {
+    font-size: 3em;
+  }
+
+  .about-head {
+    font-size: 2.5em;
+  }
+
+  .mission-head {
+    font-size: 3em;
+  }
+
+  .about-img {
+    width: 70%; /* Adjust as needed */
+  }
+
+  .container-img {
+    width: 70%; /* Adjust as needed */
+  }
+  .about-img {
+    width: 100%; /* Adjust width as needed */
+    border-radius: 0 50% 0 50%; /* Adjust as needed */
+  }
+}
+
+/* Media query for laptop and larger screens */
+@media screen and (min-width: 1024px) {
+  .about-content-head {
+    font-size: 3.5em;
+  }
+
+  .about-head {
+    font-size: 3em;
+  }
+
+  .mission-head {
+    font-size: 3.5em;
+  }
+  .about-img {
+    width: 100%; /* Adjust width as needed */
+    border-radius: 0 50% 0 50%; /* Adjust as needed */
+  }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .about-img {
+    width: 100%; /* Adjust width as needed */
+  }
+
+  .aboutus-page {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding-bottom: 20px; /* Adjust padding as needed */
+  }
+
+  .about-content-head {
+    font-size: 2em; /* Adjust font size as needed */
+  }
+
+  .about-content-para {
+    font-size: 16px; /* Adjust font size as needed */
+  }
+
+  .about-tag {
+    margin: 2rem 1rem;
+    padding: 1rem;
+  }
+
+  .mission-container {
+    padding: 20px; /* Adjust padding as needed */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .container-img {
+    width: 100%;
+  }
+
+  .container-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .moto-vision {
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  .moto-vision h4 {
+    font-size: 1.5em; /* Adjust font size as needed */
+  }
+
+  .mission-head {
+    font-size: 2em; /* Adjust font size as needed */
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+}
+
+/* For larger screens, keep the existing styles */
+.about-img {
+  width: 100%; /* Adjust width as needed */
+  border-radius: 0 50% 0 50%; /* Adjust as needed */
+}
+
+.aboutus-page {
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.about-content-head {
+  font-size: 2em; /* Adjust font size as needed */
+}
+
+.about-content-para {
+  font-size: 16px; /* Adjust font size as needed */
+}

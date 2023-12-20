@@ -6,6 +6,7 @@ const Aboutus = () => {
   return (
     <>
     <Navs/>
+    
     <Footer/>
     </>
   

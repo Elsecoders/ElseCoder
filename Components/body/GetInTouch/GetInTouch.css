@@ -3,6 +3,7 @@
     background-image: url("/Images/GetInTouch/GetIn.webp");
     background-size: cover; /* Adjust the size of the background image */
     background-position: center;
+    height: 55vh;
 }
 
 
@@ -24,7 +25,7 @@
     position: absolute;
     color: #999 ;
     top: 50%;
-    left:10%;
+    left:4%;
     transform: translateY(-50%);
     transition: top 0.3s, font-size 0.3s color 0.3s;
 
@@ -34,8 +35,8 @@
   margin-bottom: 20px;
 }
 .input-field{
-  width: 200px;
-  padding: 10px;
+  width: 800px;
+  padding: 15px;
   border: none;
   border-radius: 3px;
   background-color: #fff;
@@ -55,7 +56,7 @@
 }
 .inqury-btn2 {
     font-family: "Inter";
-    padding: 0.6em 2em;
+    padding: 0.4em 2em;
     border: none;
     outline: none;
     color: rgb(255, 255, 255);
@@ -65,9 +66,9 @@
     z-index: 1;
     border-radius: 10px;
     box-shadow: 0px 0px 10px;
-    margin-left: 40%;
+    margin-left: 45%;
     padding-top: auto;
-    
+    font-size: 1.3rem; 
     
   }
   .inqury-btn2:before{
@@ -124,7 +125,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90%;
     background: #111;
     left: 0;
     top: 0;

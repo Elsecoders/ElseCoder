@@ -29,7 +29,7 @@ const GetInTouch = () => {
       <h1 className="HeadingGIT">Get In Touch</h1>
       <form className="form-box1" onSubmit={handleSubmit}>
       <div className='input-container'>
-        <input type='text' id='name' className='input-field' placeholder='' required/>
+        <input type='text' id='name' className='input-field' placeholder=" " required/>
         <label for='name' className='input-label'>Name<span style={{color:'red'}}> *</span></label>
         </div>
         <div className='input-container'>

@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import Navs from '../Navbar/Navs';
 import Footer from '../footer/Footer';
 import SliderSection from '../body/SliderSection/SliderSection';

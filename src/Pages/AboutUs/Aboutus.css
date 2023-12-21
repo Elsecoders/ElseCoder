@@ -122,10 +122,6 @@
   .container-img {
     width: 70%; /* Adjust as needed */
   }
-  .about-img {
-    width: 100%; /* Adjust width as needed */
-    border-radius: 0 50% 0 50%; /* Adjust as needed */
-  }
 }
 
 /* Media query for laptop and larger screens */
@@ -141,22 +137,31 @@
   .mission-head {
     font-size: 3.5em;
   }
-  .about-img {
-    width: 100%; /* Adjust width as needed */
-    border-radius: 0 50% 0 50%; /* Adjust as needed */
-  }
 }
 
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
-  .about-img {
-    width: 100%; /* Adjust width as needed */
-  }
-
   .aboutus-page {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    padding-bottom: 20px; /* Adjust padding as needed */
+  }
+
+  .about-img {
+    width: 100%;
+    border-radius: 0 50% 0 50%; /* Adjust border-radius as needed */
+  }
+
+  .container-img {
+    width: 100%;
+    border-radius: 10%; /* Adjust border-radius as needed */
+  }
+
+  .container-img img {
+    border-radius: 10%; /* Adjust border-radius as needed */
+  }
+
+  .about-content {
+    padding-top: 20px; /* Add padding to separate image and text */
   }
 
   .about-content-head {
@@ -178,16 +183,6 @@
     align-items: center; /* Center items horizontally */
   }
 
-  .container-img {
-    width: 100%;
-  }
-
-  .container-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
   .moto-vision {
     padding: 10px; /* Adjust padding as needed */
   }
@@ -200,23 +195,4 @@
     font-size: 2em; /* Adjust font size as needed */
     margin-top: 10px; /* Adjust margin as needed */
   }
-}
-
-/* For larger screens, keep the existing styles */
-.about-img {
-  width: 100%; /* Adjust width as needed */
-  border-radius: 0 50% 0 50%; /* Adjust as needed */
-}
-
-.aboutus-page {
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-}
-
-.about-content-head {
-  font-size: 2em; /* Adjust font size as needed */
-}
-
-.about-content-para {
-  font-size: 16px; /* Adjust font size as needed */
 }

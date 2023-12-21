@@ -7,7 +7,7 @@ import Agency from '../body/Agency/Agency';
 import MiddleContent from '../body/MiddleContent/MiddleContent';
 import ServicesWeOffer from '../body/ServicesWeOffer/ServicesWeOffer';
 import InformationalBolg from '../body/InformationalBlog/InformationalBolg';
-import GetInTouch from '../body/GetInTouch/GetInTouch';
+// import GetInTouch from '../body/GetInTouch/GetInTouch';
 
 const MainBody = () => {
   return (
@@ -19,7 +19,7 @@ const MainBody = () => {
    <MiddleContent/>
    <ServicesWeOffer/>
    <InformationalBolg/>
-   <GetInTouch/>
+   {/* <GetInTouch/> */}
    <Footer/>
    </>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 import Navs from "../../../Components/Navbar/Navs";
-
 import "./Services.css";
 import { Link } from "react-router-dom";
 import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
@@ -8,10 +7,12 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CodeIcon from "@mui/icons-material/Code";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 //import Footer from "../../../Components/footer/Footer";
+
 const Services = () => {
   return (
     <>
       <Navs />
+    
       <div className="servicePage mt-4">
         <div className="Services">
           <div className="ServiceImg">
@@ -39,25 +40,25 @@ const Services = () => {
             >
               <Link
                 className="link-with-line"
-                style={{ textDecoration: "none", color: "#777" }}
+                style={{ textDecoration: "none", color: "#fff" }}
               >
                 Solution Implementation<span className="line"></span>
               </Link>
               <Link
                 className="link-with-line"
-                style={{ textDecoration: "none", color: "#777" }}
+                style={{ textDecoration: "none", color: "#fff" }}
               >
                 Software Development<span className="line"></span>
               </Link>
               <Link
                 className="link-with-line"
-                style={{ textDecoration: "none", color: "#777" }}
+                style={{ textDecoration: "none", color: "#fff" }}
               >
                 Search Engine Optimization<span className="line"></span>
               </Link>
               <Link
                 className="link-with-line"
-                style={{ textDecoration: "none", color: "#777" }}
+                style={{ textDecoration: "none", color: "#fff" }}
               >
                 Social Media Management<span className="line"></span>
               </Link>
@@ -195,8 +196,14 @@ const Services = () => {
               </box>
             </div>
           </div>
+
+          
         </div>
       </div>
+      
+      
+    
+
     </>
   );
 };

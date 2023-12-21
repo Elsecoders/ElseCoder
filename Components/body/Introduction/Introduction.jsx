@@ -58,14 +58,14 @@ const Introduction = () => {
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
               variant="center"
-              src="/Images/2.png"
+              src="/public/Images/Intro/emer.png"
               style={{ width: "10rem", height: "10rem" }}
             />
           </Card>
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
               variant="center"
-              src="/Images/2.png"
+              src="/public/Images/Intro/ss.png"
               style={{ width: "10rem", height: "10rem" }}
             />
           </Card>

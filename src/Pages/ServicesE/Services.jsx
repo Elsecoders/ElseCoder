@@ -1,12 +1,13 @@
 import React from "react";
 import Navs from "../../../Components/Navbar/Navs";
-import Footer from "../../../Components/footer/Footer";
+
 import "./Services.css";
 import { Link } from "react-router-dom";
-import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import CodeIcon from '@mui/icons-material/Code';
-import NorthEastIcon from '@mui/icons-material/NorthEast';
+import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import CodeIcon from "@mui/icons-material/Code";
+import NorthEastIcon from "@mui/icons-material/NorthEast";
+//import Footer from "../../../Components/footer/Footer";
 const Services = () => {
   return (
     <>
@@ -32,7 +33,7 @@ const Services = () => {
               style={{
                 gap: "20px",
                 display: "flex",
-                justifyContent: "space-between",
+                justifyContent: "space-evenly",
                 listStyleType: "none",
               }}
             >
@@ -64,7 +65,7 @@ const Services = () => {
           </div>
         </div>
         <div className="service-div mt-5">
-          <div className="service-div-1">
+          <div className="service-div-1" style={{ backgroundColor: "#fafafb" }}>
             <div className="service-div-content">
               <h1>
                 <span>Solution</span>
@@ -72,82 +73,130 @@ const Services = () => {
                 <span style={{ color: "#2CA3CC" }}>Implementation</span>
               </h1>
               <p>
-                As a trusted partner of world's leading CRM solutions, <br></br>we can
-                help you customize and implement business solutions 3x faster
-                and smarter.
+                As a trusted partner of world's leading CRM solutions, 
+                we can help you customize and implement business solutions 3x
+                faster and smarter.
               </p>
             </div>
             <div className="service-div-sol">
-              <box className="box-1"><IntegrationInstructionsIcon/>Word Press<NorthEastIcon/></box><br></br>
-              <box className="box-1"><CodeIcon/>Custom React CMS<NorthEastIcon/></box>
-              <box className="box-1"><ShoppingCartIcon/>Shopify<NorthEastIcon/></box>
+              <box className="box-1">
+                <IntegrationInstructionsIcon />
+                Word Press
+                <NorthEastIcon />
+              </box>
+              <br></br>
+              <box className="box-1">
+                <CodeIcon />
+                Custom React CMS
+                <NorthEastIcon />
+              </box>
+              <box className="box-1">
+                <ShoppingCartIcon />
+                Shopify
+                <NorthEastIcon />
+              </box>
             </div>
           </div>
           <div className="service-div-1">
             <div className="service-div-content">
               <h1>
-                <span>Solution</span>
+                <span>Software</span>
                 <br></br>
-                <span style={{ color: "#2CA3CC" }}>Implementation</span>
+                <span style={{ color: "#2CA3CC" }}>Development</span>
               </h1>
               <p>
-                As a trusted partner of world's leading CRM solutions, <br></br>we can
-                help you customize and implement business solutions 3x faster
-                and smarter.
+                Named among top 1% global companies by Clutch,  we have the trust
+                of 500+ companies when it comes to bespoke software solutions.
               </p>
             </div>
             <div className="service-div-sol">
-              <box className="box-1"><IntegrationInstructionsIcon/>Word Press<NorthEastIcon/></box><br></br>
-              <box className="box-1"><CodeIcon/>Custom React CMS<NorthEastIcon/></box>
-              <box className="box-1"><ShoppingCartIcon/>Shopify<NorthEastIcon/></box>
+              <box className="box-1">
+                <IntegrationInstructionsIcon />
+                Word Press
+                <NorthEastIcon />
+              </box>
+              <br></br>
+              <box className="box-1">
+                <CodeIcon />
+                Custom React CMS
+                <NorthEastIcon />
+              </box>
+              <box className="box-1">
+                <ShoppingCartIcon />
+                Shopify
+                <NorthEastIcon />
+              </box>
+            </div>
+          </div>
+          <div className="service-div-1" style={{ backgroundColor: "#fafafb" }}>
+            <div className="service-div-content">
+              <h1>
+                <span>Search Engine</span>
+                <br></br>
+                <span style={{ color: "#2CA3CC" }}>Optimization</span>
+              </h1>
+              <p>
+                Our SEO solutions build a website's relevance and trust with
+                search engines. Every task performed has a specific purpose that
+                improves your website's ranking.
+              </p>
+            </div>
+            <div
+              className="service-div-sol"
+              style={{ justifyContent: "space-between" }}
+            >
+              <box className="box-1">
+                <IntegrationInstructionsIcon />
+                Word Press
+                <NorthEastIcon />
+              </box>
+              <br></br>
+              <box className="box-1">
+                <CodeIcon />
+                Custom React CMS
+                <NorthEastIcon />
+              </box>
+              <box className="box-1">
+                <ShoppingCartIcon />
+                Shopify
+                <NorthEastIcon />
+              </box>
             </div>
           </div>
           <div className="service-div-1">
             <div className="service-div-content">
               <h1>
-                <span>Solution</span>
+                <span>Social Media </span>
                 <br></br>
-                <span style={{ color: "#2CA3CC" }}>Implementation</span>
+                <span style={{ color: "#2CA3CC" }}>Management</span>
               </h1>
               <p>
-                As a trusted partner of world's leading CRM solutions, <br></br>we can
-                help you customize and implement business solutions 3x faster
-                and smarter.
-              </p>
-            </div>
-            <div className="service-div-sol" style={{justifyContent:"space-between"}}>
-              <box className="box-1"><IntegrationInstructionsIcon/>Word Press<NorthEastIcon/></box><br></br>
-              <box className="box-1"><CodeIcon/>Custom React CMS<NorthEastIcon/></box>
-              <box className="box-1"><ShoppingCartIcon/>Shopify<NorthEastIcon/></box>
-            </div>
-          </div>
-          <div className="service-div-1">
-            <div className="service-div-content">
-              <h1>
-                <span>Solution</span>
-                <br></br>
-                <span style={{ color: "#2CA3CC" }}>Implementation</span>
-              </h1>
-              <p>
-                As a trusted partner of world's leading CRM solutions, <br></br>we can
-                help you customize and implement business solutions 3x faster
-                and smarter.
+                From content creation to community management, we will help you
+                establish a strong social media presence, build brand awareness,
+                and 
               </p>
             </div>
             <div className="service-div-sol">
-              <box className="box-1"><IntegrationInstructionsIcon/>Word Press<NorthEastIcon/></box><br></br>
-              <box className="box-1"><CodeIcon/>Custom React CMS<NorthEastIcon/></box>
-              <box className="box-1"><ShoppingCartIcon/>Shopify<NorthEastIcon/></box>
+              <box className="box-1">
+                <IntegrationInstructionsIcon />
+                Word Press
+                <NorthEastIcon />
+              </box>
+              <br></br>
+              <box className="box-1">
+                <CodeIcon />
+                Custom React CMS
+                <NorthEastIcon />
+              </box>
+              <box className="box-1">
+                <ShoppingCartIcon />
+                Shopify
+                <NorthEastIcon />
+              </box>
             </div>
           </div>
         </div>
       </div>
-    
-     
-     
-    
-    
-    <Footer/>
     </>
   );
 };

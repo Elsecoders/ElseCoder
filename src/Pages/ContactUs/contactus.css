@@ -1,9 +1,10 @@
 .containercontactUs {
     display: flex;
-    justify-content: column;
+    /* justify-content: column; */
     align-items: center;
     font-family: "Inter";
-    font-weight: 600;
+    font-weight: 400;
+    
   }
   
   .img2 {
@@ -20,12 +21,13 @@
     object-fit: cover;
   }
   
-  .content {
+  .Contactus-content {
     width: 100%; /* Adjust width as needed */
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    align-items: center;
   }
   .contact-box {
     width: 800px;
@@ -204,10 +206,58 @@
     top: 0;
     border-radius: 10px;
   }
-  
-  
-  /* Media query for smaller screens */
+
   @media screen and (max-width: 768px) {
+    .contact-box {
+      max-width: 100%;
+    }
+
+    .form-row {
+      display: block;
+    }
+
+    .form-field {
+      width: 100%;
+    }
+  }
+  .img2,
+  .Contactus-content {
+    width: 100%; /* Make both take full width in smaller screens */
+    text-align: center; /* Align text to the left for smaller screens */
+  }
+
+    
+  @media screen and (max-width:450px){
+
+    .containercontactUs {
+      display: flex;
+      align-items: center;
+      font-family: "Inter";
+      font-weight: 600;
+      flex-direction: column;
+      align-items: center;
+    }
+    .img2, .Contactus-content {
+      width: 100%;
+      text-align: center;
+  }
+  .Contactus-content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+
+  }
+}
+  /* .containercontactUs {
+     flex-direction: column; 
+    align-items: center;
+  } */
+
+
+  /* Media query for smaller screens */
+  /* @media screen and (max-width: 768px) {
     .containerSlider {
       flex-direction: column;
       align-items: center;
@@ -215,21 +265,21 @@
   
     .img2,
     .content {
-      width: 100%; /* Make both take full width in smaller screens */
-      text-align: left; /* Align text to the left for smaller screens */
+      width: 100%; 
+      text-align: left; 
     }
   }
     .form-row {
-      flex-direction: column; /* Stack fields vertically on smaller screens */
+      flex-direction: column; 
     }
   
     .form-field {
-      flex: 0 0 100%; /* Full width for all fields on smaller screens */
-      margin-bottom: 10px; /* Add some spacing between fields */
+      flex: 0 0 100%; 
+      margin-bottom: 10px; 
     }
   
     .form-field button {
-      width: 100%; /* Full width for the button on smaller screens */
+      width: 100%; 
     }
     .containercontactUs {
         flex-direction: column;
@@ -243,20 +293,20 @@
       }
     
       .img2 img {
-        border-radius: 0; /* Adjust styles for smaller screens */
+        border-radius: 0; 
       }
     
       .contact-box {
-        width: 100%; /* Make the contact box full-width on smaller screens */
+        width: 100%; 
         margin: 20px 0;
         padding: 20px;
         border-radius: 8px;
       }
     
       .contact-heading {
-        font-size: 32px; /* Adjust font size for smaller screens */
+        font-size: 32px; 
       }
     
       .contact-text {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-      }
+        font-size: 1rem; 
+      } */

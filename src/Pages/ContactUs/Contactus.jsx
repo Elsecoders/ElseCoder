@@ -11,7 +11,7 @@ const Contactus = () => {
         <div className="img2">
           <img src="/Images/Contact-us/contactUs-img.jpg" alt="" />
         </div>
-        <div className="content">
+        <div className="Contactus-content">
           <p>
             Behind the powerful{' '}
             <h1>

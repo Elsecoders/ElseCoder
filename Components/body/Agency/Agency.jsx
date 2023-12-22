@@ -3,6 +3,8 @@ import Card from "react-bootstrap/Card";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
 import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
 import DashboardCustomizeOutlinedIcon from "@mui/icons-material/DashboardCustomizeOutlined";
+
+import { NavLink } from "react-router-dom";
 const Agency = () => {
   return (
     <>
@@ -27,7 +29,8 @@ const Agency = () => {
               />
               <p className="shopify-div">Shopify Store Setup</p>
               <p className="shopify-bar">___</p>
-              <p className="shopify-rm">Read More</p>
+              <NavLink as={NavLink} to="/shopifystoresetup" style={{textDecoration:"none"}}><p className="shopify-rm">Read More</p></NavLink>
+              
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem", height: "18rem" }} className="card-2">
@@ -41,7 +44,7 @@ const Agency = () => {
               />
               <p className="shopify-div">Shopify Content SEO</p>
               <p className="shopify-bar">___</p>
-              <p className="shopify-rm">Read More</p>
+            <NavLink as={NavLink} to="/shopifycontentseo" style={{textDecoration:"none"}}><p className="shopify-rm">Read More</p></NavLink>  
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem", height: "18rem" }} className="card-3">
@@ -55,7 +58,7 @@ const Agency = () => {
               />
               <p className="shopify-div">Shopify Theme Customization</p>
               <p className="shopify-bar">___</p>
-              <p className="shopify-rm">Read More</p>
+            <NavLink as={NavLink} to="/shopifythemecustomization" style={{textDecoration:"none"}}><p className="shopify-rm">Read More</p></NavLink>  
             </Card.Body>
           </Card>
         </div>

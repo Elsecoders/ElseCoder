@@ -6,7 +6,9 @@ import Aboutus from './Pages/AboutUs/Aboutus';
 import MainBody from '../Components/MainBody/MainBody';
 import Services from './Pages/ServicesE/Services';
 import Contactus from './Pages/ContactUs/Contactus';
-
+import ShopifyContentSEO from './Pages/Agency/ShopifyContentSEO/ShopifyContentSEO';
+import ShopifyStoreSetup from './Pages/Agency/ShopifyStoreSetup/ShopifyStoreSetup';
+import ShopifyThemeCustomization from './Pages/Agency/ShopifyThemeCustomization/ShopifyThemeCustomization';
   const App = () => {
     return (
       
@@ -18,6 +20,9 @@ import Contactus from './Pages/ContactUs/Contactus';
         <Route path='/aboutus' element={<Aboutus/>}/>
         <Route path='/services' element={<Services/>}/>
         <Route path='/contactus' element={<Contactus/>}/>
+        <Route path='/shopifycontentseo' element={<ShopifyContentSEO/>}/>
+        <Route path='/shopifystoresetup' element={<ShopifyStoreSetup/>}/>
+        <Route path='/shopifythemecustomization' element={<ShopifyThemeCustomization/>}/>
       </Routes>
       </BrowserRouter>
 

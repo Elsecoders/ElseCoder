@@ -1,6 +1,6 @@
 .about-container {
-  height: 100%;
   font-family: "Inter";
+  font-weight: 600;
 }
 .aboutus-page {
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .about-img {
-  width: 150%; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
   overflow: hidden;
   border-radius: 0 50% 0 50%;
   object-fit: cover;
@@ -36,7 +36,7 @@
   font-size: 55px;
 }
 .about-content-para {
-  font-size: 20px;
+  font-size: 18px;
   color: #777;
 }
 
@@ -100,6 +100,137 @@
   margin-top: 20px;
   color: #444;
 }
+.ourvalue-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5%;
+}
+.value-container-img {
+  width: 30%;
+  margin-bottom: 15px;
+}
+.value-container-img1 {
+  width: 22.2%;
+  margin-bottom: 15px;
+}
+.value-container-img2 {
+  width: 27%;
+  margin-bottom: 15px;
+}
+.value-container-head {
+  color: #444;
+  font-size: 25px;
+  font-weight: 600;
+}
+.value-container-head1 {
+  color: #444;
+  font-size: 25px;
+  font-weight: 600;
+}
+.value-container-head2 {
+  color: #444;
+  font-size: 25px;
+  font-weight: 600;
+}
+.value-container-para {
+  color: #777;
+}
+.ourvalue-subcontainer {
+  margin: 10px;
+}
+.ourvalue-head {
+  text-align: center;
+  justify-content: center;
+  font-size: 350px;
+  margin-top: 20px;
+  color: #444;
+  font-weight: 800;
+}
+.application-services {
+  text-align: center;
+  justify-content: center;
+  font-size: 350px;
+  margin-top: 20px;
+  color: #444;
+  font-weight: 800;
+}
+/* .service-image {
+    position: absolute;
+}
+.countainer1{
+  position: relative;
+    margin: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 3.8rem 2rem 2rem;
+    margin: 5.5rem 0.5rem 0.5rem 0;
+    box-shadow: 0.05rem 0.05rem #a7a7a7,
+} */
+/* .service-head {
+  margin-top: 0;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: none;
+  color: #444;
+  line-height: 1.2;
+} */
+/* .service-para {
+  font-size: 14px;
+  margin: 0 0 10px;
+} */
+/* .service-more {
+  text-transform: uppercase;
+  color: rgb(0, 77, 255);
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+} */
+/* i {
+  margin-top: 1.5rem !important;
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+} */
+/* .ecommerce {
+  display: flex;
+  justify-content: center;
+} */
+/* .ecommerce {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .countainer1 {
+    position: relative;
+    width: 45%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .service-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .notification-overlay {
+    position:absolute;
+    left: 5px;
+    color: white;
+    width: 10%x;
+    margin-top: -10%;
+  }
+
+  .service-head,
+  .service-para,
+  .service-more {
+    margin: 10px;
+  } */
 
 /* Media query for tablet and larger screens */
 @media screen and (min-width: 768px) {
@@ -122,6 +253,39 @@
   .container-img {
     width: 70%; /* Adjust as needed */
   }
+  .ourvalue-head {
+    font-size: 2.5em;
+  }
+
+  .value-container-img {
+    width: 24%; /* Adjust as needed */
+  }
+
+  .value-container-img1 {
+    width: 18%; /* Adjust as needed */
+  }
+
+  .value-container-img2 {
+    width: 22%; /* Adjust as needed */
+  }
+
+  .value-container-head {
+    font-size: 1.8em; /* Adjust font size as needed */
+  }
+
+  .value-container-head1 {
+    font-size: 1.8em; /* Adjust font size as needed */
+  }
+
+  .value-container-head2 {
+    font-size: 1.8em; /* Adjust font size as needed */
+  }
+
+  .value-container-para,
+  .value-container-para1,
+  .value-container-para2 {
+    font-size: 16px; /* Adjust font size as needed */
+  }
 }
 
 /* Media query for laptop and larger screens */
@@ -133,9 +297,51 @@
   .about-head {
     font-size: 3em;
   }
+  .about-img {
+    width: 150%;
+  }
+  .about-content-head {
+    width: 100;
+  }
 
   .mission-head {
     font-size: 3.5em;
+  }
+  .ourvalue-head {
+    font-size: 3em; /* Adjust font size as needed */
+  }
+
+  .value-container-img {
+    width: 25%; /* Adjust as needed */
+  }
+
+  .value-container-img1 {
+    width: 18%; /* Adjust as needed */
+  }
+
+  .value-container-img2 {
+    width: 22.5%; /* Adjust as needed */
+  }
+
+  .value-container-head {
+    font-size: 2em; /* Adjust font size as needed */
+  }
+  .value-container-head1 {
+    font-size: 2em; /* Adjust font size as needed */
+  }
+  .value-container-head2 {
+    font-size: 1.8em; /* Adjust font size as needed */
+  }
+
+  .value-container-para {
+    font-size: 18px; /* Adjust font size as needed */
+    margin-top: -3px;
+  }
+  .value-container-para1 {
+    font-size: 18px; /* Adjust font size as needed */
+  }
+  .value-container-para2 {
+    font-size: 17.5px; /* Adjust font size as needed */
   }
 }
 
@@ -194,5 +400,35 @@
   .mission-head {
     font-size: 2em; /* Adjust font size as needed */
     margin-top: 10px; /* Adjust margin as needed */
+  }
+  .ourvalue-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .ourvalue-subcontainer {
+    text-align: center;
+  }
+
+  .value-container-img,
+  .value-container-img1,
+  .value-container-img2 {
+    width: 20%; /* Adjust as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+
+  .value-container-head {
+    font-size: 1.9em; /* Adjust font size as needed */
+  }
+  .value-container-head1 {
+    font-size: 1.5em; /* Adjust font size as needed */
+  }
+  .value-container-head2 {
+    font-size: 1.5em; /* Adjust font size as needed */
+  }
+  .value-container-para,
+  .value-container-para1,
+  .value-container-para2 {
+    font-size: 16px; /* Adjust font size as needed */
   }
 }

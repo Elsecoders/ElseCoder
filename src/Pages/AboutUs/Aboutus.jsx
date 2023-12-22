@@ -58,7 +58,7 @@ const Aboutus = () => {
           <div className="mission-container">
             <div className="container-img">
               <img
-                src="/Images/aboutUs/Vision-Mission.webp"
+                src="/public/Images/aboutUs/Vision-Mission.png"
                 alt="Mission Image"
               />
             </div>
@@ -80,6 +80,91 @@ const Aboutus = () => {
             </div>
           </div>
         </div>
+        <div className="ourvalue-head">
+          <h3>
+            <b>Our Values</b>
+          </h3>
+        </div>
+        <div className="ourvalue-container">
+          <div className="ourvalue-subcontainer">
+            <img
+              className="value-container-img"
+              src="/public/Images/aboutUs/passion.png"
+              alt="Passion"
+            />
+            <h6 className="value-container-head">
+              <b>Passion</b>
+            </h6>
+            <p className="value-container-para">
+              We are fueled by our passion and committed to infusing purpose
+              into every aspect of our endeavors.
+            </p>
+          </div>
+          <div className="ourvalue-subcontainer">
+            <img
+              className="value-container-img1"
+              src="/public/Images/aboutUs/innovation.png"
+              alt="Innovation"
+            />
+            <h6 className="value-container-head1">
+              <b>Impactful Innovation</b>
+            </h6>
+            <p className="value-container-para1">
+              We constantly strive to challenge the current norms and envision
+              the future demands of the market in order to create significant
+              value.
+            </p>
+          </div>
+          <div className="ourvalue-subcontainer">
+            <img
+              className="value-container-img2"
+              src="/public/Images/aboutUs/trust.png"
+              alt="Trust"
+            />
+            <h6 className="value-container-head2">
+              <b>Trust & Diversity</b>
+            </h6>
+            <p className="value-container-para2">
+              We honor and embrace a variety of viewpoints, while cultivating a
+              culture of mutual reliance and responsibility
+            </p>
+          </div>
+        </div>
+        {/* <div className="application-services">
+          <h3>
+            <b>End-to-end application services</b>
+          </h3>
+        </div>
+        <div className="ecommerce">
+        <div className="countainer1">
+            <img className="service-image"
+              src="/public/Images/aboutUs/online-shopping.png"
+              alt="development"
+            />
+            <h5 className="service-head">Application Development</h5>
+            <p className="service-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
+              neque.
+            </p>
+            <span className="service-more">Learn More
+            <i> &#8594;</i></span>
+          </div>
+          <div className="countainer1">
+          <div className="notification-overlay">
+            <img className="service-image"
+              src="/public/Images/aboutUs/online-shopping.png"
+              alt="development"
+            />
+            </div>
+            <h5 className="service-head">Application Development</h5>
+            <p className="service-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
+              neque.
+            </p>
+            <span className="service-more">Learn More
+            <i> &#8594;</i></span>
+          </div>
+        </div> */}
       </div>
       <Footer />
     </>

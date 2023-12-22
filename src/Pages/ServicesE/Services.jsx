@@ -38,27 +38,28 @@ const Services = () => {
                 listStyleType: "none",
               }}
             >
+
               <Link
                 className="link-with-line"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Solution Implementation<span className="line"></span>
               </Link>
               <Link
                 className="link-with-line"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Software Development<span className="line"></span>
               </Link>
               <Link
                 className="link-with-line"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Search Engine Optimization<span className="line"></span>
               </Link>
               <Link
                 className="link-with-line"
-                style={{ textDecoration: "none", color: "#fff" }}
+                style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Social Media Management<span className="line"></span>
               </Link>
@@ -81,20 +82,26 @@ const Services = () => {
             </div>
             <div className="service-div-sol">
               <box className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" }}>
                 <IntegrationInstructionsIcon />
                 Word Press
                 <NorthEastIcon />
+                </Link>
               </box>
               <br></br>
               <box className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" }}>
                 <CodeIcon />
                 Custom React CMS
                 <NorthEastIcon />
+                </Link>
               </box>
-              <box className="box-1">
+              <box  className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" }}>
                 <ShoppingCartIcon />
                 Shopify
                 <NorthEastIcon />
+                </Link>
               </box>
             </div>
           </div>
@@ -106,8 +113,7 @@ const Services = () => {
                 <span style={{ color: "#2CA3CC" }}>Development</span>
               </h1>
               <p>
-                Named among top 1% global companies by Clutch,  we have the trust
-                of 500+ companies when it comes to bespoke software solutions.
+              As a trusted partner of world's leading CRM solutions, we can help you customize and implement business solutions 3x faster and smarter.
               </p>
             </div>
             <div className="service-div-sol">
@@ -137,9 +143,7 @@ const Services = () => {
                 <span style={{ color: "#2CA3CC" }}>Optimization</span>
               </h1>
               <p>
-                Our SEO solutions build a website's relevance and trust with
-                search engines. Every task performed has a specific purpose that
-                improves your website's ranking.
+              As a trusted partner of world's leading CRM solutions, we can help you customize and implement business solutions 3x faster and smarter.
               </p>
             </div>
             <div
@@ -172,9 +176,7 @@ const Services = () => {
                 <span style={{ color: "#2CA3CC" }}>Management</span>
               </h1>
               <p>
-                From content creation to community management, we will help you
-                establish a strong social media presence, build brand awareness,
-                and 
+              As a trusted partner of world's leading CRM solutions, we can help you customize and implement business solutions 3x faster and smarter.
               </p>
             </div>
             <div className="service-div-sol">
@@ -202,7 +204,7 @@ const Services = () => {
       </div>
       
       
-    
+   
 
     </>
   );

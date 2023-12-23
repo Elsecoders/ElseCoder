@@ -1,84 +1,66 @@
-import React, { useState } from 'react';
-import './GetInTouch.css';
+import React from 'react'
+import "./GetInTouch.css"
 
 const GetInTouch = () => {
-  const [errorMessage, setErrorMessage] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent form submission
-
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    const enquireFor = e.target.enquireFor.value;
-    const message = e.target.message.value;
-
-    if (!name || !email || !enquireFor || !message) {
-      setErrorMessage('All fields are mandatory');
-      return;
-    }
-
-    // Perform your form submission logic here
-
-    // Clear the form after submission if needed
-    e.target.reset();
-    setErrorMessage('');
-  };
-
   return (
-    <div className="GetInTouch">
-      <h1 className="HeadingGIT">Get In Touch</h1>
-      <form className="form-box1" onSubmit={handleSubmit}>
-      <div className='input-container'>
-        <input type='text' id='name' className='input-field' placeholder=" " required/>
-        <label for='name' className='input-label'>Name<span style={{color:'red'}}> *</span></label>
+    <>
+       <div class="contact-box">
+        <div class="contact-heading">Get in touch</div>
+        <div class="contact-text">
+          <p>
+            Our team of regional experts is here to support you with your global expansion plans.
+            If you have any questions, just get in touch, and we will be delighted to help.
+          </p>
         </div>
-        <div className='input-container'>
-        <input type='text' id='email' className='input-field' placeholder='' required/>
-        <label for='username' className='input-label'>Email<span style={{color:'red'}}> *</span></label>
-        </div>
-        <div className='input-container'>
-        <input type='text' id='text' className='input-field' placeholder='' required/>
-        <label for='text' className='input-label'>Enquire For ?<span style={{color:'red'}}> *</span></label>
-        </div>
-        <div className='input-container'>
-        <input type='text' id='email' className='input-field' placeholder='' required/>
-        <label for='username' className='input-label'>Message<span style={{color:'red'}}> *</span></label>
-        
-        </div>
-        {/* <div className="mb-3">
-          <label htmlFor="name" className="form-label">
-            Name <span style={{ color: 'red' }}>*</span>
-          </label>
-          <input type="text" className="form-control" id="name" required />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">
-          Email <span style={{ color: 'red' }}>*</span>
-          </label>
-          <input type="text" className="form-control" id="name" required />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">
-            Enquire For ? <span style={{ color: 'red' }}>*</span>
-          </label>
-          <input type="text" className="form-control" id="name" required />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">
-            Message <span style={{ color: 'red' }}>*</span>
-          </label>
-          <textarea type="textarea" className="form-control" id="name" required />
-        </div> */}
-       
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">
+                First Name <span style={{ color: 'red' }}> *</span>
+              </label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-field">
+              <label for="lastName">
+                Last Name<span style={{ color: 'red' }}> *</span>
+              </label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field full-width">
+              <label for="organization">Organization<span style={{ color: 'red' }}> *</span></label>
+              <input type="text" id="organization" name="organization" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email<span style={{ color: 'red' }}> *</span></label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-field">
+              <label for="phoneNumber">Phone Number<span style={{ color: 'red' }}> *</span></label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field full-width">
+              <label for="message">How can we help and what are your challenges?<span style={{ color: 'red' }}> *</span></label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <p className="form-note">
+                We normally respond within 24 hours. If you haven't received anything, check your spam folder.
+              </p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field full-width">
+              <button class="submit-form" type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </>
+    )
+}
 
-        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-
-        <button type="submit" className="inqury-btn2">
-          Submit
-        </button>
-      </form>
-    </div>
-  );
-};
-
-export default GetInTouch;
+export default GetInTouch

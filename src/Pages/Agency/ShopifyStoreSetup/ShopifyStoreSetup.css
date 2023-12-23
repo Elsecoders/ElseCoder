@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+.shopify-store-creation-content {
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    width:100%
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+.shopify-store-creation-main{
+    display: flex;
+    /* align-items: center!important; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    justify-content: center;
+    height: 70vh;
+    font-family: "Inter";
+    width: 100%;
+}
+.custom-heading{
+    font-size: 5.3vw;
+    font-weight: 500;
+    line-height: 100%;
+    /* color: rgb(44, 163, 204); */
+    color: black;
+}
+.color-theme {
+    color: rgb(234, 90, 27);
+}
+.shopify-store-creation-para{
+    margin-top: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: calc(1.275rem + .3vw)!important;
+}
+/* 
+.content p {
+    margin-top: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: calc(1.275rem + .3vw)!important;
+} */
+
+.image-container {
+    overflow: hidden;
+    width: 50%;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: baseline;
+
+}
+
+.image-container img {
+    width: 60%;
+    height: 440px;
+    display: block;
+    border-radius: 10px;
+}
+.fw-bolder {
+    font-weight: bolder!important;
+}
+.fs-1 {
+    font-size: calc(1.375rem + 1.5vw)!important;
+    color: black;
+}
+.ecommerce {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+}
+.countainer1 {
+    margin: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 30px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); */
+    width: 33%;
+}
+.service-image {
+    margin-top: 15px;
+    width: 15%;
+    margin-bottom: 20px;
+}
+.service-head {
+    margin-top: 0;
+    font-weight: 900;
+    font-style: "Intern";
+    text-transform: none;
+    color: #444;
+    line-height: 1.2;
+}
+.contact-box {
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: "Inter";
+    background-color: rgb(250, 250, 250, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  }
+
+  .contact-heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+ text-align: center;
+  }
+
+  .contact-text {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .form-field {
+    flex: 0 0 48%; /* Adjust the width as needed */
+  }
+
+  .form-field.full-width {
+    flex: 0 0 100%; /* Full width for single fields */
+  }
+
+  .form-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+
+  .form-field input:hover,
+  .form-field textarea:hover {
+    border-color: #000; /* Black border on hover */
+  }
+
+  .form-field textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+
+  .form-field button {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px;
+    /* margin-left: 0; */
+    margin: 0 auto;
+  }
+  .form-note {
+    font-size: 14px;
+    color: #777;
+    margin-top: 8px;
+    text-align: center;
+  }
+  
+  .form-field button {
+    width: 30%; /* Adjust the width of the button */
+    /* margin:  auto;  */
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .submit-form {
+    font-family: "Inter";
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+  }
+  .submit-form:before{
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .submit-form:active{
+    color: #111;
+  }
+  
+  .submit-form:active::after{
+    background: transparent;
+  }
+  .submit-form:hover::before{
+    opacity: 1;
+  }
+  .submit-form:after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }

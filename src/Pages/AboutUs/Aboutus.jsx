@@ -2,6 +2,7 @@ import React from "react";
 import Navs from "../../../Components/Navbar/Navs";
 import Footer from "../../../Components/footer/Footer";
 import "./Aboutus.css";
+// import CustomerReviewSlider from "../../../Components/body/TestimonialSlider/TestimonialSlider";
 const Aboutus = () => {
   return (
     <>
@@ -130,14 +131,15 @@ const Aboutus = () => {
             </p>
           </div>
         </div>
-        {/* <div className="application-services">
+        <div className="application-services">
           <h3>
             <b>End-to-end application services</b>
           </h3>
         </div>
         <div className="ecommerce">
-        <div className="countainer1">
-            <img className="service-image"
+          <div className="countainer1">
+            <img
+              className="service-image"
               src="/public/Images/aboutUs/online-shopping.png"
               alt="development"
             />
@@ -146,26 +148,83 @@ const Aboutus = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
               neque.
             </p>
-            <span className="service-more">Learn More
-            <i> &#8594;</i></span>
+            <span className="service-more">
+              Learn More
+              <i> &#8594;</i>
+            </span>
           </div>
           <div className="countainer1">
-          <div className="notification-overlay">
-            <img className="service-image"
-              src="/public/Images/aboutUs/online-shopping.png"
-              alt="development"
-            />
+            <div>
+              <img
+                className="service-image"
+                src="/public/Images/aboutUs/online-shopping.png"
+                alt="development"
+              />
             </div>
             <h5 className="service-head">Application Development</h5>
             <p className="service-para">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
               neque.
             </p>
-            <span className="service-more">Learn More
-            <i> &#8594;</i></span>
+            <span className="service-more">
+              Learn More
+              <i> &#8594;</i>
+            </span>
           </div>
-        </div> */}
+        </div>
+        <div className="ecommerce">
+          <div className="countainer1">
+            <img
+              className="service-image"
+              src="/public/Images/aboutUs/online-shopping.png"
+              alt="development"
+            />
+            <h5 className="service-head">SEO</h5>
+            <p className="service-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
+              neque.
+            </p>
+            <span className="service-more">
+              Learn More
+              <i> &#8594;</i>
+            </span>
+          </div>
+          <div className="countainer1">
+            <div>
+              <img
+                className="service-image"
+                src="/public/Images/aboutUs/online-shopping.png"
+                alt="development"
+              />
+            </div>
+            <h5 className="service-head">Social Media Marketing</h5>
+            <p className="service-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
+              neque.
+            </p>
+            <span className="service-more">
+              Learn More
+              <i> &#8594;</i>
+            </span>
+          </div>
+        </div>
+        <div className="form-row">
+          <div className="service-buttuon">
+            <button className="service-btn" type="button">
+              See All Services
+            </button>
+          </div>
+        </div>
       </div>
+      <div>
+         {/* <div className="customerreview-head">
+        <h5 className="head">See What Our Customer Says About Us</h5>
+        </div>
+        <div className="customerreview-content">
+        <CustomerReviewSlider />
+         </div> */}
+      </div>
+      
       <Footer />
     </>
   );

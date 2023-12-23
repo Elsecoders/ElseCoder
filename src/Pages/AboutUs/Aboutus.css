@@ -155,37 +155,36 @@
   color: #444;
   font-weight: 800;
 }
-/* .service-image {
-    position: absolute;
+.service-image {
+  width: 20%;
 }
-.countainer1{
-  position: relative;
-    margin: 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    padding: 3.8rem 2rem 2rem;
-    margin: 5.5rem 0.5rem 0.5rem 0;
-    box-shadow: 0.05rem 0.05rem #a7a7a7,
-} */
-/* .service-head {
+.countainer1 {
+  margin: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.service-head {
   margin-top: 0;
-  font-weight: 800;
-  font-style: normal;
+  font-weight: 900;
+  font-style: "Intern";
   text-transform: none;
   color: #444;
   line-height: 1.2;
-} */
-/* .service-para {
+}
+.service-para {
   font-size: 14px;
   margin: 0 0 10px;
-} */
-/* .service-more {
+}
+.service-more {
   text-transform: uppercase;
   color: rgb(0, 77, 255);
   font-size: 1.05rem !important;
   font-weight: 700 !important;
-} */
-/* i {
+}
+i {
   margin-top: 1.5rem !important;
   font-weight: 900;
   -webkit-font-smoothing: antialiased;
@@ -194,44 +193,64 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-} */
-/* .ecommerce {
+}
+.ecommerce {
   display: flex;
   justify-content: center;
+}
+
+.service-head,
+.service-para,
+.service-more {
+  margin: 10px;
+}
+.service-buttuon {
+  flex: 0 0 100%; /* Full width for single fields */
+  align-items: center;
+}
+.service-btn {
+  font-family: "Inter";
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.customerreview-head {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+} 
+ .head {
+  font-size: 30px;
+  font-weight: 600;
+  color: #444;
+  font-family: "Intern";
+ }
+/* .customerreview-content {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  background-image: url(/public/Images/aboutUs/blue-cement-studio-dark-showroom-background.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px; /* Adjust the padding as needed */
+  /* margin-left: 20%;
 } */
-/* .ecommerce {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .countainer1 {
-    position: relative;
-    width: 45%;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-
-  .service-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .notification-overlay {
-    position:absolute;
-    left: 5px;
-    color: white;
-    width: 10%x;
-    margin-top: -10%;
-  }
-
-  .service-head,
-  .service-para,
-  .service-more {
-    margin: 10px;
-  } */
-
 /* Media query for tablet and larger screens */
 @media screen and (min-width: 768px) {
   .about-content-head {
@@ -430,5 +449,49 @@
   .value-container-para1,
   .value-container-para2 {
     font-size: 16px; /* Adjust font size as needed */
+  }
+  .ecommerce {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .countainer1 {
+    width: 100%; /* Full width for mobile screens */
+    margin: 15px 0; /* Adjust margin as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .service-image {
+    width: 55%; /* Full width for mobile screens */
+    border-radius: 0; /* Remove border-radius for mobile screens */
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+
+  .service-head,
+  .service-para,
+  .service-more {
+    margin: 10px;
+    text-align: center; /* Center text */
+  }
+
+  .service-para {
+    font-size: 14px; /* Adjust font size as needed */
+    margin: 0 0 10px;
+  }
+
+  .service-more {
+    font-size: 1rem !important; /* Adjust font size as needed */
+  }
+
+  .service-head {
+    font-weight: 900;
+    font-style: "Intern";
+    text-transform: none;
+    color: #444;
+    line-height: 1.2;
+    margin-top: 10px; /* Adjust margin as needed */
   }
 }

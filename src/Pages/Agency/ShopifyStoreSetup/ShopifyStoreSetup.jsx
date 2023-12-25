@@ -8,18 +8,19 @@ const ShopifyStoreSetup = () => {
   return (
     <>
     <Navs />
-    <div>
+    <div className='SscM'>
       <div className='shopify-store-creation-main mt-4'>
+      <div className="image-container">
+        <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="Shopify Store Image" />
+      </div>
       <div className="shopify-store-creation-content">
-        <h1 class="custom-heading">
+        <h1 class="custom-heading" style={{fontWeight:"900"}}>
           Setup Your 
         <span class="color-theme"> Shopify Store</span></h1>
         <p className='shopify-store-creation-para'>Welcome to the world of seamless, stress-free online selling! Unlock the full potential of your business with our Shopify Store Setup Services, where we transform your e-commerce vision into a captivating reality.</p>
       </div>
 
-      <div className="image-container">
-        <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="Shopify Store Image" />
-      </div>
+     
       </div>
       <div class="my-4 text-center w-100 "><h2 class="fw-bolder fs-1">What We Offer</h2></div>
 

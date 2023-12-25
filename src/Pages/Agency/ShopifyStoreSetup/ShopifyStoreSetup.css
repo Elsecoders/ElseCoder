@@ -1,28 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Inter";
+
+.SscM{
+  font-family: "Inter";
+}
+
+
+.shopify-store-creation-main{
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+
+}
+.image-container {
+  width: 100%; /* Adjust width as needed */
+  overflow: hidden;
+  border-radius: 0 50% 0 50%;
+  object-fit: cover;
+  padding-left: 10px;
+
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .shopify-store-creation-content {
-    max-width: 600px;
-    padding: 20px;
-    text-align: left;
-    background-color: #ffffff;
-    width:100%
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  width: 100%; /* Adjust width as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
-.shopify-store-creation-main{
-    display: flex;
-    /* align-items: center!important; */
-    /* flex-direction: column; */
-    /* align-items: flex-start; */
-    justify-content: center;
-    height: 70vh;
-    font-family: "Inter";
-    width: 100%;
+@media screen and (max-width: 768px) {
+  .shopify-store-creation-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container,
+  .shopify-store-creation-content {
+    width: 100%; /* Make both take full width in smaller screens */
+    text-align: left; /* Align text to the left for smaller screens */
+  }
 }
 .custom-heading{
-    font-size: 5.3vw;
+    
     font-weight: 500;
     line-height: 100%;
     /* color: rgb(44, 163, 204); */
@@ -31,12 +55,7 @@
 .color-theme {
     color: rgb(234, 90, 27);
 }
-.shopify-store-creation-para{
-    margin-top: 20px;
-    color: black;
-    font-weight: 500;
-    font-size: calc(1.275rem + .3vw)!important;
-}
+
 /* 
 .content p {
     margin-top: 20px;
@@ -45,22 +64,7 @@
     font-size: calc(1.275rem + .3vw)!important;
 } */
 
-.image-container {
-    overflow: hidden;
-    width: 50%;
-    border-radius: 10px;
-    justify-content: center;
-    display: flex;
-    align-items: baseline;
 
-}
-
-.image-container img {
-    width: 60%;
-    height: 440px;
-    display: block;
-    border-radius: 10px;
-}
 .fw-bolder {
     font-weight: bolder!important;
 }

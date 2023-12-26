@@ -1,12 +1,11 @@
-
 import Card from "react-bootstrap/Card";
-//import CardLink from "react-bootstrap/esm/CardLink";
+//import CardNavLink from "react-bootstrap/esm/CardNavLink";
 import ViewInArOutlinedIcon from "@mui/icons-material/ViewInArOutlined";
 import WebhookOutlinedIcon from "@mui/icons-material/WebhookOutlined";
 import EditNoteOutlinedIcon from "@mui/icons-material/EditNoteOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import "./ServicesWeOffer.css";
-import { Link } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 const ServicesWeOffer = () => {
   return (
@@ -32,26 +31,26 @@ const ServicesWeOffer = () => {
                   Solution <br></br> Implementation
                 </p>
                 <div className="platform-div">
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
                     to="/wordpress"
                   >
                     Wordpress
-                  </Link>
+                  </NavLink>
                   <br></br>
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/customreactcms"
+                    to="/websiteexperience"
                   >
                     Custom React CMS
-                  </Link>
+                  </NavLink>
                   <br></br>
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
                     to="/shopify"
                   >
                     Shopify
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
             </Card.Body>
@@ -70,26 +69,26 @@ const ServicesWeOffer = () => {
                   Software <br></br> Development
                 </p>
                 <div className="platform-div">
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/wordpress"
+                    to="/uiuxdesign"
                   >
                     UI/UX Design
-                  </Link>
+                  </NavLink>
                   <br></br>
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/customreactcms"
+                    to="/customsoftwaredevelopment"
                   >
                     Custom Software Development
-                  </Link>
+                  </NavLink>
                   <br></br>
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/shopify"
+                    to="/mobileapplication"
                   >
                     Mobile Application
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
             </Card.Body>
@@ -110,33 +109,33 @@ const ServicesWeOffer = () => {
                   <p className="service-div ">SEO</p>
                 </div>
                 <div className="platform-div">
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/wordpress"
+                    to="/keywordresearch"
                   >
                     Keyword Research
-                  </Link>
+                  </NavLink>
                   <br></br>
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/customreactcms"
+                    to="/contentcreation"
                   >
                     Content Creation
-                  </Link>
+                  </NavLink>
                   <br></br>
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/shopify"
+                    to="/onsiteoptimization"
                   >
                     Onsite Optimization
-                  </Link>
+                  </NavLink>
                   <br></br>
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/shopify"
+                    to="/backlinkbuilding"
                   >
-                    Backlink Building
-                  </Link>
+                    BackNavLink Building
+                  </NavLink>
                 </div>
               </div>
             </Card.Body>
@@ -155,27 +154,27 @@ const ServicesWeOffer = () => {
                   Social Media <br></br> Management{" "}
                 </p>
                 <div className="platform-div">
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/wordpress"
+                    to="/socialmediastrategy"
                   >
                     Social Media Strategy
-                  </Link>
+                  </NavLink>
                   <br></br>
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/customreactcms"
+                    to="/socialMediacontent"
                   >
                     Social Media Content
-                  </Link>
+                  </NavLink>
                   <br></br>
 
-                  <Link
+                  <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/shopify"
+                    to="/graphicdesigning"
                   >
                     Graphic Designing
-                  </Link>
+                  </NavLink>
                 </div>
               </div>
             </Card.Body>

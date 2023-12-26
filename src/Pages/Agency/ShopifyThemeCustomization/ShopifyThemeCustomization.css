@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+}
+
+.shopify-content-theme-main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+}
+.shopify-theme-content {
+flex: 1; 
+  width: 100%; 
+  max-width: 600px; 
+  margin-bottom: 20px; 
+justify-content: flex-end;
+}
+
+.shopify-theme-custom-heading{
+font-size: 5.3vw;
+font-weight: 500;
+line-height: 100%;
+color: black;
+}
+.shopify-theme-color-theme {
+    color: rgb(234, 90, 27);
+}
+.shopify-theme-para{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #777;
+    font-weight: 500;
+    font-size: 20px
+}
+.shopify-theme-image{
+    flex: 1;
+    justify-content: flex-start;
+}
+.shopify-theme-img img{
+    height: 50vh;
+    width: 100%;
+    border-radius: 0px 50px 0px 50px;
+}
+.fw-bolder {
+    font-weight: bolder!important;
+}
+.fs-1 {
+    font-size: calc(1.375rem + 1.5vw)!important;
+    color: black;
+    margin-top: 60px;
+    font-family: "Inter";
+}
+.shopify-theme-cards{
+    font-family: "Inter";
+}
+@media (max-width: 768px) {
+    .shopify-content-theme-main {
+      flex-direction: column;
+    }
+  
+    .shopify-theme-content,
+    .shopify-theme-img {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .shopify-shopify-theme-para {
+      margin-top: 10px;
+      font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+  }

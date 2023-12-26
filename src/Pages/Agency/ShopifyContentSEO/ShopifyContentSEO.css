@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+}
+.jawwad{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.shopify-content-seo-main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+}
+.seo-content {
+flex: 1; 
+  width: 100%; 
+  max-width: 600px; 
+  margin-bottom: 20px; 
+justify-content: flex-end;
+}
+
+.seo-custom-heading{
+font-size: 5.3vw;
+font-weight: 500;
+line-height: 100%;
+color: black;
+}
+.seo-color-theme {
+    color: rgb(234, 90, 27);
+}
+.shopify-seo-para{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #777;
+    font-weight: 500;
+    font-size: 20px
+}
+.seo-image{
+    flex: 1;
+    justify-content: flex-start;
+}
+.seo-img img{
+    height: 50vh;
+    width: 100%;
+    border-radius: 0px 50px 0px 50px;
+}
+.fw-bolder {
+    font-weight: bolder!important;
+}
+.fs-1 {
+    font-size: calc(1.375rem + 1.5vw)!important;
+    color: black;
+    margin-top: 60px;
+    font-family: "Inter";
+}
+.seo-cards{
+    font-family: "Inter";
+}
+@media (max-width: 768px) {
+    .shopify-content-seo-main {
+      flex-direction: column;
+    }
+  
+    .seo-content,
+    .seo-img {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .shopify-seo-para {
+      margin-top: 10px;
+      font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+  }

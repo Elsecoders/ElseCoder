@@ -12,7 +12,10 @@ import ShopifyThemeCustomization from './Pages/Agency/ShopifyThemeCustomization/
 import SocialMediaStrategies from'./Pages/InfoBlogPages/SocialMediaStrategies/SocialMediaStrategies';
 import WebsiteExperience from'./Pages/InfoBlogPages/WebsiteExperience/WebsiteExperience';
 import ECommerceWebsite from './Pages/InfoBlogPages/eCommerceWebsite/eCommerceWebsite';
-
+import Wordpress from './Pages/ServiceWeOffer/SolutionImplementation/Wordpress/Worpress';
+import Shopify from './Pages/ServiceWeOffer/SolutionImplementation/Shopify/Shopify';
+import CustomSoftwareDevelopment from './Pages/ServiceWeOffer/SoftwareDevelopment/CustomSoftwareDevelopment/CustomSoftwareDevelopment';
+import UiUxDesign from './Pages/ServiceWeOffer/SoftwareDevelopment/UiUxDesign/UiUxDesign';
 const App = () => {
     return (
       
@@ -30,6 +33,10 @@ const App = () => {
         <Route path='/ecommercewebsite' element={<ECommerceWebsite/>}/>
         <Route path='/socialmediastrategies' element={<SocialMediaStrategies/>}/>
         <Route path='/websiteexperience' element={<WebsiteExperience/>}/>
+        <Route path='/wordpress' element={<Wordpress/>}/>
+        <Route path='/shopify' element={<Shopify/>}/>
+        <Route path='/customsoftwaredevelopment' element={<CustomSoftwareDevelopment/>}/>
+        <Route path='uiuxdesign' element={<UiUxDesign/>}/>
       </Routes>
       </BrowserRouter>
 

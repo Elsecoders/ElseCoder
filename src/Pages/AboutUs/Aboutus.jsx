@@ -5,6 +5,7 @@ import { Carousel } from "bootstrap"; // Import Carousel component
 import Navs from "../../../Components/Navbar/Navs";
 import Footer from "../../../Components/footer/Footer";
 import "./Aboutus.css";
+import { NavLink } from "react-router-dom";
 
 const Aboutus = () => {
   useEffect(() => {
@@ -250,9 +251,10 @@ const Aboutus = () => {
         </div>
         <div className="form-row">
           <div className="service-buttuon">
-            <button className="service-btn" type="button">
+           <NavLink to="/services"> <button className="service-btn" type="button">
               See All Services
             </button>
+            </NavLink>
           </div>
         </div>
       </div>

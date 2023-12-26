@@ -1,0 +1,14 @@
+.WebsiteExperience{
+    font-family: "Inter";
+    margin: 40px;
+    
+}
+
+.WebsiteExperience-Heading{
+    text-align: center;
+    color: #000;
+}
+.WebsiteExperience-Image{
+    display: flex;
+    justify-content: center;
+}

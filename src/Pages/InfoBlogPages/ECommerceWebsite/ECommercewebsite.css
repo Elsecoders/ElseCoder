@@ -6,7 +6,11 @@
 
 .eCommerceWebiste-Heading{
     text-align: center;
+    color: #000;
 }
-
+.eCommerceWebiste-Image{
+    display: flex;
+    justify-content: center;
+}
 
 

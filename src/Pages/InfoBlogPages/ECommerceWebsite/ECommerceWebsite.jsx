@@ -12,17 +12,17 @@ const ECommerceWebsite = () => {
             How to create a successful e-commerce website for your business
           </h1>
         </div>
-        <div className="eCommerceWebiste-Image">
-          <img src="/ElseCoder/public/Images/Contact-us/contactUs-img.jpg" alt="blog_img" />
+        <div className="eCommerceWebiste-Image mt-5">
+          <img src="/Images/Contact-us/contactUs-img.jpg" alt="blog_img" />
         </div>
-        <div className="eCommerceWebsite-Content">
+        <div className="eCommerceWebsite-Content mt-4">
           <p>
             The ever-evolving IT domain, experiences, and knowledge have made us
             realize the importance of tech solutions. Furthermore, it has
             reassured the world how valuable the prevailing solutions are for
             both consumers and providers.
           </p>
-          <h5>Choose the right platform</h5>
+          <h5 style={{color:"#000"}}>Choose the right platform</h5>
           <p>
             The first step in creating a successful e-commerce website is
             choosing the right platform. There are many e-commerce platforms
@@ -33,7 +33,7 @@ const ECommerceWebsite = () => {
             grow with your business and provide the functionality you need to
             succeed.
           </p>
-          <h5>Design with the user in mind</h5>
+          <h5 style={{color:"#000"}}>Design with the user in mind</h5>
           <p>
             The success of your e-commerce website significantly depends on its
             design. You want to create a website that is visually appealing and
@@ -44,7 +44,7 @@ const ECommerceWebsite = () => {
             your website is mobile-friendly, as more and more people are using
             their mobile devices to shop online.
           </p>
-          <h5>Optimize for search engines</h5>
+          <h5 style={{color:"#000"}}>Optimize for search engines</h5>
           <p>
             Search engine optimization (SEO) is essential for any e-commerce
             website. You want to make sure your website ranks well in search
@@ -57,7 +57,7 @@ const ECommerceWebsite = () => {
             algorithm.
           </p>
 
-          <h5>Provide high-quality product images and descriptions</h5>
+          <h5 style={{color:"#000"}}>Provide high-quality product images and descriptions</h5>
           <p>
             When it comes to e-commerce, your product images and descriptions
             are your salespeople. You want to provide high-quality images that
@@ -68,7 +68,7 @@ const ECommerceWebsite = () => {
             may have. Doing so can establish trust and lead to a rise in
             conversions.
           </p>
-          <h5>Offer a smooth checkout process</h5>
+          <h5 style={{color:"#000"}}>Offer a smooth checkout process</h5>
           <p>
             One of the most important elements of any e-commerce website is the
             checkout process. You want to make sure that it's as smooth and
@@ -78,7 +78,7 @@ const ECommerceWebsite = () => {
             instructions at every step of the process, and minimizing the number
             of clicks required to complete a purchase.
           </p>
-          <h5>Use social media to promote your website</h5>
+          <h5 style={{color:"#000"}}>Use social media to promote your website</h5>
           <p>
             Utilizing social media can prove to be a potent technique for
             marketing your e-commerce website. You can use platforms like
@@ -89,7 +89,7 @@ const ECommerceWebsite = () => {
             addition, you may ponder on running advertisements on social media
             to extend your reach to a broader audience.
           </p>
-          <h5>Monitor your analytics</h5>
+          <h5 style={{color:"#000"}}>Monitor your analytics</h5>
           <p>
             Finally, it's important to monitor your website analytics to see how
             your website is performing. Consequently, you can recognize the

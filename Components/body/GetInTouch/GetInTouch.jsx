@@ -4,6 +4,7 @@ import "./GetInTouch.css"
 const GetInTouch = () => {
   return (
     <>
+    <div className='GiT-div'>
        <div class="contact-box">
         <div class="contact-heading">Get in touch</div>
         <div class="contact-text">
@@ -58,6 +59,7 @@ const GetInTouch = () => {
             </div>
           </div>
         </form>
+      </div>
       </div>
     </>
     )

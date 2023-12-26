@@ -1,48 +1,41 @@
-// import React, { Component } from "react";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+// import React from "react";
+// import {
+//   MDBCarousel,
+//   MDBCarouselInner,
+//   MDBCarouselItem,
+//   MDBContainer,
+//   MDBRow,
+//   MDBCol,
+//   MDBIcon,
+// } from "mdb-react-ui-kit";
 
-// export default class PauseOnHover extends Component {
-//   render() {
-//     var settings = {
-//       dots: true,
-//       infinite: true,
-//       slidesToShow: 3,
-//       slidesToScroll: 1,
-//       autoplay: true,
-//       autoplaySpeed: 2000,
-//       pauseOnHover: true,
-//     };
+// const TestimonialSlider = () =>{
 //     return (
-//       <div className="testimonial-countainer">
-//         <Slider {...settings}>
-//           <div className="testimonial1">
-//             <h5>Rafay</h5>
-//             <p>
-//               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-//             </p>
-//           </div>
-//           <div className="testimonial1">
-//             <h5>jawwad</h5>
-//             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, reiciendis.
-//             </p>
-//           </div>
-//           <div className="testimonial1">
-//             <h5>maaz</h5>
-//             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, veritatis?</p>
-//           </div>
-//           <div>
-//             <h3>4</h3>
-//           </div>
-//           <div>
-//             <h3>5</h3>
-//           </div>
-//           <div>
-//             <h3>6</h3>
-//           </div>
-//         </Slider>
-//       </div>
-//     );
+// <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+//   <ol class="carousel-indicators">
+//     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+//     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+//     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+//   </ol>
+//   <div class="carousel-inner">
+//     <div class="carousel-item active">
+//       <img class="d-block w-100" src="..." alt="First slide">
+//     </div>
+//     <div class="carousel-item">
+//       <img class="d-block w-100" src="..." alt="Second slide">
+//     </div>
+//     <div class="carousel-item">
+//       <img class="d-block w-100" src="..." alt="Third slide">
+//     </div>
+//   </div>
+//   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+//     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+//     <span class="sr-only">Previous</span>
+//   </a>
+//   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+//     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+//     <span class="sr-only">Next</span>
+//   </a>
+// </div>
 //   }
-// }
+// export default TestimonialSlider;

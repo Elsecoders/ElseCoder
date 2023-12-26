@@ -1,9 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap styles
+import { Carousel } from "bootstrap"; // Import Carousel component
+
 import Navs from "../../../Components/Navbar/Navs";
 import Footer from "../../../Components/footer/Footer";
 import "./Aboutus.css";
-// import CustomerReviewSlider from "../../../Components/body/TestimonialSlider/TestimonialSlider";
+
 const Aboutus = () => {
+  useEffect(() => {
+    const initCarousel = () => {
+      const carouselElement = document.getElementById(
+        "carouselMultiItemExample"
+      );
+      const carousel = new Carousel(carouselElement, {
+        interval: 5000, // Set interval to 5000 milliseconds (5 seconds)
+      });
+
+      // Optionally, you can pause the carousel on hover
+      carouselElement.addEventListener("mouseenter", () => {
+        carousel.pause();
+      });
+
+      carouselElement.addEventListener("mouseleave", () => {
+        carousel.cycle();
+      });
+    };
+
+    // Initialize the carousel when the component mounts
+    initCarousel();
+
+    // Destroy the carousel when the component unmounts
+    return () => {
+      const carouselElement = document.getElementById(
+        "carouselMultiItemExample"
+      );
+      carouselElement.removeEventListener("mouseenter", () => {});
+      carouselElement.removeEventListener("mouseleave", () => {});
+    };
+  }, []); // Empty dependency array ensures the effect runs only once after initial render
   return (
     <>
       <Navs />
@@ -137,75 +171,81 @@ const Aboutus = () => {
           </h3>
         </div>
         <div className="ecommerce">
-          <div className="countainer1">
-            <img
-              className="service-image"
-              src="/public/Images/aboutUs/online-shopping.png"
-              alt="development"
-            />
-            <h5 className="service-head">Application Development</h5>
-            <p className="service-para">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
-              neque.
-            </p>
-            <span className="service-more">
-              Learn More
-              <i> &#8594;</i>
-            </span>
-          </div>
-          <div className="countainer1">
-            <div>
+          <div className="ecommerce-container">
+            <div className="countainer1">
               <img
                 className="service-image"
                 src="/public/Images/aboutUs/online-shopping.png"
                 alt="development"
               />
+              <h5 className="service-head">Application Development</h5>
+              <p className="service-para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
+                neque.
+              </p>
+              <span className="service-more">
+                Learn More
+                <i> &#8594;</i>
+              </span>
             </div>
-            <h5 className="service-head">Application Development</h5>
-            <p className="service-para">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
-              neque.
-            </p>
-            <span className="service-more">
-              Learn More
-              <i> &#8594;</i>
-            </span>
+            <div className="countainer1">
+            <div className="image-service">
+                <img
+                  className="service-image"
+                  src="/public/Images/aboutUs/online-shopping.png"
+                  alt="development"
+                />
+                </div>
+              <h5 className="service-head">Application Development</h5>
+              <p className="service-para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
+                neque.
+              </p>
+              <span className="service-more">
+                Learn More
+                <i> &#8594;</i>
+              </span>
+            </div>
           </div>
         </div>
         <div className="ecommerce">
-          <div className="countainer1">
-            <img
-              className="service-image"
-              src="/public/Images/aboutUs/online-shopping.png"
-              alt="development"
-            />
-            <h5 className="service-head">SEO</h5>
-            <p className="service-para">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
-              neque.
-            </p>
-            <span className="service-more">
-              Learn More
-              <i> &#8594;</i>
-            </span>
-          </div>
-          <div className="countainer1">
-            <div>
+          <div className="ecommerce-container">
+            <div className="countainer1">
+              
               <img
                 className="service-image"
                 src="/public/Images/aboutUs/online-shopping.png"
                 alt="development"
               />
+              
+              <h5 className="service-head">SEO</h5>
+              <p className="service-para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
+                neque.
+              </p>
+              <span className="service-more">
+                Learn More
+                <i> &#8594;</i>
+              </span>
             </div>
-            <h5 className="service-head">Social Media Marketing</h5>
-            <p className="service-para">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
-              neque.
-            </p>
-            <span className="service-more">
-              Learn More
-              <i> &#8594;</i>
-            </span>
+            <div className="countainer1">
+            <div className="image-service">
+                <img
+                  className="service-image"
+                  src="/public/Images/aboutUs/online-shopping.png"
+                  alt="development"
+                />
+                </div>
+              <h5 className="service-head">Social Media Marketing</h5>
+              <p className="service-para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
+                neque.
+              </p>
+              <span className="service-more">
+                Learn More
+                <i> &#8594;</i>
+              </span>
+            </div>
           </div>
         </div>
         <div className="form-row">
@@ -217,14 +257,302 @@ const Aboutus = () => {
         </div>
       </div>
       <div>
-         {/* <div className="customerreview-head">
-        <h5 className="head">See What Our Customer Says About Us</h5>
+        <div className="customerreview-head">
+          <h5 className="head">
+            <b>See What Our Customer Says About Us</b>
+          </h5>
         </div>
         <div className="customerreview-content">
-        <CustomerReviewSlider />
-         </div> */}
+          <div
+            id="carouselMultiItemExample"
+            className="carousel slide carousel-dark text-center"
+            data-mdb-ride="carousel"
+          >
+            {/* Controls */}
+            <div className="d-flex justify-content-center mb-4">
+              <button
+                className="carousel-control-prev position-relative"
+                type="button"
+                data-bs-target="#carouselMultiItemExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next position-relative"
+                type="button"
+                data-bs-target="#carouselMultiItemExample"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+            {/* Inner */}
+            <div className="carousel-inner py-4">
+              {/* Single item */}
+              <div className="carousel-item active">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-4">
+                      <img
+                        className="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                        alt="avatar"
+                        style={{ width: "150px" }}
+                      />
+                      <h5 className="mb-3">Anna Deynah</h5>
+                      <p>UX Designer</p>
+                      <p className="text-muted">
+                        <i className="fas fa-quote-left pe-2"></i>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quod eos id officiis hic tenetur quae quaerat ad
+                        velit ab hic tenetur.
+                      </p>
+                      <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="col-lg-4 d-lg-block">
+                      <img
+                        className="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
+                        alt="avatar"
+                        style={{ width: "150px" }}
+                      />
+                      <h5 className="mb-3">John Doe</h5>
+                      <p>Web Developer</p>
+                      <p className="text-muted">
+                        <i className="fas fa-quote-left pe-2"></i>
+                        Ut enim ad minima veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam, nisi ut aliquid
+                        commodi.
+                      </p>
+                      <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="col-lg-4 d-lg-block">
+                      <img
+                        className="rounded-circle shadow-1-strong mb-4"
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                        alt="avatar"
+                        style={{ width: "150px" }}
+                      />
+                      <h5 className="mb-3">Maria Kate</h5>
+                      <p>Photographer</p>
+                      <p className="text-muted">
+                        <i className="fas fa-quote-left pe-2"></i>
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti.
+                      </p>
+                      <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="far fa-star fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-4">
+                      <img
+                        className="rounded-circle shadow-1-strong mb-4"
+                        src="https://placekitten.com/150/150"
+                        alt="avatar"
+                        style={{ width: "150px" }}
+                      />
+                      <h5 className="mb-3">Kitty Cat</h5>
+                      <p>Cute Critic</p>
+                      <p className="text-muted">
+                        <i className="fas fa-quote-left pe-2"></i>
+                        Meow meow meow, purr purr purr. Pawsitively delightful!
+                      </p>
+                      <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-lg-4 d-lg-block" >
+                      <img
+                        className="rounded-circle shadow-1-strong mb-4"
+                        src="https://placekitten.com/160/150"
+                        alt="avatar"
+                        style={{ width: "150px" }}
+                      />
+                      <h5 className="mb-3">Whiskers McFluffy</h5>
+                      <p>Furry Developer</p>
+                      <p className="text-muted">
+                        <i className="fas fa-quote-left pe-2"></i>
+                        Code, sleep, eat, repeat. The life of a coding cat!
+                      </p>
+                      <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-lg-4 d-lg-block">
+                      <img
+                        className="rounded-circle shadow-1-strong mb-4"
+                        src="https://placekitten.com/150/150"
+                        alt="avatar"
+                        style={{ width: "150px" }}
+                      />
+                      <h5 className="mb-3">Kitty Cat</h5>
+                      <p>Cute Critic</p>
+                      <p className="text-muted">
+                        <i className="fas fa-quote-left pe-2"></i>
+                        Meow meow meow, purr purr purr. Pawsitively delightful!
+                      </p>
+                      <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    {/* Add more reviewers for Slide 2 */}
+                  </div>
+                </div>
+              </div>
+
+              {/* Slide 3 */}
+              {/* <div className="carousel-item">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-4">
+                      <img
+                        className="rounded-circle shadow-1-strong mb-4"
+                        src="https://placekitten.com/160/150"
+                        alt="avatar"
+                        style={{ width: "150px" }}
+                      />
+                      <h5 className="mb-3">Whiskers McFluffy</h5>
+                      <p>Furry Developer</p>
+                      <p className="text-muted">
+                        <i className="fas fa-quote-left pe-2"></i>
+                        Code, sleep, eat, repeat. The life of a coding cat!
+                      </p>
+                      <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star fa-sm"></i>
+                        </li>
+                        <li>
+                          <i className="fas fa-star-half-alt fa-sm"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    {/* Add more reviewers for Slide 3 */}
+              {/* </div>
+                </div>
+              </div> */}
+
+              {/* Additional items go here */}
+            </div>
+            {/* Inner */}
+          </div>
+        </div>
       </div>
-      
+
       <Footer />
     </>
   );

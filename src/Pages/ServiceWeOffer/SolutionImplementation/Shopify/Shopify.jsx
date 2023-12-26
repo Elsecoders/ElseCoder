@@ -1,10 +1,13 @@
 import React from 'react';
 import './Shopify.css';
+import Navs from '../../../../../Components/Navbar/Navs';
+import Footer from '../../../../../Components/footer/Footer';
 const Shopify = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <Navs/>
+    <Footer/>
+    </>
   );
 }
 

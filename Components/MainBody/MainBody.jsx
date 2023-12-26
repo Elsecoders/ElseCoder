@@ -9,6 +9,7 @@ import ServicesWeOffer from '../body/ServicesWeOffer/ServicesWeOffer';
 import InformationalBolg from '../body/InformationalBlog/InformationalBolg';
  import GetInTouch from '../body/GetInTouch/GetInTouch';
 
+
 const MainBody = () => {
   return (
    <>
@@ -21,6 +22,7 @@ const MainBody = () => {
    <InformationalBolg/>
    <GetInTouch/>
    <Footer/>
+   
    </>
   );
 }

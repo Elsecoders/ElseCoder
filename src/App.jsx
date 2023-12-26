@@ -9,7 +9,11 @@ import Contactus from './Pages/ContactUs/Contactus';
 import ShopifyContentSEO from './Pages/Agency/ShopifyContentSEO/ShopifyContentSEO';
 import ShopifyStoreSetup from './Pages/Agency/ShopifyStoreSetup/ShopifyStoreSetup';
 import ShopifyThemeCustomization from './Pages/Agency/ShopifyThemeCustomization/ShopifyThemeCustomization';
-  const App = () => {
+import SocialMediaStrategies from'./Pages/InfoBlogPages/SocialMediaStrategies/SocialMediaStrategies';
+import WebsiteExperience from'./Pages/InfoBlogPages/WebsiteExperience/WebsiteExperience';
+import ECommerceWebsite from './Pages/InfoBlogPages/eCommerceWebsite/eCommerceWebsite';
+
+const App = () => {
     return (
       
       <>
@@ -23,6 +27,9 @@ import ShopifyThemeCustomization from './Pages/Agency/ShopifyThemeCustomization/
         <Route path='/shopifycontentseo' element={<ShopifyContentSEO/>}/>
         <Route path='/shopifystoresetup' element={<ShopifyStoreSetup/>}/>
         <Route path='/shopifythemecustomization' element={<ShopifyThemeCustomization/>}/>
+        <Route path='/ecommercewebsite' element={<ECommerceWebsite/>}/>
+        <Route path='/socialmediastrategies' element={<SocialMediaStrategies/>}/>
+        <Route path='/websiteexperience' element={<WebsiteExperience/>}/>
       </Routes>
       </BrowserRouter>
 

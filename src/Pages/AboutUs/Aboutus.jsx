@@ -173,12 +173,14 @@ const Aboutus = () => {
         </div>
         <div className="ecommerce">
           <div className="ecommerce-container">
-            <div className="countainer1">
-              <img
-                className="service-image"
-                src="/public/Images/aboutUs/online-shopping.png"
-                alt="development"
-              />
+            <div className="countainer12">
+              <div className="image-service">
+                <img
+                  className="service-image"
+                  src="/public/Images/aboutUs/online-shopping.png"
+                  alt="development"
+                />
+              </div>
               <h5 className="service-head">Application Development</h5>
               <p className="service-para">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
@@ -189,14 +191,15 @@ const Aboutus = () => {
                 <i> &#8594;</i>
               </span>
             </div>
-            <div className="countainer1">
-            <div className="image-service">
-                <img
-                  className="service-image"
-                  src="/public/Images/aboutUs/online-shopping.png"
-                  alt="development"
-                />
-                </div>
+            <div className="countainer12">
+              <div className="image-service">
+                  <img
+                    className="service-image"
+                    src="/public/Images/aboutUs/online-shopping.png"
+                    alt="development"
+                  />
+              
+              </div>
               <h5 className="service-head">Application Development</h5>
               <p className="service-para">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
@@ -211,15 +214,16 @@ const Aboutus = () => {
         </div>
         <div className="ecommerce">
           <div className="ecommerce-container">
-            <div className="countainer1">
-              
-              <img
-                className="service-image"
-                src="/public/Images/aboutUs/online-shopping.png"
-                alt="development"
-              />
-              
-              <h5 className="service-head">SEO</h5>
+            <div className="countainer12">
+              <div className="image-service">
+                <img
+                  className="service-image"
+                  src="/public/Images/aboutUs/online-shopping.png"
+                  alt="development"
+                />
+              </div>
+
+              <h5 className="service-head">SEO development</h5>
               <p className="service-para">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
                 neque.
@@ -229,14 +233,14 @@ const Aboutus = () => {
                 <i> &#8594;</i>
               </span>
             </div>
-            <div className="countainer1">
-            <div className="image-service">
+            <div className="countainer12">
+              <div className="image-service">
                 <img
                   className="service-image"
                   src="/public/Images/aboutUs/online-shopping.png"
                   alt="development"
                 />
-                </div>
+              </div>
               <h5 className="service-head">Social Media Marketing</h5>
               <p className="service-para">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
@@ -441,7 +445,7 @@ const Aboutus = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="col-lg-4 d-lg-block" >
+                    <div className="col-lg-4 d-lg-block">
                       <img
                         className="rounded-circle shadow-1-strong mb-4"
                         src="https://placekitten.com/160/150"

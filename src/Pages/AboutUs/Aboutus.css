@@ -160,7 +160,12 @@
   position: absolute;
   top: 0;
 }
-.countainer1 {
+.image-service .service-image {
+  width: 5%;
+  top: -6%;
+
+}
+.countainer12 {
   margin: 20px;
   background-color: #f2f2f2;
   border: 1px solid #ccc;
@@ -169,7 +174,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .service-head {
-  margin-top: 0;
   font-weight: 900;
   font-style: "Intern";
   text-transform: none;
@@ -206,11 +210,6 @@ i {
   align-items: center;
   position: relative;
 }
-.service-head,
-.service-para,
-.service-more {
-  margin: 10px;
-}
 .service-buttuon {
   flex: 0 0 100%; /* Full width for single fields */
   align-items: center;
@@ -227,6 +226,30 @@ i {
   z-index: 0;
   border-radius: 10px;
   box-shadow: 0px 0px 10px;
+}
+.service-head,
+.service-para,
+.service-more {
+  margin: 10px;
+  text-align: center; /* Center text */
+}
+
+.service-para {
+  font-size: 14px; /* Adjust font size as needed */
+  margin: 0 0 10px;
+}
+
+.service-more {
+  font-size: 1rem !important; /* Adjust font size as needed */
+}
+
+.service-head {
+  font-weight: 900;
+  font-style: "Intern";
+  text-transform: none;
+  color: #444;
+  line-height: 1.2;
+  margin-top: 10px; /* Adjust margin as needed */
 }
 .form-row {
   display: flex;
@@ -279,6 +302,7 @@ i {
   .container-img {
     width: 70%; /* Adjust as needed */
   }
+
   .ourvalue-head {
     font-size: 2.5em;
   }
@@ -312,47 +336,31 @@ i {
   .value-container-para2 {
     font-size: 16px; /* Adjust font size as needed */
   }
+
   .ecommerce {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start of the flex container */
   }
+
   .ecommerce-container {
-    display: flex;
-    justify-content: center;
+    width: 100%; /* Adjust as needed */
+    margin: 0;
+  }
+
+  .countainer12 {
+    width: 100%; /* Make each container take the full width */
+    margin: 35px 15px;
     position: relative;
-    width: 100%;
+    height: 100%;
   }
-  .countainer1 {
-    width: 100%;
+
+  .image-service .service-image {
+    position: absolute; /* Reset position to relative */
+    width: 15%; /* Make the image full-width */
+    margin-top: -20px; /* Add margin as needed */
   }
-  .service-image {
-    position: absolute;
-    width: 5%;
-  }
-  .service-head,
-.service-para,
-.service-more {
-  margin: 10px;
-  text-align: center; /* Center text */
-}
-
-.service-para {
-  font-size: 14px; /* Adjust font size as needed */
-  margin: 0 0 10px;
-}
-
-.service-more {
-  font-size: 1rem !important; /* Adjust font size as needed */
-}
-
-.service-head {
-  font-weight: 900;
-  font-style: "Intern";
-  text-transform: none;
-  color: #444;
-  line-height: 1.2;
-  margin-top: 10px; /* Adjust margin as needed */
-}
 }
 
 /* Media query for laptop and larger screens */
@@ -409,6 +417,14 @@ i {
   }
   .value-container-para2 {
     font-size: 17.5px; /* Adjust font size as needed */
+  }
+  .image-service .service-image {
+    width: 10%;
+    top: -15%;
+  }
+  .application-services{
+    margin-bottom: 35px;
+
   }
 }
 
@@ -499,55 +515,33 @@ i {
     font-size: 16px; /* Adjust font size as needed */
   }
   .ecommerce {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-  }
-.ecommerce-container{
-  display: flex;
-  flex-direction: column;
-}
-  .countainer1 {
-     width: 100%; /*Full width for mobile screens */
-    margin: 20px 0; /* Adjust margin as needed */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    align-items: center; /*Center items horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
-  .service-image {
-   /* Full width for mobile screens */
+  .ecommerce-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countainer12 {
+    width: 100%;
+    margin: 10% 0%;
+    position: relative;
+  }
+
+  .image-service .service-image {
+    position: absolute;
     width: 10%;
-    top: -2%;
+    top: -32%;
+    left: 5%; /* Adjust as needed */
   }
-  .image-service .service-image{
-    margin-top: 41%;
+
+  .service-head {
+    margin-top: 15px;
   }
-  .carousel-inner{
+  .carousel-inner {
     display: flex;
     flex-direction: column;
   }
-}
-
-.service-head,
-.service-para,
-.service-more {
-  margin: 10px;
-  text-align: center; /* Center text */
-}
-
-.service-para {
-  font-size: 14px; /* Adjust font size as needed */
-  margin: 0 0 10px;
-}
-
-.service-more {
-  font-size: 1rem !important; /* Adjust font size as needed */
-}
-
-.service-head {
-  font-weight: 900;
-  font-style: "Intern";
-  text-transform: none;
-  color: #444;
-  line-height: 1.2;
-  margin-top: 10px; /* Adjust margin as needed */
 }

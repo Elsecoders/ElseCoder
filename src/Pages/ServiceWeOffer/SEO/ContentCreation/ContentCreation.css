@@ -1,0 +1,111 @@
+.container-ContentCreation {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    font-family: "Inter";
+    font-weight: 600;
+  }
+  
+  .img2 {
+    width: 100%; /* Adjust width as needed */
+    overflow: hidden;
+    border-radius: 0 50% 0 50%;
+    object-fit: cover;
+    padding-left: 10px;
+  }
+  
+  .img2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .ContentCreation-color-theme {
+    color: rgb(234, 90, 27);
+  }
+  .content-ContentCreation {
+    width: 100%; /* Adjust width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .content-ContentCreation h1{
+    font-size: 5.2vw;
+    color: black;
+}
+.content-ContentCreation p{
+    font-size: 1.5rem!important;
+    text-align: left;
+}
+
+
+.container-ContentCreation-1 {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    font-family: "Inter";
+    font-weight: 600;
+  }
+  
+  .img2-1 {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 35px;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .img2-1 img {
+    width: 60%;
+    overflow: hidden;
+    border-radius: 35px;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+  }
+  .ContentCreation-color-theme-1 {
+    color: rgb(234, 90, 27);
+  }
+  .content-ContentCreation-1 {
+    width: 100%; /* Adjust width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .content-ContentCreation-1 h1{
+    color: black;
+    font-size: 2.1rem;
+    text-align: left;
+}
+
+.content-ContentCreation-1 p{
+    font-size: large;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .container-ContentCreation {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img2,
+    .content-ContentCreation {
+      width: 100%; /* Make both take full width in smaller screens */
+      text-align: center; /* Align text to the left for smaller screens */
+    }
+  }
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .container-ContentCreation-1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img2-1,
+    .content-ContentCreation-1 {
+      width: 100%; /* Make both take full width in smaller screens */
+      text-align: center; /* Align text to the left for smaller screens */
+    }
+  }
+  

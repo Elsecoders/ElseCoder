@@ -17,12 +17,15 @@ import CustomSoftwareDevelopment from "./Pages/ServiceWeOffer/SoftwareDevelopmen
 import UiUxDesign from "./Pages/ServiceWeOffer/SoftwareDevelopment/UiUxDesign/UiUxDesign";
 import MobileApplication from "./Pages/ServiceWeOffer/SoftwareDevelopment/MobileApplication/MobileApplication";
 import GraphicDesigning from "./Pages/ServiceWeOffer/SocialMediaManagement/GraphicDesigning/GraphicDesigning";
+import Copywriting from "./Pages/ServiceWeOffer/SocialMediaManagement/Copywriting/Copywriting";
+
 import SocialMediaContent from "./Pages/ServiceWeOffer/SocialMediaManagement/SocialMediaContent/SocialMediaContent";
 import SocialMediaStrategy from "./Pages/ServiceWeOffer/SocialMediaManagement/SocialMediaStrategy/SocialMediaStrategy";
 import BacklinkBuilding from "./Pages/ServiceWeOffer/SEO/BacklinkBuilding/Backlinkbuilding";
 import ContentCreation from "./Pages/ServiceWeOffer/SEO/ContentCreation/ContentCreation";
 import KeywordResearch from "./Pages/ServiceWeOffer/SEO/KeywordResearch/KeywordResearch";
 import OnsiteOptimization from "./Pages/ServiceWeOffer/SEO/OnsiteOptimization/Onsiteoptimization";
+import CustomReactCMS from "./Pages/ServiceWeOffer/SolutionImplementation/CustomReactCMS/CustomReactCMS";
 
 const App = () => {
   return (
@@ -64,6 +67,8 @@ const App = () => {
           <Route path="/contentcreation" element={<ContentCreation />} />
           <Route path="/keywordresearch" element={<KeywordResearch />} />
           <Route path="/onsiteoptimization" element={<OnsiteOptimization />} />
+          <Route path="/customreactcms" element={<CustomReactCMS />} />
+          <Route path="/copywriting" element={<Copywriting />} />
         </Routes>
       </BrowserRouter>
     </>

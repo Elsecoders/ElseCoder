@@ -40,7 +40,7 @@ const ServicesWeOffer = () => {
                   <br></br>
                   <NavLink
                     style={{ color: "black", textDecoration: "none" }}
-                    to="/websiteexperience"
+                    to="/customreactcms"
                   >
                     Custom React CMS
                   </NavLink>
@@ -174,6 +174,13 @@ const ServicesWeOffer = () => {
                     to="/graphicdesigning"
                   >
                     Graphic Designing
+                  </NavLink>
+                  <br></br>
+                  <NavLink
+                    style={{ color: "black", textDecoration: "none" }}
+                    to="/copywriting"
+                  >
+                    Copywriting
                   </NavLink>
                 </div>
               </div>

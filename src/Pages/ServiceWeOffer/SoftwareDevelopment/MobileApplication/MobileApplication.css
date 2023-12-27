@@ -1,0 +1,115 @@
+.MobileApplicationSlider {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    font-family: "Inter";
+    font-weight: 600;
+  }
+  
+  .MobileApplicationImg {
+    width: 100%; /* Adjust width as needed */
+    overflow: hidden;
+    border-radius: 0 50% 0 50%;
+    object-fit: cover;
+    padding-left: 10px;
+  }
+  
+  .MobileApplicationImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .MobileApplicationcontent {
+    width: 100%; /* Adjust width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .MobileApplicationSlider {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .MobileApplicationImg,
+    .MobileApplicationcontent {
+      width: 100%; /* Make both take full width in smaller screens */
+      text-align: left; /* Align text to the left for smaller screens */
+    }
+    .ProductDescriptionMobileApplication {
+        flex-direction: column;
+        align-items: center;
+      }
+      .MobileApplication-Img,
+    .MobileApplicationContent {
+      width: 100%; /* Make both take full width in smaller screens */
+      text-align: left; /* Align text to the left for smaller screens */
+    }
+    .MobileApplicationBox{
+      flex-direction: column;
+      align-items: center;
+    }
+    .MobileApplicationBoxHeading,
+    .MobileApplicationimg{
+      width: 100%; /* Make both take full width in smaller screens */
+      text-align: left;
+    }
+
+  }
+
+  .ProductDescriptionMobileApplication{
+    font-family: "Inter";
+    margin: 40px;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+  
+  }
+
+  .MobileApplicationContent {
+    width: 100%; /* Adjust width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .MobileApplication-Img{
+    width: 100%; /* Adjust width as needed */
+    overflow: hidden;
+    border-radius: 0 50% 0 50%;
+    object-fit: cover;
+    padding-left: 10px;
+  }
+.MobileApplication-Img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+ .MobileApplicationBox{
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    font-family: "Inter";
+    font-weight: 600;
+    padding: 20px;
+ } 
+
+.MobileApplicationBoxHeading{
+     /* Adjust width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.MobileApplicationboximg{
+  width: 100%; /* Adjust width as needed */
+  overflow: hidden;
+  
+  object-fit: cover;
+  padding-left: 10px;
+}
+.MobileApplicationboximg img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

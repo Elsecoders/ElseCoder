@@ -1,0 +1,114 @@
+.CustomSoftwareDevelopmentSlider {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    font-family: "Inter";
+    font-weight: 600;
+  }
+  
+  .CustomSoftwareDevelopmentImg {
+    width: 100%; /* Adjust width as needed */
+    overflow: hidden;
+    border-radius: 0 50% 0 50%;
+    object-fit: cover;
+    padding-left: 10px;
+  }
+  
+  .CustomSoftwareDevelopmentImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .CustomSoftwareDevelopmentcontent {
+    width: 100%; /* Adjust width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .CustomSoftwareDevelopmentSlider {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .CustomSoftwareDevelopmentImg,
+    .CustomSoftwareDevelopmentcontent {
+      width: 100%; /* Make both take full width in smaller screens */
+      text-align: left; /* Align text to the left for smaller screens */
+    }
+    .ProductDescriptionCustomSoftwareDevelopment {
+        flex-direction: column;
+        align-items: center;
+      }
+      .CustomSoftwareDevelopment-Img,
+    .CustomSoftwareDevelopmentContent {
+      width: 100%; /* Make both take full width in smaller screens */
+      text-align: left; /* Align text to the left for smaller screens */
+    }
+    .CustomSoftwareDevelopmentBox{
+      flex-direction: column;
+      align-items: center;
+    }
+    .CustomSoftwareDevelopmentBoxHeading,
+    .CustomSoftwareDevelopmentimg{
+      width: 100%; /* Make both take full width in smaller screens */
+      text-align: left;
+    }
+
+  }
+
+  .ProductDescriptionCustomSoftwareDevelopment{
+    font-family: "Inter";
+    margin: 40px;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+  
+  }
+
+  .CustomSoftwareDevelopmentContent {
+    width: 100%; /* Adjust width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .CustomSoftwareDevelopment-Img{
+    width: 100%; /* Adjust width as needed */
+    overflow: hidden;
+    border-radius: 0 50% 0 50%;
+    object-fit: cover;
+    padding-left: 10px;
+  }
+.CustomSoftwareDevelopment-Img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+ .CustomSoftwareDevelopmentBox{
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    font-family: "Inter";
+    font-weight: 600;
+ } 
+
+.CustomSoftwareDevelopmentBoxHeading{
+     /* Adjust width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.CustomSoftwareDevelopmentboximg{
+  width: 100%; /* Adjust width as needed */
+  overflow: hidden;
+  
+  object-fit: cover;
+  padding-left: 10px;
+}
+.CustomSoftwareDevelopmentboximg img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

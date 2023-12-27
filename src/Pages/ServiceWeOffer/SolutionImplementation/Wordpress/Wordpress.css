@@ -1,0 +1,40 @@
+.wordpressSlider {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    font-family: "Inter";
+    font-weight: 600;
+  }
+  
+  .wordpressImg {
+    width: 100%; /* Adjust width as needed */
+    overflow: hidden;
+    border-radius: 0 50% 0 50%;
+    object-fit: cover;
+    padding-left: 10px;
+  }
+  
+  .wordpressImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .wordpresscontent {
+    width: 100%; /* Adjust width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .wordpressSlider {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .wordpressImg,
+    .wordpresscontent {
+      width: 100%; /* Make both take full width in smaller screens */
+      text-align: left; /* Align text to the left for smaller screens */
+    }
+  }

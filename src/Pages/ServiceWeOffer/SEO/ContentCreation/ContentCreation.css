@@ -98,7 +98,7 @@
   /* Media query for smaller screens */
   @media screen and (max-width: 768px) {
     .container-ContentCreation-1 {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
     }
   

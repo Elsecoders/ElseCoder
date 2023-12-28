@@ -9,7 +9,7 @@ const SliderSection = () => {
           <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
         </div>
         <div className="content">
-          <h1>
+          <h1 style={{fontWeight:"800",}}>
             <span style={{ color: "black" }}>{`<`}</span>
             <span style={{ color: "#2CA3CC" }}>{`E!se`}</span>
             <span style={{ color: "#EA5A1B" }}>{`Coder`}</span>

@@ -70,9 +70,8 @@
 }
 .link-with-line {
   position: relative;
-  text-decoration: none;
-  color: #777;
-  text-shadow: 0 0 2px #000000, 0 0 65px #000000;
+  
+
   
 }
 
@@ -102,21 +101,19 @@
 
 
 
-.service-div {
-  
-  height: 250px;
-}
+
 .service-div-content {
   padding-right: 30px;
   font-size: 12px;
   columns: 250px 2;
+  padding-bottom:20px;
  
 }
 .service-div-1 {
   display: flex;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  text-align: center;
+ 
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 40px;
@@ -165,7 +162,7 @@
   .service-div-sol {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+   
     align-items: center;
   }
 

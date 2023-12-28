@@ -1,18 +1,29 @@
-import React from "react";
 import Navs from "../../../Components/Navbar/Navs";
 import "./Services.css";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CodeIcon from "@mui/icons-material/Code";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
-//import Footer from "../../../Components/footer/Footer";
+import Footer from "../../../Components/footer/Footer";
 
-const Services = () => {
+const Services = ({ scrollTo }) => {
+  const location = useLocation();
+  useEffect(() => {
+    // Scroll to the specific section based on the route
+    if (scrollTo && location.hash === `#${scrollTo}`) {
+      const element = document.getElementById(scrollTo);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [scrollTo, location]);
+
   return (
     <>
       <Navs />
-    
+
       <div className="servicePage mt-4">
         <div className="Services">
           <div className="ServiceImg">
@@ -38,27 +49,30 @@ const Services = () => {
                 listStyleType: "none",
               }}
             >
-
               <Link
                 className="link-with-line"
+                to="/solution-implementation"
                 style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Solution Implementation<span className="line"></span>
               </Link>
               <Link
                 className="link-with-line"
+                to="/software-development"
                 style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Software Development<span className="line"></span>
               </Link>
               <Link
                 className="link-with-line"
+                to="/search-engine-optimization"
                 style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Search Engine Optimization<span className="line"></span>
               </Link>
               <Link
                 className="link-with-line"
+                to="/social-media-management"
                 style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Social Media Management<span className="line"></span>
@@ -66,10 +80,11 @@ const Services = () => {
             </ul>
           </div>
         </div>
-        <div className="service-div mt-5">
+      </div>
+      <div className="service-div mt-5">
           <div className="service-div-1" style={{ backgroundColor: "#fafafb" }}>
-            <div className="service-div-content">
-              <h1>
+            <div className="service-div-content" id="solution-implementation">
+              <h1 style={{}}>
                 <span>Solution</span>
                 <br></br>
                 <span style={{ color: "#2CA3CC" }}>Implementation</span>
@@ -105,7 +120,7 @@ const Services = () => {
               </box>
             </div>
           </div>
-          <div className="service-div-1">
+          <div className="service-div-1" id="software-development">
             <div className="service-div-content">
               <h1>
                 <span>Software</span>
@@ -135,7 +150,7 @@ const Services = () => {
               </box>
             </div>
           </div>
-          <div className="service-div-1" style={{ backgroundColor: "#fafafb" }}>
+          <div className="service-div-1" id="search-engine-optimization" style={{ backgroundColor: "#fafafb" }}>
             <div className="service-div-content">
               <h1>
                 <span>Search Engine</span>
@@ -168,7 +183,7 @@ const Services = () => {
               </box>
             </div>
           </div>
-          <div className="service-div-1">
+          <div className="service-div-1" id="social-media-management">
             <div className="service-div-content">
               <h1>
                 <span>Social Media </span>
@@ -199,13 +214,10 @@ const Services = () => {
             </div>
           </div>
 
-          
+         
+         
         </div>
-      </div>
-      
-      
-   
-
+      <Footer />
     </>
   );
 };

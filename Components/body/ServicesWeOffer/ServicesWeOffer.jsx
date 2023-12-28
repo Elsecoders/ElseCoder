@@ -16,7 +16,7 @@ const ServicesWeOffer = () => {
           <h2>Services We Offer</h2>
         </div>
         <div className="Services-Box mt-3">
-          <Card style={{ width: "35rem", height: "18rem" }}>
+          <Card className="cardbox"style={{ width: "35rem", height: "18rem" }}>
             <Card.Body>
               <ViewInArOutlinedIcon
                 style={{
@@ -55,7 +55,7 @@ const ServicesWeOffer = () => {
               </div>
             </Card.Body>
           </Card>
-          <Card style={{ width: "35rem", height: "18rem" }}>
+          <Card className="cardbox" style={{ width: "35rem", height: "18rem" }}>
             <Card.Body>
               <WebhookOutlinedIcon
                 style={{
@@ -95,7 +95,7 @@ const ServicesWeOffer = () => {
           </Card>
         </div>
         <div className="Services-Box mt-4">
-          <Card style={{ width: "35rem", height: "18rem" }}>
+          <Card className="cardbox" style={{ width: "35rem", height: "18rem" }}>
             <Card.Body>
               <EditNoteOutlinedIcon
                 style={{
@@ -140,7 +140,7 @@ const ServicesWeOffer = () => {
               </div>
             </Card.Body>
           </Card>
-          <Card style={{ width: "35rem", height: "18rem" }}>
+          <Card className="cardbox" style={{ width: "35rem", height: "18rem" }}>
             <Card.Body>
               <ShareOutlinedIcon
                 style={{

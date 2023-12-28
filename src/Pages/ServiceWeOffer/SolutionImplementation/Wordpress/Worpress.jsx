@@ -41,11 +41,11 @@ const Worpress = () => {
   return (
     <>
       <Navs />
-      <div className="CustomReactCMSSlider mt-2">
-        <div className="CustomReactCMSImg">
+      <div className="wordpressSlider mt-2">
+        <div className="wordpressImg">
           <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
         </div>
-        <div className="CustomReactCMScontent">
+        <div className="wordpresscontent">
           <h1>
             <span style={{ color: "black" }}>{`<`}</span>
             <span style={{ color: "#2CA3CC" }}>{`Wordpress`}</span>
@@ -59,7 +59,7 @@ const Worpress = () => {
         </div>
       </div>
 
-      <div className="CustomReactCMS-Boxes m-5">
+      <div className="wordpress-Boxes m-5">
         <Row xs={1} md={3} className="g-4">
           {cardsData.map((card, idx) => (
             <Col key={idx}>

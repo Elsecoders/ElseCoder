@@ -19,7 +19,8 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 gap: 20px;
-border-radius: 10px;
+height: 310px;
+
 
 }
 .shopify-div{
@@ -42,9 +43,11 @@ border-radius: 10px;
 .card-2,
 .card-3 
 {
-  border-radius: 10px;
-  box-shadow: 0px 0px 8px rgba(246, 77, 77, 0.5);;
+  border-radius: 40px;
+  box-shadow: -3px -3px 7px #ffffff42, 3px 3px 5px rgba(0,0,0, 0.374);
   outline-color: aqua;
+  background-color: rgb(255, 248, 248);
+  
 }
 
 .service-box .card-1,

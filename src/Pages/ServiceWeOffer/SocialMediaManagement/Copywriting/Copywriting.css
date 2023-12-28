@@ -1,0 +1,143 @@
+.copywriting-main-container {
+  font-family: "Inter";
+  font-weight: 600;
+}
+.copywriting-page {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  padding-bottom: 40px;
+  height: 60%;
+  margin: auto;
+  width: 100%;
+}
+
+.copywriting-img {
+  width: 80%; /* Adjust width as needed */
+  overflow: hidden;
+  border-radius: 0 50% 0 50%;
+  object-fit: cover;
+  padding-left: 10px;
+  margin-left: 85px;
+}
+
+.copywriting-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.copywriting-content {
+  width: 100%; /* Adjust width as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  margin-left: 15px;
+}
+.copywriting-content-head {
+  font-size: 65px;
+  text-align: left;
+  color: #444;
+}
+.copywriting-content-para {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #777;
+  text-align: left;
+}
+.copywriting-countainer1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  width: 100%;
+  margin: auto;
+}
+.copywriting-detail-container {
+  width: 60%;
+  margin-left: 85px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+.copywriting-detail-img {
+  width: 50%; /* Adjust width as needed */
+  margin-left: 85px;
+  height: 10%;
+}
+.copywriting-detail-img img {
+  width: 50%;
+  height: 20%;
+  margin-left: 25%;
+}
+
+.copywriting-detail-para {
+  font-size: 15px;
+  margin-right: 9%;
+}
+@media screen and (max-width: 768px) {
+  .copywriting-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copywriting-img,
+  .copywriting-content {
+    width: 100%; /* Make both take full width in smaller screens */
+    text-align: left; /* Align text to the left for smaller screens */
+  }
+  .copywriting-content-head {
+    font-size: 55px;
+    text-align: left;
+    margin-left: 25px;
+    color: #444;
+  }
+  .copywriting-content-para {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #777;
+    text-align: left;
+    margin-left: 25px;
+  }
+  .copywriting-detail-container,
+  .copywriting-detail-img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .copywriting-countainer1 {
+    flex-direction: column-reverse; /* Move the image to the top in a vertical order */
+  }
+  .copywriting-detail-img {
+    height: auto;
+  }
+  .copywriting-detail-img img {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copywriting-detail-para {
+    margin-right: 0;
+    font-size: -10px;
+  }
+  .copywriting-detail {
+    margin-top: 20px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .copywriting-detail-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .copywriting-detail-img {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+}

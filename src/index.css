@@ -4,3 +4,10 @@ body {
   color: #777;
   font-size: 14px;
 }
+body::-webkit-scrollbar{
+  background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+  background:linear-gradient(#EA5A1B,#2CA3CC);
+  border-radius: 90px;
+}

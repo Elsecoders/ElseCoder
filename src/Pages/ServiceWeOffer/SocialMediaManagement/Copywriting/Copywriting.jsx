@@ -48,7 +48,7 @@ const Copywriting = () => {
               tailored to elevate your brand's identity and communication.
               Whether you're a startup or an established enterprise, we're here
               to translate your vision into a visual narrative that speaks
-              volumes and sets you apart in the competitive landscape.
+              volumes and sets you apart in the competitives landscape.
             </p>
           </div>
           <div className="copywriting-detail-img">

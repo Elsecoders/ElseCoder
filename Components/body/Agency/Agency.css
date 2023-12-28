@@ -19,7 +19,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 gap: 20px;
-height: 310px;
+
 
 
 }
@@ -50,6 +50,21 @@ height: 310px;
   
 }
 
+.card-1,
+.card-2,
+.card-3 > img {
+aspect-ratio: 1/1;
+object-fit: cover;
+transition: transform 350ms ease, filter 350ms linear;
+}
+
+.card-1,
+.card-2,
+.card-3 :has(img:hover) img:not(:hover){
+  transform: scale(0.8);
+  filter: opacity(0.7);
+}
+
 .service-box .card-1,
 .service-box .card-2,
 .service-box .card-3 {
@@ -58,16 +73,16 @@ height: 310px;
 
 /* Styles on hover */
 .service-box .card-1:hover {
-  background-color: #ea5a1b; /* Change background color on hover */
+  background: linear-gradient(#EA5A1B,#2CA3CC); /* Change background color on hover */
   color: white; /* Change text color on hover */
 }
 
 .service-box .card-2:hover {
-  background-color: #ea5a1b; /* Change background color on hover */
+  background: linear-gradient(#EA5A1B,#2CA3CC); /* Change background color on hover */
   color: white; /* Change text color on hover */
 }
 
 .service-box .card-3:hover {
-  background-color: #ea5a1b; /* Change background color on hover */
+  background: linear-gradient(#EA5A1B,#2CA3CC); /* Change background color on hover */
   color: white; /* Change text color on hover */
 }

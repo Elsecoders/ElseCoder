@@ -97,7 +97,8 @@
   /* Media query for smaller screens */
   @media screen and (max-width: 768px) {
     .container-keywordResearch-1 {
-      flex-direction: column;
+      /* flex-direction: column; */
+      flex-direction: column-reverse;
       align-items: center;
     }
   

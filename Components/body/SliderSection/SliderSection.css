@@ -25,6 +25,8 @@
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
+  
+
 }
 
 /* Media query for smaller screens */
@@ -38,5 +40,6 @@
   .content {
     width: 100%; /* Make both take full width in smaller screens */
     text-align: left; /* Align text to the left for smaller screens */
+  
   }
 }

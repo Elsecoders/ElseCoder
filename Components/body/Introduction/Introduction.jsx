@@ -7,8 +7,8 @@ const Introduction = () => {
     <>
       <div className="intro-Dock">
         <div className="introduction">
-          <div className="heading">
-            <h1>OUR IMPRESSION.</h1>
+          <div className="heading ">
+            <h1 className="heads">OUR IMPRESSION.</h1>
           </div>
           <div className="paragraph">
             <p>

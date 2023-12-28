@@ -533,7 +533,7 @@ i {
   .image-service .service-image {
     position: absolute;
     width: 10%;
-    top: -32%;
+    top: -20%;
     left: 5%; /* Adjust as needed */
   }
 

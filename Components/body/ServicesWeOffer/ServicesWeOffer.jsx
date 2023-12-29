@@ -31,7 +31,8 @@ const ServicesWeOffer = () => {
                   Solution <br></br> Implementation
                 </p>
                 <div className="platform-div">
-                  <NavLink
+                  <NavLink 
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/wordpress"
                   >
@@ -39,6 +40,7 @@ const ServicesWeOffer = () => {
                   </NavLink>
                   <br></br>
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/customreactcms"
                   >
@@ -46,6 +48,7 @@ const ServicesWeOffer = () => {
                   </NavLink>
                   <br></br>
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/shopify"
                   >
@@ -70,6 +73,7 @@ const ServicesWeOffer = () => {
                 </p>
                 <div className="platform-div">
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/uiuxdesign"
                   >
@@ -77,6 +81,7 @@ const ServicesWeOffer = () => {
                   </NavLink>
                   <br></br>
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/customsoftwaredevelopment"
                   >
@@ -84,6 +89,7 @@ const ServicesWeOffer = () => {
                   </NavLink>
                   <br></br>
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/mobileapplication"
                   >
@@ -110,6 +116,7 @@ const ServicesWeOffer = () => {
                 </div>
                 <div className="platform-div">
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/keywordresearch"
                   >
@@ -117,6 +124,7 @@ const ServicesWeOffer = () => {
                   </NavLink>
                   <br></br>
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/contentcreation"
                   >
@@ -124,6 +132,7 @@ const ServicesWeOffer = () => {
                   </NavLink>
                   <br></br>
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/onsiteoptimization"
                   >
@@ -131,6 +140,7 @@ const ServicesWeOffer = () => {
                   </NavLink>
                   <br></br>
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/backlinkbuilding"
                   >
@@ -155,6 +165,7 @@ const ServicesWeOffer = () => {
                 </p>
                 <div className="platform-div">
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/socialmediastrategy"
                   >
@@ -162,6 +173,7 @@ const ServicesWeOffer = () => {
                   </NavLink>
                   <br></br>
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/socialMediacontent"
                   >
@@ -170,6 +182,7 @@ const ServicesWeOffer = () => {
                   <br></br>
 
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/graphicdesigning"
                   >
@@ -177,6 +190,7 @@ const ServicesWeOffer = () => {
                   </NavLink>
                   <br></br>
                   <NavLink
+                  className="underline"
                     style={{ color: "black", textDecoration: "none" }}
                     to="/copywriting"
                   >

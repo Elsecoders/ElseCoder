@@ -1,24 +1,15 @@
 import Navs from "../../../Components/Navbar/Navs";
 import "./Services.css";
-import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link as ScrollLink, Element } from 'react-scroll';
+import { Link } from "react-router-dom";
 import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CodeIcon from "@mui/icons-material/Code";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import Footer from "../../../Components/footer/Footer";
 
-const Services = ({ scrollTo }) => {
-  const location = useLocation();
-  useEffect(() => {
-    // Scroll to the specific section based on the route
-    if (scrollTo && location.hash === `#${scrollTo}`) {
-      const element = document.getElementById(scrollTo);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [scrollTo, location]);
+const Services = () => {
+ 
 
   return (
     <>
@@ -49,47 +40,47 @@ const Services = ({ scrollTo }) => {
                 listStyleType: "none",
               }}
             >
-              <Link
+              <ScrollLink
                 className="link-with-line"
-                to="/solution-implementation"
+                to="solution-implementation" spy={true} smooth={true} duration={500}
                 style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Solution Implementation<span className="line"></span>
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 className="link-with-line"
-                to="/software-development"
+                to="software-development" spy={true} smooth={true} duration={500}
                 style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Software Development<span className="line"></span>
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 className="link-with-line"
-                to="/search-engine-optimization"
+                to="search-engine-optimization" spy={true} smooth={true} duration={500}
                 style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Search Engine Optimization<span className="line"></span>
-              </Link>
-              <Link
+              </ScrollLink>
+              <ScrollLink
                 className="link-with-line"
-                to="/social-media-management"
+                to="social-media-management" spy={true} smooth={true} duration={500}
                 style={{ textDecoration: "none", color: "#0081bc" }}
               >
                 Social Media Management<span className="line"></span>
-              </Link>
+              </ScrollLink>
             </ul>
           </div>
         </div>
       </div>
       <div className="service-div mt-5">
-          <div className="service-div-1" style={{ backgroundColor: "#fafafb" }}>
-            <div className="service-div-content" id="solution-implementation">
+          <Element name="solution-implementation" className="service-div-1" id="solution-implementation" style={{ backgroundColor: "#fafafb" }}>
+            <div className="service-div-content" >
               <h1 style={{}}>
                 <span>Solution</span>
                 <br></br>
                 <span style={{ color: "#2CA3CC" }}>Implementation</span>
               </h1>
-              <p>
+              <p style={{fontSize:"20px"}}>
                 As a trusted partner of world's leading CRM solutions, 
                 we can help you customize and implement business solutions 3x
                 faster and smarter.
@@ -119,45 +110,45 @@ const Services = ({ scrollTo }) => {
                 </Link>
               </box>
             </div>
-          </div>
-          <div className="service-div-1" id="software-development">
+          </Element>
+          <Element className="service-div-1" id="software-development">
             <div className="service-div-content">
               <h1>
                 <span>Software</span>
                 <br></br>
                 <span style={{ color: "#2CA3CC" }}>Development</span>
               </h1>
-              <p>
+              <p style={{fontSize:"20px"}}>
               As a trusted partner of world's leading CRM solutions, we can help you customize and implement business solutions 3x faster and smarter.
               </p>
             </div>
             <div className="service-div-sol">
               <box className="box-1">
                 <IntegrationInstructionsIcon />
-                Word Press
+                UL/UX Design
                 <NorthEastIcon />
               </box>
               <br></br>
               <box className="box-1">
                 <CodeIcon />
-                Custom React CMS
+                Custom Software Development
                 <NorthEastIcon />
               </box>
               <box className="box-1">
                 <ShoppingCartIcon />
-                Shopify
+                Mobile Development
                 <NorthEastIcon />
               </box>
             </div>
-          </div>
-          <div className="service-div-1" id="search-engine-optimization" style={{ backgroundColor: "#fafafb" }}>
+          </Element>
+          <Element className="service-div-1" id="search-engine-optimization" style={{ backgroundColor: "#fafafb" }}>
             <div className="service-div-content">
               <h1>
                 <span>Search Engine</span>
                 <br></br>
                 <span style={{ color: "#2CA3CC" }}>Optimization</span>
               </h1>
-              <p>
+              <p style={{fontSize:"20px"}}>
               As a trusted partner of world's leading CRM solutions, we can help you customize and implement business solutions 3x faster and smarter.
               </p>
             </div>
@@ -167,52 +158,62 @@ const Services = ({ scrollTo }) => {
             >
               <box className="box-1">
                 <IntegrationInstructionsIcon />
-                Word Press
+                Keyword Research
                 <NorthEastIcon />
               </box>
               <br></br>
               <box className="box-1">
                 <CodeIcon />
-                Custom React CMS
+                Content Creation 
                 <NorthEastIcon />
               </box>
               <box className="box-1">
                 <ShoppingCartIcon />
-                Shopify
+                Onsite Optimization
+                <NorthEastIcon />
+              </box>
+              <box className="box-1">
+                <ShoppingCartIcon />
+                Backlink building
                 <NorthEastIcon />
               </box>
             </div>
-          </div>
-          <div className="service-div-1" id="social-media-management">
+          </Element>
+          <Element className="service-div-1" id="social-media-management">
             <div className="service-div-content">
               <h1>
                 <span>Social Media </span>
                 <br></br>
                 <span style={{ color: "#2CA3CC" }}>Management</span>
               </h1>
-              <p>
+              <p style={{fontSize:"20px"}}>
               As a trusted partner of world's leading CRM solutions, we can help you customize and implement business solutions 3x faster and smarter.
               </p>
             </div>
             <div className="service-div-sol">
               <box className="box-1">
                 <IntegrationInstructionsIcon />
-                Word Press
+                Social Media Strategy
                 <NorthEastIcon />
               </box>
               <br></br>
               <box className="box-1">
                 <CodeIcon />
-                Custom React CMS
+                Socila Media Content
                 <NorthEastIcon />
               </box>
               <box className="box-1">
                 <ShoppingCartIcon />
-                Shopify
+                Copywriting
+                <NorthEastIcon />
+              </box>
+              <box className="box-1">
+                <ShoppingCartIcon />
+                Graphic Designing
                 <NorthEastIcon />
               </box>
             </div>
-          </div>
+          </Element>
 
          
          

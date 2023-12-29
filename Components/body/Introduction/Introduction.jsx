@@ -78,13 +78,30 @@ const Introduction = () => {
           </Card>
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
+          
+              variant="center"
+              src="/public/Images/Intro/TJM.svg"
+              style={{ width: "10rem", height: "10rem" }}
+            />
+          </Card>
+          <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
+            <Card.Img
+              variant="center"
+              src="/public/Images/Intro/face3face.png"
+              style={{ width: "10rem", height: "10rem" }}
+            />
+          </Card>
+          <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
+            <Card.Img
               variant="center"
               src="/Images/2.png"
               style={{ width: "10rem", height: "10rem" }}
             />
           </Card>
+          
+          
         </div>
-        <div className="projects mt-5">
+        {/* <div className="projects mt-5">
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
               variant="center"
@@ -113,7 +130,7 @@ const Introduction = () => {
               style={{ width: "10rem", height: "10rem" }}
             />
           </Card>
-        </div>
+        </div> */}
       </div>
     </>
   );

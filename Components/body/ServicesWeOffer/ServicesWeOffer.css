@@ -41,6 +41,32 @@ gap: 20px;
     cursor: pointer;
     font-size: 1rem;
     padding-left: 80px;
+    
+  }
+  .underline{
+    position: relative; /* Necessary for pseudo-element */
+  transition: color 0.3s ease-in-out;
+  }
+  .underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the underline thickness */
+    bottom: -2px; /* Adjust the distance from the text */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.588);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out; /* Transition the underline appearance */
+  }
+  
+  .underline:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .underline:hover {
+    color: rgba(120, 7, 7, 0.194); /* Optional: Change color on hover */
   }
 
   @media screen and (max-width: 768px) {

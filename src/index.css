@@ -5,10 +5,11 @@ body {
   font-size: 14px;
 }
 body::-webkit-scrollbar{
-  background:linear-gradient(
+  /* background:linear-gradient(
     90deg
-    ,#434343,#434343 1px,#111 0,#111);
-}
+    ,#434343,#434343 1px,#111 0,#111); */
+   background-color: transparent;
+  }
 body::-webkit-scrollbar-thumb{
   background:#434343;
   border-radius: 16px;

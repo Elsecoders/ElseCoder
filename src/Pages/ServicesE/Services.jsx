@@ -21,7 +21,7 @@ const Services = () => {
             <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
           </div>
           <div className="Service-content">
-            <h1 style={{ color: "black" }}>We Engineer Software Solutions</h1>
+            <h1 style={{ color: "black" }}>We <span style={{color: "rgb(234, 90, 27)"}}>Engineer</span> Software Solutions</h1>
             <p>
               We help you envision technology that powers the future of your
               business
@@ -43,28 +43,28 @@ const Services = () => {
               <ScrollLink
                 className="link-with-line"
                 to="solution-implementation" spy={true} smooth={true} duration={500}
-                style={{ textDecoration: "none", color: "#0081bc" }}
+                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" }}
               >
                 Solution Implementation<span className="line"></span>
               </ScrollLink>
               <ScrollLink
                 className="link-with-line"
                 to="software-development" spy={true} smooth={true} duration={500}
-                style={{ textDecoration: "none", color: "#0081bc" }}
+                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" }}
               >
                 Software Development<span className="line"></span>
               </ScrollLink>
               <ScrollLink
                 className="link-with-line"
                 to="search-engine-optimization" spy={true} smooth={true} duration={500}
-                style={{ textDecoration: "none", color: "#0081bc" }}
+                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" }}
               >
                 Search Engine Optimization<span className="line"></span>
               </ScrollLink>
               <ScrollLink
                 className="link-with-line"
                 to="social-media-management" spy={true} smooth={true} duration={500}
-                style={{ textDecoration: "none", color: "#0081bc" }}
+                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" }}
               >
                 Social Media Management<span className="line"></span>
               </ScrollLink>
@@ -78,7 +78,11 @@ const Services = () => {
               <h1 className="service-box-heading" style={{fontSize:"60px"}}>
                 <span>Solution</span>
                 <br></br>
+
+                <span style={{ color: "rgb(234, 90, 27)" }}>Implementation</span>
+
                 <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Implementation</span>
+
               </h1>
               <p style={{fontSize:"20px"}}>
                 As a trusted partner of world's leading CRM solutions, 
@@ -89,7 +93,11 @@ const Services = () => {
             
              <div className="service-div-sol">
               <box className="box-1">
+
+                <Link className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" }}>
+
                 <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
+
                 <IntegrationInstructionsIcon />
                 Word Press
                 <NorthEastIcon />
@@ -129,7 +137,11 @@ const Services = () => {
               <h1 className="service-box-heading" style={{fontSize:"60px"}}>
                 <span>Software</span>
                 <br></br>
+
+                <span style={{ color: "rgb(234, 90, 27)" }}>Development</span>
+
                 <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Development</span>
+
               </h1>
               <p style={{fontSize:"20px"}}>
               Named among top 1% global companies by Clutch, we have the trust of 500+ companies when it comes to bespoke software solutions.
@@ -178,7 +190,11 @@ const Services = () => {
               <h1 className="service-box-heading" style={{fontSize:"60px"}}>
                 <span>Search Engine</span>
                 <br></br>
+
+                <span style={{ color: "rgb(234, 90, 27)" }}>Optimization</span>
+
                 <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Optimization</span>
+
               </h1>
               <p style={{fontSize:"20px"}}>
               Our SEO solutions build a website's relevance and trust with search engines. Every task performed has a specific purpose that improves your website's ranking. Some of these tasks include:
@@ -227,8 +243,12 @@ const Services = () => {
               <h1 className="service-box-heading" style={{fontSize:"60px"}}>
                 <span>Social</span>
                 <br></br>
+
+                <span style={{ color: "rgb(234, 90, 27)" }}>Management</span>
+
                 <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Media Management</span>
-              </h1>
+
+         </h1>
               <p style={{fontSize:"20px"}}>
               From content creation to community management, we will help you establish a strong social media presence, build brand awareness, and drive more traffic to your website.
               </p>

@@ -6,7 +6,7 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -31,38 +31,58 @@ const Footer = () => {
 
             <div>
               <ul className="wrapper">
-                <li className="icon facebook">
-                  <span className="tooltip">Facebook</span>
-                  <span>
-                    <FontAwesomeIcon icon={faFacebookF} />
-                  </span>
-                </li>
-                <li className="icon twitter">
-                  <span className="tooltip">Twitter</span>
-                  <span>
-                    <FontAwesomeIcon icon={faTwitter} />
-                  </span>
-                </li>
-                <li className="icon instagram">
-                  <span className="tooltip">Instagram</span>
-                  <span>
-                    <FontAwesomeIcon icon={faInstagram} />
-                  </span>
-                </li>
-                <li className="icon github">
-                  <span className="tooltip">Github</span>
-                  <span>
-                    <FontAwesomeIcon icon={faGithub} />
-                  </span>
-                </li>
+                <NavLink
+                  to="https://www.facebook.com/profile.php?id=61554510617368"
+                  style={{ color: "#1877F2" }}
+                >
+                  <li className="icon facebook">
+                    <span className="tooltip">Facebook</span>
 
-                <li className="icon linkedin">
-                  <span className="tooltip">LinkedIn</span>
+                    <span>
+                      <FontAwesomeIcon icon={faFacebookF} />
+                    </span>
+                  </li>
+                </NavLink>
 
-                  <span>
-                    <FontAwesomeIcon icon={faLinkedin} />
-                  </span>
-                </li>
+                <NavLink style={{ color: "#E4405F" }}>
+                  <li className="icon instagram">
+                    <span className="tooltip">Instagram</span>
+                    <span>
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </span>
+                  </li>
+                </NavLink>
+                <NavLink style={{ color: "#1DA1F2" }}>
+                  <li className="icon twitter">
+                    <span className="tooltip">Twitter</span>
+                    <span>
+                      <FontAwesomeIcon icon={faTwitter} />
+                    </span>
+                  </li>
+                </NavLink>
+                <NavLink
+                  to="https://github.com/elsecoder1"
+                  style={{ color: "#333333" }}
+                >
+                  <li className="icon github">
+                    <span className="tooltip">Github</span>
+                    <span>
+                      <FontAwesomeIcon icon={faGithub} />
+                    </span>
+                  </li>
+                </NavLink>
+                <NavLink
+                  to="https://www.linkedin.com/company/else-coder"
+                  style={{ color: "#1877F2" }}
+                >
+                  <li className="icon linkedin">
+                    <span className="tooltip">LinkedIn</span>
+
+                    <span>
+                      <FontAwesomeIcon icon={faLinkedin} />
+                    </span>
+                  </li>
+                </NavLink>
               </ul>
             </div>
           </section>
@@ -129,9 +149,9 @@ const Footer = () => {
             className="text-center p-4"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
           >
-            © 2018 Copyright: 
+            © 2018 Copyright:
             <Link className="text-reset fw-bold" to="https://elsecoder.com/">
-                ElseCoder.com
+              ElseCoder.com
             </Link>
           </div>
         </MDBFooter>

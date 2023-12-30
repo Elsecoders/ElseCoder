@@ -29,7 +29,7 @@ const Services = () => {
           </div>
         </div>
         <div className="whatWedo">
-          <h2 style={{ color: "black", textAlign: "center" }}>What We Do</h2>
+          <h1 style={{ color: "black", textAlign: "center" }}>What We Do</h1>
           <div className="solution mt-5">
             <ul
               className="sol-link"
@@ -72,13 +72,13 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="service-div mt-5">
+      <div className="service-div mt-5" >
           <Element name="solution-implementation" className="service-div-1" id="solution-implementation" style={{ backgroundColor: "#fafafb" }}>
             <div className="service-div-content" >
-              <h1 style={{}}>
+              <h1 className="service-box-heading" style={{fontSize:"60px"}}>
                 <span>Solution</span>
                 <br></br>
-                <span style={{ color: "#2CA3CC" }}>Implementation</span>
+                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Implementation</span>
               </h1>
               <p style={{fontSize:"20px"}}>
                 As a trusted partner of world's leading CRM solutions, 
@@ -86,137 +86,189 @@ const Services = () => {
                 faster and smarter.
               </p>
             </div>
-            <div className="service-div-sol">
+            
+             <div className="service-div-sol">
               <box className="box-1">
-                <Link className="box-link" style={{ textDecoration: "none", color: "#000" }}>
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
                 <IntegrationInstructionsIcon />
                 Word Press
                 <NorthEastIcon />
                 </Link>
               </box>
-              <br></br>
-              <box className="box-1">
-                <Link className="box-link" style={{ textDecoration: "none", color: "#000" }}>
+              
+              <box className="box-1" >
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <CodeIcon />
                 Custom React CMS
                 <NorthEastIcon />
                 </Link>
               </box>
+              </div> 
+               <div className="service-div-sol">
               <box  className="box-1">
-                <Link className="box-link" style={{ textDecoration: "none", color: "#000" }}>
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <ShoppingCartIcon />
                 Shopify
                 <NorthEastIcon />
                 </Link>
               </box>
+              {/* <box className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+                <CodeIcon />
+                Custom React CMS
+                <NorthEastIcon />
+                </Link>
+              </box> */}
             </div>
+
+
           </Element>
-          <Element className="service-div-1" id="software-development">
-            <div className="service-div-content">
-              <h1>
+
+          <Element name="solution-implementation" className="service-div-1" id="solution-implementation" >
+            <div className="service-div-content" >
+              <h1 className="service-box-heading" style={{fontSize:"60px"}}>
                 <span>Software</span>
                 <br></br>
-                <span style={{ color: "#2CA3CC" }}>Development</span>
+                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Development</span>
               </h1>
               <p style={{fontSize:"20px"}}>
-              As a trusted partner of world's leading CRM solutions, we can help you customize and implement business solutions 3x faster and smarter.
+              Named among top 1% global companies by Clutch, we have the trust of 500+ companies when it comes to bespoke software solutions.
               </p>
             </div>
-            <div className="service-div-sol">
+            
+             <div className="service-div-sol">
               <box className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
                 <IntegrationInstructionsIcon />
-                UL/UX Design
+                UI/UX Design
                 <NorthEastIcon />
+                </Link>
               </box>
-              <br></br>
-              <box className="box-1">
+              
+              <box className="box-1" >
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <CodeIcon />
                 Custom Software Development
                 <NorthEastIcon />
+                </Link>
               </box>
-              <box className="box-1">
+              </div> 
+               <div className="service-div-sol">
+              <box  className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <ShoppingCartIcon />
                 Mobile Development
                 <NorthEastIcon />
+                </Link>
               </box>
+              {/* <box className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+                <CodeIcon />
+                Custom React CMS
+                <NorthEastIcon />
+                </Link>
+              </box> */}
             </div>
+
+
           </Element>
-          <Element className="service-div-1" id="search-engine-optimization" style={{ backgroundColor: "#fafafb" }}>
-            <div className="service-div-content">
-              <h1>
+
+          <Element name="solution-implementation" className="service-div-1" id="solution-implementation" style={{ backgroundColor: "#fafafb" }} >
+            <div className="service-div-content" >
+              <h1 className="service-box-heading" style={{fontSize:"60px"}}>
                 <span>Search Engine</span>
                 <br></br>
-                <span style={{ color: "#2CA3CC" }}>Optimization</span>
+                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Optimization</span>
               </h1>
               <p style={{fontSize:"20px"}}>
-              As a trusted partner of world's leading CRM solutions, we can help you customize and implement business solutions 3x faster and smarter.
+              Our SEO solutions build a website's relevance and trust with search engines. Every task performed has a specific purpose that improves your website's ranking. Some of these tasks include:
               </p>
             </div>
-            <div
-              className="service-div-sol"
-              style={{ justifyContent: "space-between" }}
-            >
+            
+             <div className="service-div-sol">
               <box className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
                 <IntegrationInstructionsIcon />
                 Keyword Research
                 <NorthEastIcon />
+                </Link>
               </box>
-              <br></br>
-              <box className="box-1">
+              
+              <box className="box-1" >
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <CodeIcon />
-                Content Creation 
+                Content Creation
                 <NorthEastIcon />
+                </Link>
               </box>
-              <box className="box-1">
+              </div> 
+               <div className="service-div-sol">
+              <box  className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <ShoppingCartIcon />
                 Onsite Optimization
                 <NorthEastIcon />
+                </Link>
               </box>
               <box className="box-1">
-                <ShoppingCartIcon />
-                Backlink building
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+                <CodeIcon />
+                Backlink Building
                 <NorthEastIcon />
+                </Link>
               </box>
             </div>
+
+
           </Element>
-          <Element className="service-div-1" id="social-media-management">
-            <div className="service-div-content">
-              <h1>
-                <span>Social Media </span>
+
+          <Element name="solution-implementation" className="service-div-1" id="solution-implementation" >
+            <div className="service-div-content" >
+              <h1 className="service-box-heading" style={{fontSize:"60px"}}>
+                <span>Social</span>
                 <br></br>
-                <span style={{ color: "#2CA3CC" }}>Management</span>
+                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Media Management</span>
               </h1>
               <p style={{fontSize:"20px"}}>
-              As a trusted partner of world's leading CRM solutions, we can help you customize and implement business solutions 3x faster and smarter.
+              From content creation to community management, we will help you establish a strong social media presence, build brand awareness, and drive more traffic to your website.
               </p>
             </div>
-            <div className="service-div-sol">
+            
+             <div className="service-div-sol">
               <box className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
                 <IntegrationInstructionsIcon />
+                Social Media Content
+                <NorthEastIcon />
+                </Link>
+              </box>
+              
+              <box className="box-1" >
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+                <CodeIcon />
                 Social Media Strategy
                 <NorthEastIcon />
+                </Link>
               </box>
-              <br></br>
-              <box className="box-1">
-                <CodeIcon />
-                Socila Media Content
-                <NorthEastIcon />
-              </box>
-              <box className="box-1">
+              </div> 
+               <div className="service-div-sol">
+              <box  className="box-1">
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <ShoppingCartIcon />
                 Copywriting
                 <NorthEastIcon />
+                </Link>
               </box>
               <box className="box-1">
-                <ShoppingCartIcon />
+                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+                <CodeIcon />
                 Graphic Designing
                 <NorthEastIcon />
+                </Link>
               </box>
             </div>
-          </Element>
 
-         
-         
+          </Element>
         </div>
       <Footer />
     </>
@@ -224,3 +276,8 @@ const Services = () => {
 };
 
 export default Services;
+
+
+
+
+

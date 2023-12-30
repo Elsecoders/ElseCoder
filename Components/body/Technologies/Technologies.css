@@ -1,0 +1,28 @@
+.Technologies{
+    margin: 40px;
+    
+}
+.Tech-name li {
+    cursor: pointer;
+    display: inline; /* To display li elements horizontally */
+    margin-right: 25px; /* Adjust spacing between list items */
+    font-size: 19px;
+    position: relative; /* Create relative positioning for the pseudo-element */
+  }
+  
+  /* Apply underline on hover */
+  .Tech-name li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -3px; /* Adjust the position of the underline */
+    transition: width 0.3s ease; /* Add transition effect */
+  }
+  
+  /* Adjust the underline width on hover */
+  .Tech-name li:hover::after {
+    width: 100%;
+  }

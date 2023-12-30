@@ -8,6 +8,7 @@ import MiddleContent from '../body/MiddleContent/MiddleContent';
 import ServicesWeOffer from '../body/ServicesWeOffer/ServicesWeOffer';
 import InformationalBolg from '../body/InformationalBlog/InformationalBolg';
  import GetInTouch from '../body/GetInTouch/GetInTouch';
+import Technologies from '../body/Technologies/Technologies';
 
 
 const MainBody = () => {
@@ -19,6 +20,7 @@ const MainBody = () => {
    <Agency/>
    <MiddleContent/>
    <ServicesWeOffer/>
+   <Technologies/>
    <InformationalBolg/>
    <GetInTouch/>
    <Footer/>

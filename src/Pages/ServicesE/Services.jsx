@@ -1,7 +1,7 @@
 import Navs from "../../../Components/Navbar/Navs";
 import "./Services.css";
 import { Link as ScrollLink, Element } from 'react-scroll';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CodeIcon from "@mui/icons-material/Code";
@@ -92,16 +92,21 @@ const Services = () => {
              <div className="service-div-sol">
               <box className="box-1">
 
+
                 <Link className="box-link" to="wordpress" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+                <NavLinkLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+
+           
+
 
                 <IntegrationInstructionsIcon />
                 Word Press
                 <NorthEastIcon />
-                </Link>
+                </NaLink>
               </box>
               
               <box className="box-1" >
-                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+                <Link className="box-link" to="" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <CodeIcon />
                 Custom React CMS
                 <NorthEastIcon />

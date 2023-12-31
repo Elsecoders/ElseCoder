@@ -57,24 +57,22 @@ const InformationalBolg = () => {
           <h3>Insights to help you stay ahead of change</h3>
           <p>Informational Blogs</p>
           <div className="main-countainer">
-            <div className="col-3 col-md-3 col-lg-2  card-mini">
+            <div className="col-12 col-md-3 col-lg-2  card-mini">
               <div className="card-body">
                 <h5 className="card-title">Special title treatment</h5>
                 <p className="card-text">
                   With supporting text below as a natural lead-in to additional
                   content.
                 </p>
-                <NavLink to="#" ><ReadMoreButton /></NavLink>
               </div>
             </div>
-            <div className="mini-card-grid">
+            <div className="mini-card-grid col-12">
       {cards.map((card, index) => (
         <div
           key={index}
-          className={`col-5 col-md-4 col-lg-3 mini-card ${hoveredCards[index] ? 'hovered' : ''} ${scrollPosition > 50 ? 'hidden' : ''}`}
+          className={`col-9 col-md-4 col-lg-3 mini-card ${hoveredCards[index] ? 'hovered' : ''} ${scrollPosition > 50 ? 'hidden' : ''}`}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={() => handleMouseLeave(index)}
-          // style={{ left: `${index * 25}%` }}
         >
           <div className="card-content">
           <Card.Img variant="top" src={card.img} />

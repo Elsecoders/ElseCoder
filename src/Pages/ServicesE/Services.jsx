@@ -29,7 +29,7 @@ const Services = () => {
           </div>
         </div>
         <div className="whatWedo">
-          <h1 style={{ color: "black", textAlign: "center" }}>What We Do</h1>
+          <h1 style={{ color: "black", textAlign: "center"}}>What We Do</h1>
           <div className="solution mt-5">
             <ul
               className="sol-link"
@@ -43,28 +43,28 @@ const Services = () => {
               <ScrollLink
                 className="link-with-line"
                 to="solution-implementation" spy={true} smooth={true} duration={500}
-                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" }}
+                style={{ textDecoration: "none", color: "rgb(234, 90, 27)",  fontSize:"x-large"}}
               >
                 Solution Implementation<span className="line"></span>
               </ScrollLink>
               <ScrollLink
                 className="link-with-line"
                 to="software-development" spy={true} smooth={true} duration={500}
-                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" }}
+                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" ,  fontSize:"x-large"}}
               >
                 Software Development<span className="line"></span>
               </ScrollLink>
               <ScrollLink
                 className="link-with-line"
                 to="search-engine-optimization" spy={true} smooth={true} duration={500}
-                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" }}
+                style={{ textDecoration: "none", color: "rgb(234, 90, 27)",  fontSize:"x-large" }}
               >
                 Search Engine Optimization<span className="line"></span>
               </ScrollLink>
               <ScrollLink
                 className="link-with-line"
                 to="social-media-management" spy={true} smooth={true} duration={500}
-                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" }}
+                style={{ textDecoration: "none", color: "rgb(234, 90, 27)" ,  fontSize:"x-large"}}
               >
                 Social Media Management<span className="line"></span>
               </ScrollLink>
@@ -79,9 +79,7 @@ const Services = () => {
                 <span>Solution</span>
                 <br></br>
 
-                <span style={{ color: "rgb(234, 90, 27)" }}>Implementation</span>
-
-                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Implementation</span>
+                <span className="service-box-span-heading" style={{color: "rgb(234, 90, 27)"}}>Implementation</span>
 
               </h1>
               <p style={{fontSize:"20px"}}>
@@ -94,9 +92,12 @@ const Services = () => {
              <div className="service-div-sol">
               <box className="box-1">
 
-                <NavLinkLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" }}>
 
-                <NaLink className="box-link" to="#" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
+                <Link className="box-link" to="wordpress" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+                <NavLinkLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+
+           
+
 
                 <IntegrationInstructionsIcon />
                 Word Press
@@ -138,9 +139,7 @@ const Services = () => {
                 <span>Software</span>
                 <br></br>
 
-                <span style={{ color: "rgb(234, 90, 27)" }}>Development</span>
-
-                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Development</span>
+                <span className="service-box-span-heading" style={{ color: "rgb(234, 90, 27)" }}>Development</span>
 
               </h1>
               <p style={{fontSize:"20px"}}>
@@ -191,9 +190,8 @@ const Services = () => {
                 <span>Search Engine</span>
                 <br></br>
 
-                <span style={{ color: "rgb(234, 90, 27)" }}>Optimization</span>
 
-                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Optimization</span>
+                <span className="service-box-span-heading" style={{ color: "rgb(234, 90, 27)" }}>Optimization</span>
 
               </h1>
               <p style={{fontSize:"20px"}}>
@@ -244,9 +242,7 @@ const Services = () => {
                 <span>Social</span>
                 <br></br>
 
-                <span style={{ color: "rgb(234, 90, 27)" }}>Management</span>
-
-                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Media Management</span>
+                <span className="service-box-span-heading" style={{ color: "rgb(234, 90, 27)" }}>Media Management</span>
 
          </h1>
               <p style={{fontSize:"20px"}}>

@@ -48,7 +48,7 @@ const Aboutus = () => {
             <img src="/Images/aboutUs/aboutUs-page.jpg" alt="Slider" />
           </div>
           <div className="about-content">
-            <h1 className="about-content-head">
+            <h1 style={{fontWeight:"800"}} className="about-content-head">
               <span style={{ color: "black" }}>{`About `}</span>
               <span style={{ color: "black" }}>{`<`}</span>
               <span style={{ color: "#2CA3CC" }}>{`E!se`}</span>

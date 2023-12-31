@@ -46,13 +46,13 @@ const Worpress = () => {
           <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
         </div>
         <div className="wordpresscontent">
-          <h1>
-            <span style={{ color: "black" }}>{`<`}</span>
-            <span style={{ color: "#2CA3CC" }}>{`Wordpress`}</span>
-            <span style={{ color: "#EA5A1B" }}>{`Development`}</span>
-            <span style={{ color: "black" }}>{`/>`}</span>
+          <h1 style={{fontSize:"3.9rem"}}>
+            <span style={{ color: "black" }}></span>
+            <span style={{ color: "#2CA3CC" }}>{`Wordpress`}</span> 
+            <span style={{ color: "#EA5A1B" }}> {`Development`}</span>
+            <span style={{ color: "black" }}></span>
           </h1>
-          <h5>
+          <h5 style={{fontSize:"x-large"}}>
           Elevate Your Web Presence
           </h5>
           <h1 />

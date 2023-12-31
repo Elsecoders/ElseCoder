@@ -53,13 +53,13 @@ const Shopify = () => {
         <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
       </div>
       <div className="Shopifycontent">
-        <h1>
-          <span style={{ color: "black" }}>{`<`}</span>
+        <h1 style={{fontSize:"3.9rem"}}>
+          <span style={{ color: "black" }}></span>
           <span style={{ color: "#2CA3CC" }}>{`Comprehensive Shopify`}</span>
-          <span style={{ color: "#EA5A1B" }}>{`Solutions`}</span>
-          <span style={{ color: "black" }}>{`/>`}</span>
+          <span style={{ color: "#EA5A1B" }}> {`Solutions`}</span>
+          <span style={{ color: "black" }}></span>
         </h1>
-        <h5>
+        <h5 style={{fontSize:"x-large"}}>
         Empowering Your Ecommerce Success
         </h5>
         <h1 />

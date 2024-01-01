@@ -94,9 +94,9 @@ const Services = () => {
              <div className="service-div-sol">
               <box className="box-1">
 
-                <Link className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" }}>
+               
 
-                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
+                <Link className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
 
                 <IntegrationInstructionsIcon />
                 Word Press

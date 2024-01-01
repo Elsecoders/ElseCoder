@@ -38,15 +38,14 @@
   margin-left: 15px;
 }
 .copywriting-content-head {
-  font-size: 65px;
-  text-align: left;
-  color: #444;
+font-size: 3.9rem;
+
+  color: black;
 }
 .copywriting-content-para {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: x-large;
   color: #777;
-  text-align: left;
 }
 .copywriting-countainer1 {
   display: flex;
@@ -63,6 +62,9 @@
   display: flex;
   align-items: center;
   margin-right: 25px;
+}
+.copywriting-detail{
+  color: black;
 }
 .copywriting-detail-img {
   width: 50%; /* Adjust width as needed */

@@ -38,15 +38,16 @@
   margin-left: 15px;
 }
 .socialmediacontent-content-head {
-  font-size: 65px;
-  text-align: left;
-  color: #444;
+  font-size: 3.9rem;
+  color: black;
 }
 .socialmediacontent-content-para {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: x-large;
   color: #777;
-  text-align: left;
+}
+.socialmediacontent-detail{
+  color: black;
 }
 .socialmediacontent-countainer1 {
   display: flex;

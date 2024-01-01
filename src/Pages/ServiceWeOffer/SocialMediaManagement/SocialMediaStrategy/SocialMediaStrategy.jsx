@@ -30,7 +30,7 @@ const SocialMediaStrategy = () => {
         </div>
         <div className="socialmediastrategy-countainer1">
           <div className="socialmediastrategy-detail-container">
-            <h2 className="socialmediastrategy-detail">Crafting <span style={{ color: "#EA5A1B" }}> Stories </span> Through <span style={{ color: "#EA5A1B" }}> Visual </span> Innovation</h2>
+            <h2 className="socialmediastrategy-detail">Crafting <span style={{ color: "#EA5A1B" }}> Stories Through  </span>Visual Innovation</h2>
             <p className="socialmediastrategy-detail-para">
               Our graphic designing service is a creative hub where imagination
               and innovation blend seamlessly to bring your ideas to life. With

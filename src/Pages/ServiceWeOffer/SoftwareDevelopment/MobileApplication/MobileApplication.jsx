@@ -41,13 +41,13 @@ const MobileApplication = () => {
           <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
         </div>
         <div className="MobileApplicationcontent">
-          <h1>
-            <span style={{ color: "black" }}>{`<`}</span>
-            <span style={{ color: "#2CA3CC" }}>{`Transforming`}</span>
-            <span style={{ color: "#EA5A1B" }}>{`Ideas into Apps`}</span>
-            <span style={{ color: "black" }}>{`/>`}</span>
+          <h1 style={{fontSize:'3.9rem'}}>
+            <span style={{ color: "black" }}></span>
+            <span style={{ color: "black" }}>{`Transforming`}</span>
+            <span style={{ color: "#EA5A1B" }}> {`Ideas `}</span>
+            <span style={{ color: "black" }}>into Apps</span>
           </h1>
-          <h3>
+          <h3 style={{fontSize:'x-large'}}>
             Apps that Amaze, Experiences that Engage - Beyond Apps, We Deliver
             Experiences. Our agile, responsive, and scalable mobile app
             development accelerates your competitive edge.
@@ -57,10 +57,10 @@ const MobileApplication = () => {
       </div>
       <div className="ProductDescriptionMobileApplication ">
         <div className="MobileApplicationContent">
-          <h3 style={{ color: "#000" }}>
-            Turning Ideas into Functional Mobile Apps
-          </h3>
-          <p>
+          <h2 style={{ color: "#000" , textAlign:"left" , fontSize:"2rem"}}>
+            Turning Ideas into <span style={{ color: "#EA5A1B" }}> {`Functional Mobile Apps`}</span>
+          </h2>
+          <p style={{ textAlign:"left" , fontSize:"15px"}}>
             Experience excellence in mobile app development with our
             cutting-edge services. We specialize in transforming ideas into
             fully functional, user-centric apps that drive engagement and

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navs from '../../../Components/Navbar/Navs';
 import Footer from '../../../Components/footer/Footer';
+import GetInTouch from '../../../Components/body/GetInTouch/GetInTouch'
 import "./contactus.css";
 
 const Contactus = () => {
@@ -12,9 +13,9 @@ const Contactus = () => {
           <img src="/Images/Contact-us/contactUs-img.jpg" alt="" />
         </div>
         <div className="Contactus-content">
-          <p>
+          <p style={{fontSize: "18px"}}>
             Behind the powerful{' '}
-            <h1>
+            <h1 style={{fontWeight:"800"}}>
               <span style={{ color: "black" }}>{`<`}</span>
               <span style={{ color: "#2CA3CC" }}>{`E!se`}</span>
               <span style={{ color: "#EA5A1B" }}>{`Coder`}</span>
@@ -25,7 +26,7 @@ const Contactus = () => {
           <h1 />
         </div>
       </div>
-      <div class="contact-box">
+      {/* <div class="contact-box">
         <div class="contact-heading">Get in touch</div>
         <div class="contact-text">
           <p>
@@ -79,7 +80,9 @@ const Contactus = () => {
             </div>
           </div>
         </form>
-      </div>
+      </div> */}
+
+      <GetInTouch/>
       <Footer />
     </>
   );

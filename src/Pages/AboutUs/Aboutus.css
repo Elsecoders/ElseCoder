@@ -284,7 +284,7 @@ i {
 /* Media query for tablet and larger screens */
 @media screen and (min-width: 768px) {
   .about-content-head {
-    font-size: 3em;
+    font-size: 3.2rem;
   }
 
   .about-head {

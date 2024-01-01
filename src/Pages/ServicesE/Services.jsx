@@ -93,8 +93,8 @@ const Services = () => {
               <box className="box-1">
 
 
-                <Link className="box-link" to="wordpress" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
-                <NavLinkLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
+               
+                <NavLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
 
            
 
@@ -102,7 +102,7 @@ const Services = () => {
                 <IntegrationInstructionsIcon />
                 Word Press
                 <NorthEastIcon />
-                </NaLink>
+                </NavLink>
               </box>
               
               <box className="box-1" >

@@ -1,33 +1,91 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
+import Modal from "react-bootstrap/Modal";
+import Form from "react-bootstrap/Form";
+import "./Button.css";
+import { useForm } from "@formspree/react";
 
-import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
-import './Button.css';
 const CustomButton = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [state, handleSubmitFormspree] = useForm("xqkrkqeb");
+  const [show, setShow] = useState(false);
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    enquireFor: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({
+    name: false,
+    email: false,
+    enquireFor: false,
+    message: false,
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setSubmitted(true);
+      setShowSuccessMessage(true);
+
+      // Reset form after successful submission
+      handleClose();
+
+      // Hide the success message after 2 seconds
+      const timer = setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [state.succeeded]);
 
   const handleClose = () => {
-    setShowModal(false);
-    setErrorMessage('');
+    setShow(false);
+    setSubmitted(false);
+    setFormValues({
+      name: "",
+      email: "",
+      enquireFor: "",
+      message: "",
+    });
+    setErrors({
+      name: false,
+      email: false,
+      enquireFor: false,
+      message: false,
+    });
   };
 
-  const handleShow = () => setShowModal(true);
+  const handleShow = () => setShow(true);
 
-  const handleSubmit = () => {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const enquireFor = document.getElementById('enquireFor').value;
-    const message = document.getElementById('message').value;
+  const handleInputChange = (event) => {
+    const { id, value } = event.target;
+    setFormValues({ ...formValues, [id]: value });
+  };
 
-    if (!name || !email || !enquireFor || !message) {
-      setErrorMessage('All fields are mandatory');
-      return;
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    const { name, email, enquireFor, message } = formValues;
+    const newErrors = {
+      name: !name,
+      email: !email,
+      enquireFor: !enquireFor,
+      message: !message,
+    };
+
+    setErrors(newErrors);
+
+    if (Object.values(newErrors).every((val) => !val)) {
+      try {
+        await handleSubmitFormspree(e);
+      } catch (error) {
+        console.error(error);
+        // Handle form submission error here
+      }
+    } else {
+      alert("Please fill all fields");
     }
-
-    // Perform your form submission logic here
-
-    handleClose(); // Close the modal after form submission
   };
 
   return (
@@ -38,48 +96,86 @@ const CustomButton = () => {
         </button>
       </div>
 
-      <Modal className='modal' show={showModal} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title style={{color:"black", fontFamily:"Inter"}}>Get In Touch</Modal.Title>
+          <Modal.Title>Enquire For</Modal.Title>
+          {showSuccessMessage && <h1 style={{ color: "#EA5A1B" }}>Thanks for joining!</h1>}
         </Modal.Header>
         <Modal.Body>
-          <Form className='form-box'>
-            <Form.Group className="mb-3" controlId="name">
-              <Form.Label>
-                Name <span style={{ color: 'red' }}>*</span>
-                <small style={{ color: 'red', marginLeft: '5px' }}> </small>
-              </Form.Label>
-              <Form.Control type="text" autoFocus />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="email">
-              <Form.Label>
-                Email <span style={{ color: 'red' }}>*</span>
-                <small style={{ color: 'red', marginLeft: '5px' }}> </small>
-              </Form.Label>
-              <Form.Control type="email" autoFocus />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="enquireFor">
-              <Form.Label>
-                Enquire For <span style={{ color: 'red' }}>*</span>
-                <small style={{ color: 'red', marginLeft: '5px' }}></small>
-              </Form.Label>
-              <Form.Control type="text" autoFocus />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="message">
-              <Form.Label>
-                Message <span style={{ color: 'red' }}>*</span>
-                <small style={{ color: 'red', marginLeft: '5px' }}> </small>
-              </Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-            {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-          </Form>
+          {submitted ? (
+            <p>Thank you for your inquiry!</p>
+          ) : (
+            <Form onSubmit={handleFormSubmit}>
+                   <Form.Group className="mb-3" controlId="name">
+                <Form.Label>
+                  Name<span style={{ color: "red" }}>*</span>
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  required
+                  autoFocus
+                  value={formValues.name}
+                  onChange={handleInputChange}
+                  isInvalid={errors.name}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your name.
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="email">
+                <Form.Label>
+                  Email<span style={{ color: "red" }}>*</span>
+                </Form.Label>
+                <Form.Control
+                  type="email"
+                  required
+                  autoFocus
+                  value={formValues.email}
+                  onChange={handleInputChange}
+                  isInvalid={errors.email}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your email.
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="enquireFor">
+                <Form.Label>
+                  Enquire For<span style={{ color: "red" }}>*</span>
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  required
+                  autoFocus
+                  value={formValues.enquireFor}
+                  onChange={handleInputChange}
+                  isInvalid={errors.enquireFor}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your Enquiry.
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="message">
+                <Form.Label>
+                  Message<span style={{ color: "red" }}>*</span>
+                </Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  required
+                  value={formValues.message}
+                  onChange={handleInputChange}
+                  isInvalid={errors.message}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter your Message.
+                </Form.Control.Feedback>
+              </Form.Group>
+              <button className="inqury-btn" type="submit">
+                Submit
+              </button>
+            </Form>
+          )}
         </Modal.Body>
-        <Modal.Footer>
-          <button className="inqury-btn" onClick={handleSubmit}>
-            Submit
-          </button>
-        </Modal.Footer>
       </Modal>
     </>
   );

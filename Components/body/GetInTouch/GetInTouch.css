@@ -4,7 +4,7 @@
   background-size: cover;
 }
 
-.contact-box {
+.contact-boxC {
     width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -20,7 +20,7 @@
   z-index: 1000;
   }
 
-  .contact-heading {
+  .contact-headingC {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -28,40 +28,40 @@
  text-align: center;
   }
 
-  .contact-text {
+  .contact-textC {
     margin-bottom: 20px;
     color: #555;
     font-size: 1.2rem;
     text-align: center;
   }
 
-  .contact-form {
+  .contact-formC {
     display: flex;
     flex-direction: column;
   }
 
-  .form-row {
+  .form-rowC {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
   }
 
-  .form-field {
+  .form-fieldC {
     flex: 0 0 48%; /* Adjust the width as needed */
   }
 
-  .form-field.full-width {
+  .form-fieldC.full-width {
     flex: 0 0 100%; /* Full width for single fields */
   }
 
-  .form-field label {
+  .form-fieldC label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
   }
 
-  .form-field input,
-  .form-field textarea {
+  .form-fieldC input,
+  .form-fieldC textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -70,16 +70,16 @@
     transition: border-color 0.3s;
   }
 
-  .form-field input:hover,
-  .form-field textarea:hover {
+  .form-fieldC input:hover,
+  .form-fieldC textarea:hover {
     border-color: #000; /* Black border on hover */
   }
 
-  .form-field textarea {
+  .form-fieldC textarea {
     resize: vertical; /* Allow vertical resizing of textarea */
   }
 
-  .form-field button {
+  .form-fieldC button {
     width: 100%;
     padding: 8px 12px;
     background-color: #007bff;
@@ -98,17 +98,17 @@
     text-align: center;
   }
   
-  .form-field button {
+  .form-fieldC button {
     width: 30%; /* Adjust the width of the button */
     /* margin:  auto;  */
   }
-  .form-row {
+  .form-rowC {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
     text-align: center;
   }
-  .submit-form {
+  .submit-formC {
     font-family: "Inter";
     padding: 0.6em 2em;
     border: none;
@@ -121,7 +121,7 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px;
   }
-  .submit-form:before{
+  .submit-formC:before{
     content: "";
     background: linear-gradient(
       45deg,
@@ -160,17 +160,17 @@
     }
   }
   
-  .submit-form:active{
+  .submit-formC:active{
     color: #111;
   }
   
-  .submit-form:active::after{
+  .submit-formC:active::after{
     background: transparent;
   }
-  .submit-form:hover::before{
+  .submit-formC:hover::before{
     opacity: 1;
   }
-  .submit-form:after{
+  .submit-formC:after{
     z-index: -1;
     content: "";
     position: absolute;

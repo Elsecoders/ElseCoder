@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import "./Button.css";
 import { useForm } from "@formspree/react";
 
 const CustomButton = () => {
-  const [state, handleSubmit] = useForm("xqkrkqeb");
-
+  const [state, handleSubmitFormspree] = useForm("xqkrkqeb");
   const [show, setShow] = useState(false);
   const [formValues, setFormValues] = useState({
     name: "",
@@ -21,6 +20,24 @@ const CustomButton = () => {
     message: false,
   });
   const [submitted, setSubmitted] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setSubmitted(true);
+      setShowSuccessMessage(true);
+
+      // Reset form after successful submission
+      handleClose();
+
+      // Hide the success message after 2 seconds
+      const timer = setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [state.succeeded]);
 
   const handleClose = () => {
     setShow(false);
@@ -61,8 +78,7 @@ const CustomButton = () => {
 
     if (Object.values(newErrors).every((val) => !val)) {
       try {
-        await handleSubmit(e);
-        setSubmitted(true);
+        await handleSubmitFormspree(e);
       } catch (error) {
         console.error(error);
         // Handle form submission error here
@@ -83,13 +99,14 @@ const CustomButton = () => {
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Enquire For</Modal.Title>
+          {showSuccessMessage && <h1 style={{ color: "#EA5A1B" }}>Thanks for joining!</h1>}
         </Modal.Header>
         <Modal.Body>
           {submitted ? (
             <p>Thank you for your inquiry!</p>
           ) : (
             <Form onSubmit={handleFormSubmit}>
-              <Form.Group className="mb-3" controlId="name">
+                   <Form.Group className="mb-3" controlId="name">
                 <Form.Label>
                   Name<span style={{ color: "red" }}>*</span>
                 </Form.Label>
@@ -139,7 +156,7 @@ const CustomButton = () => {
               </Form.Group>
               <Form.Group className="mb-3" controlId="message">
                 <Form.Label>
-                  Example textarea<span style={{ color: "red" }}>*</span>
+                  Message<span style={{ color: "red" }}>*</span>
                 </Form.Label>
                 <Form.Control
                   as="textarea"
@@ -153,16 +170,12 @@ const CustomButton = () => {
                   Please enter your Message.
                 </Form.Control.Feedback>
               </Form.Group>
+              <button className="inqury-btn" type="submit">
+                Submit
+              </button>
             </Form>
           )}
         </Modal.Body>
-        <Modal.Footer>
-          {!submitted && (
-            <button className="inqury-btn" type="submit">
-              Submit
-            </button>
-          )}
-        </Modal.Footer>
       </Modal>
     </>
   );

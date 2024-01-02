@@ -18,9 +18,7 @@ const Navs = () => {
                 alt="ElseCoder"
                 className="d-inline-block align-top logo"
               />
-              {/* <div className='slide'>
-            <p>WHERE ALOGORITHMS MEET IMAGINATION </p>
-          </div> */}
+              
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

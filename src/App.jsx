@@ -40,6 +40,7 @@ const App = () => {
         <Routes>
           <Route path="*" element={<Navigate to="/home" />} />
           <Route path="/home" element={<MainBody />} />
+
           <Route path="/aboutus" element={<Aboutus />} />
           
             <Route path="/services" element={<Services />} />

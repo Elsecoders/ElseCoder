@@ -10,44 +10,44 @@ import GetInTouch from "../../../../Components/body/GetInTouch/GetInTouch";
 const ShopifyStoreSetup = () => {
   const datacards = [
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Shopify/ShopifyStoreCreation.jpg",
       title: "Tailored Store Creation",
       text: "We understand that no two businesses are the same. That's why our expert team crafts a unique, custom Shopify store that perfectly aligns with your brand and vision.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/ShopifyTheme.png",
       title: "Stunning Designs",
       text: "Our design wizards ensure that your store is a visual masterpiece, enticing customers with an irresistible, user-friendly interface.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Shopify/HassleFreeSetup.png",
       title: "Hassle-Free Setup",
       text: "Leave the technicalities to us. We'll handle the setup, configurations, and integration of payment gateways, ensuring a smooth and secure transaction process.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifySEO/SEO.jpg",
       title: "SEO Optimization",
       text: "Your success starts with visibility. Our SEO specialists will optimize your store to rank higher in search engines, boosting your online presence.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Shopify/MobileRepsonsivness.png",
       title: "Mobile Responsiveness",
       text: "In today's mobile-driven world, we make sure your store looks and works flawlessly on all devices, keeping your customers engaged wherever they are.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Shopify/ProductUpload.png",
       title: "Product Upload",
       text: "Save time and effort. Our team can upload your products, complete with descriptions, images, and pricing, allowing you to focus on what you do best.",
     },
   ];
   return (
-    <>
+    
 
-      <div>
+      <>
         <Navs />
         <div className="shopify-content-StoreSetup-main mt-4">
           <div className="StoreSetup-img">
-            <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="" />
+            <img src="public/Images/SolutionImplementation/Shopify/ShopifyStoreSetup.jpg" alt="" />
           </div>
           <div className="StoreSetup-content">
             <h1 class="StoreSetup-custom-heading">

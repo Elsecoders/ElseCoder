@@ -10,27 +10,27 @@ import GetInTouch from "../../../../Components/body/GetInTouch/GetInTouch";
 const ShopifyThemeCustomization = () => {
   const datacards = [
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/Tailored Design.png",
       title: "Tailored Design",
       text: "We'll craft a custom look and feel for your Shopify store, ensuring it aligns perfectly with your brand identity and values",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/MobileOptimization.png",
       title: "Mobile-Optimized",
       text: "With the majority of shoppers browsing on mobile devices, we'll make sure your site is responsive and looks exceptional on all screens.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SoftwareDevelopment/UIUXDesign/UIUX.jpg",
       title: "Enhanced User Experience",
       text: "We optimize navigation, page load times, and user interfaces to keep your customers engaged and satisfied.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/ConversionBoosting.png",
       title: "Conversion-Boosting Features",
       text: "Implement the latest eCommerce best practices to increase sales, from intuitive product pages to a seamless checkout process.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifySEO/SEO.jpg",
       title: "SEO Optimization",
       text: "Improve your store's search engine visibility to attract more organic traffic and potential customers.",
     },

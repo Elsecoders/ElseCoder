@@ -10,27 +10,27 @@ import GetInTouch from "../../../../Components/body/GetInTouch/GetInTouch";
 const ShopifyContentSEO = () => {
   const datacards = [
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifySEO/EnhancedVisibility.png",
       title: "Enhanced Visibility",
       text: "Watch your website rise through the search engine ranks, so you're visible to your target audience when they're ready to make a purchase.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifySEO/IncreasedTraffic.png",
       title: "Increased Traffic",
       text: "More clicks mean more potential customers. Our SEO efforts will boost your website's traffic, resulting in higher conversion rates",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifySEO/BetterROI.png",
       title: "Better ROI",
       text: "With targeted, organic traffic flowing to your Shopify store, you'll enjoy a higher return on investment (ROI) as your sales and revenue soar.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifySEO/CustomizedStrategy.png",
       title: "Customized Strategies",
       text: "We understand that every Shopify store is unique, so we create a custom SEO strategy tailored to your specific business goals.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifySEO/TransparentReporting.png",
       title: "Transparent Reporting",
       text: "You'll receive regular reports on the progress of your SEO campaign, so you can see the tangible results of our efforts.",
     },

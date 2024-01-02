@@ -50,7 +50,7 @@ const Shopify = () => {
     <Navs />
     <div className="ShopifySlider mt-2">
       <div className="ShopifyImg">
-        <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+        <img src="public/Images/SolutionImplementation/Shopify/ShopifyStoreSetup.jpg" alt="Slider" />
       </div>
       <div className="Shopifycontent">
         <h1 style={{fontSize:"3.9rem"}}>

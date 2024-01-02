@@ -43,7 +43,7 @@ const ShopifyContentSEO = () => {
       <div className="shopify-content-seo-main mt-4">
 
       <div className="seo-img">
-          <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="" />
+          <img src="public/Images/SolutionImplementation/ShopifySEO/SEO.jpg" alt="" />
         </div> 
                <div className="seo-content">
         <h1 className="seo-custom-heading">

@@ -42,6 +42,7 @@ const ShopifyStoreSetup = () => {
   ];
   return (
     <>
+
       <div>
         <Navs />
         <div className="shopify-content-StoreSetup-main mt-4">
@@ -63,7 +64,7 @@ const ShopifyStoreSetup = () => {
         </div>
         <div class="my-4 text-center w-100 ">
           <h2 class="fw-bolder fs-1">What we Offer</h2>
-        </div>
+
 
         <div className="StoreSetup-cards">
           <Row

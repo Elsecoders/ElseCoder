@@ -45,7 +45,7 @@ const Aboutus = () => {
       <div className="about-container">
         <div className="aboutus-page mt-2">
           <div className="about-img">
-            <img src="/Images/aboutUs/aboutUs-page.jpg" alt="Slider" />
+            <img src="public/Images/aboutUs/AboutUs.jpg" alt="Slider" />
           </div>
           <div className="about-content">
             <h1 style={{fontWeight:"800"}} className="about-content-head">

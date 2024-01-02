@@ -10,7 +10,7 @@ const UiUxDesign = () => {
       <Navs />
       <div className="UiUxDesignSlider mt-2">
         <div className="UiUxDesignImg">
-          <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+          <img src="public/Images/SoftwareDevelopment/UIUXDesign/UIUX.jpg" alt="Slider" />
         </div>
         <div className="UiUxDesigncontent">
           <h1 style={{fontSize:"3.9rem"}}>

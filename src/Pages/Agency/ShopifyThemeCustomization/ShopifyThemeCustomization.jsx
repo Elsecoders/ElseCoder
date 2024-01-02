@@ -43,7 +43,7 @@ const ShopifyThemeCustomization = () => {
       <div className="shopify-content-theme-main mt-4">
 
 <div className="shopify-theme-img">
-    <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="" />
+    <img src="public/Images/SolutionImplementation/ShopifyTheme/ShopifyTheme.png" alt="" />
   </div> 
          <div className="shopify-theme-content">
   <h1 class="shopify-theme-custom-heading">

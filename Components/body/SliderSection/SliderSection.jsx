@@ -6,7 +6,7 @@ const SliderSection = () => {
     <>
       <div className="containerSlider mt-2">
         <div className="img2">
-          <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+          <img src="/public/Images/HomeSliderImg/Homepage.jpg" alt="Slider" />
         </div>
         <div className="content">
           <h1 style={{fontWeight:"800", fontSize:"3.2rem"}}>

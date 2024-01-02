@@ -46,15 +46,15 @@ const ShopifyContentSEO = () => {
           <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="" />
         </div> 
                <div className="seo-content">
-        <h1 class="seo-custom-heading">
+        <h1 className="seo-custom-heading">
         Expert 
-        <span class="seo-color-theme"> Shopify SEO </span> Services </h1>
+        <span className="seo-color-theme"> Shopify SEO </span> Services </h1>
         <p className='shopify-seo-para'>Unlock the full potential of your e-commerce empire with our tailored, results-driven Shopify SEO services. We specialize in optimizing your online store for search engines, ensuring that your products and brand stand out in a crowded digital marketplace.</p>
         </div>
        
       </div>
-      <div class="my-4 text-center w-100 ">
-        <h2 class="fw-bolder fs-1">What you can expect from our Shopify SEO services</h2></div>
+      <div className="my-4 text-center w-100 ">
+        <h2 className="fw-bolder fs-1">What you can expect from our Shopify SEO services</h2></div>
 
         <div className="seo-cards">
         <Row xs={1} md={3} className="g-4" style={{margin :"40px 60px 0px 60px" }}>

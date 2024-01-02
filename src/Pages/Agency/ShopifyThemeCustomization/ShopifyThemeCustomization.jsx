@@ -46,15 +46,15 @@ const ShopifyThemeCustomization = () => {
     <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="" />
   </div> 
          <div className="shopify-theme-content">
-  <h1 class="shopify-theme-custom-heading">
+  <h1 className="shopify-theme-custom-heading">
   Expert 
-  <span class="shopify-theme-color-theme"> Shopify </span> Theme Customization</h1>
+  <span className="shopify-theme-color-theme"> Shopify </span> Theme Customization</h1>
   <p className='shopify-theme-para'>Our team of skilled designers and developers is here to transform your Shopify store into a visually stunning and user-friendly masterpiece.</p>
   </div>
  
 </div>
-<div class="my-4 text-center w-100 ">
-  <h2 class="fw-bolder fs-1">What We Offer</h2></div>
+<div className="my-4 text-center w-100 ">
+  <h2 className="fw-bolder fs-1">What We Offer</h2></div>
 
   <div className="shopify-theme-cards">
   <Row xs={1} md={3} className="g-4" style={{margin :"40px 60px 0px 60px" }}>

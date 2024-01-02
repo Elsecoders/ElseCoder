@@ -11,8 +11,8 @@ const CustomReactCMS = () => {
   const cardsData = [
     { 
       
-      title: "Content Management",
-      text: "Our Custom React CMS Service offers precision control. Seamlessly create, edit, and organize content with tailored solutions that harness the power of React.",
+      title: "Content Administration",
+      text: "Experience precision control with our Custom React CMS Service. Effortlessly generate, modify, and organize content using tailored solutions that tap into the dynamic capabilities of React.",
       imageSrc: "/public/Images/2.png",
     },
     {
@@ -42,7 +42,7 @@ const CustomReactCMS = () => {
       <div className="wordpresscontent">
         <h1 style={{fontSize:"3.9rem"}}>
           <span style={{ color: "black" }}></span>
-          <span style={{ color: "#2CA3CC" }}>{`Tailored React`}</span>
+          <span style={{ color: "#000000" }}>{`Tailored React`}</span>
           <span style={{ color: "#EA5A1B" }}> {`CMS Solutions`}</span>
           <span style={{ color: "black" }}></span>
         </h1>

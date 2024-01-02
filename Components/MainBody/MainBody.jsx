@@ -9,6 +9,7 @@ import ServicesWeOffer from '../body/ServicesWeOffer/ServicesWeOffer';
 import InformationalBolg from '../body/InformationalBlog/InformationalBolg';
  import GetInTouch from '../body/GetInTouch/GetInTouch';
 import Technologies from '../body/Technologies/Technologies';
+import Parallax from '../body/Parallax/Parallax';
 
 
 const MainBody = () => {
@@ -17,10 +18,13 @@ const MainBody = () => {
    <Navs/>
    <SliderSection/>
    <Introduction/>
+   <Parallax/>
    <Agency/>
+   <Technologies/>
    <MiddleContent/>
    <ServicesWeOffer/>
-   <Technologies/>
+   
+   
    <InformationalBolg/>
    <GetInTouch/>
    <Footer/>

@@ -100,6 +100,7 @@ const ShopifyStoreSetup = () => {
       <GetInTouch />
 
       <Footer />
+      </div>
     </>
   );
 };

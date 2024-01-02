@@ -1,0 +1,37 @@
+.parallax-container {
+    position: relative;
+     /* Adjust the height as needed */
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .parallax-background {
+    background-image: url('/public/Images/69.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    
+    z-index: -1;
+    -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  }
+  
+  .parallax-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Adjust the height as needed */
+  }
+  
+  .parallax-text {
+    font-family: 'Inter';
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000; /* Change the text color as needed */
+    text-align: center;
+  }
+  

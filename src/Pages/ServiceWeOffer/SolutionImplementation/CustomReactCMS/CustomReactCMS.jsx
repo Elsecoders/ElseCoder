@@ -37,7 +37,7 @@ const CustomReactCMS = () => {
     <Navs />
     <div className="wordpressSlider mt-2">
       <div className="wordpressImg">
-        <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+        <img src="public/Images/SolutionImplementation/CMS/CMS.jpg" alt="Slider" />
       </div>
       <div className="wordpresscontent">
         <h1 style={{fontSize:"3.9rem"}}>

@@ -18,7 +18,7 @@ const Services = () => {
       <div className="servicePage mt-4">
         <div className="Services">
           <div className="ServiceImg">
-            <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+            <img src="public/Images/Services/Handshake.jpg" alt="Slider" />
           </div>
           <div className="Service-content">
             <h1 style={{ color: "black" }}>We <span style={{color: "rgb(234, 90, 27)"}}>Engineer</span> Software Solutions</h1>

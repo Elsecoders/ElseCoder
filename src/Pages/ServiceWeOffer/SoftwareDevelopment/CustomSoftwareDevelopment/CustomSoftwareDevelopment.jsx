@@ -27,7 +27,7 @@ const CustomSoftwareDevelopment = () => {
     <Navs/>
     <div className="CustomSoftwareDevelopmentSlider mt-2">
         <div className="CustomSoftwareDevelopmentImg">
-          <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+          <img src="public/Images/SoftwareDevelopment/CustomSoftwareDevelopment/CustomSoftwareDevelopment.jpg" alt="Slider" />
         </div>
         <div className="CustomSoftwareDevelopmentcontent">
           <h1 style={{fontSize:"3.9rem"}}>

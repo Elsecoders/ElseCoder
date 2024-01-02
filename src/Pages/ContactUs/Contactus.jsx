@@ -10,7 +10,7 @@ const Contactus = () => {
       <Navs />
       <div className="containercontactUs mt-2">
         <div className="img2">
-          <img src="/Images/Contact-us/contactUs-img.jpg" alt="" />
+          <img src="public/Images/Contact-us/ContactUs.jpg" alt="" />
         </div>
         <div className="Contactus-content">
           <p style={{fontSize: "18px"}}>

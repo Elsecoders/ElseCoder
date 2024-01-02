@@ -38,7 +38,7 @@ const MobileApplication = () => {
       <Navs />
       <div className="MobileApplicationSlider mt-2">
         <div className="MobileApplicationImg">
-          <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+          <img src="public/Images/SoftwareDevelopment/MobileApplication/MobileApplication.jpg" alt="Slider" />
         </div>
         <div className="MobileApplicationcontent">
           <h1 style={{fontSize:'3.9rem'}}>
@@ -72,7 +72,7 @@ const MobileApplication = () => {
           </p>
         </div>
         <div className="MobileApplication-Img">
-          <Image src="/public/Images/2.png" style={{height:"400px", }}></Image>
+          <Image src="public/Images/SoftwareDevelopment/MobileApplication/MobileApplication2.jpg" style={{height:"500px", }}></Image>
         </div>
       </div>
       {/* <div className="MobileApplicationExplore mt-5" style={{backgroundColor:"rgb(248, 248, 248)", height:"300px"}}>

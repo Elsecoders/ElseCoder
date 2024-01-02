@@ -8,6 +8,34 @@ import Footer from "../../../../Components/footer/Footer";
 import GetInTouch from "../../../../Components/body/GetInTouch/GetInTouch";
 
 const ShopifyThemeCustomization = () => {
+  const datacards = [
+    {
+      imageSrc: "/public/Images/2.png",
+      title: "Tailored Design",
+      text: "We'll craft a custom look and feel for your Shopify store, ensuring it aligns perfectly with your brand identity and values",
+    },
+    {
+      imageSrc: "/public/Images/2.png",
+      title: "Mobile-Optimized",
+      text: "With the majority of shoppers browsing on mobile devices, we'll make sure your site is responsive and looks exceptional on all screens.",
+    },
+    {
+      imageSrc: "/public/Images/2.png",
+      title: "Enhanced User Experience",
+      text: "We optimize navigation, page load times, and user interfaces to keep your customers engaged and satisfied.",
+    },
+    {
+      imageSrc: "/public/Images/2.png",
+      title: "Conversion-Boosting Features",
+      text: "Implement the latest eCommerce best practices to increase sales, from intuitive product pages to a seamless checkout process.",
+    },
+    {
+      imageSrc: "/public/Images/2.png",
+      title: "SEO Optimization",
+      text: "Improve your store's search engine visibility to attract more organic traffic and potential customers.",
+    },
+   
+  ];
   return (
     <>    
     <div>
@@ -30,16 +58,14 @@ const ShopifyThemeCustomization = () => {
 
   <div className="shopify-theme-cards">
   <Row xs={1} md={3} className="g-4" style={{margin :"40px 60px 0px 60px" }}>
-{Array.from({ length: 5 }).map((_, idx) => (
+{datacards.map((card, idx) => (
   <Col key={idx}>
     <Card style={{backgroundColor:"#eeeeee"}}>
-      <Card.Img style={{width: "100px" , height:"100px" , marginBottom:"-20px"}} variant="top" src="/public/Images/2.png" />
+      <Card.Img style={{width: "100px" , height:"100px" , marginBottom:"-20px"}} variant="top" src={card.imageSrc} />
       <Card.Body >
-        <Card.Title style={{color:'black' , fontWeight:"700"}}>Card title</Card.Title>
+        <Card.Title style={{color:'black' , fontWeight:"700"}}> {card.title}</Card.Title>
         <Card.Text style={{color:"#777"}}>
-          This is a longer card with supporting text below as a natural
-          lead-in to additional content. This content is a little bit
-          longer.
+        {card.text}
         </Card.Text>
       </Card.Body>
     </Card>

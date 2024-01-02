@@ -14,27 +14,27 @@ const Worpress = () => {
       
       title: "Wordpress Setup",
       text: "From domain registration and hosting configuration to theme installation and essential plugin setup, our experts guide you through the process, enabling you to focus on crafting captivating content and engaging experiences for your visitors.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressSetup.jpg",
     },
     {
       title: "Theme Customization",
       text: "Tailoring your website to reflect your unique vision and brand identity is effortless with our expert assistance. We go beyond the basics, personalizing every aspect of your chosen WordPress theme - from layout and color schemes to fonts and interactive elements.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressThemeSetup.png",
     },
     {
       title: "Content Migration",
       text: "Tailoring your website to reflect your unique vision and brand identity is effortless with our expert assistance. We go beyond the basics, personalizing every aspect of your chosen WordPress theme - from layout and color schemes to fonts and interactive elements.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/ContentMigration.png",
     },
     {
       title: "Plugin Integration",
       text: "Tailoring your website to reflect your unique vision and brand identity is effortless with our expert assistance. We go beyond the basics, personalizing every aspect of your chosen WordPress theme - from layout and color schemes to fonts and interactive elements.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/PluginIntegration.png",
     },
     {
       title: "Maintenance & Support",
       text: "Keeping up with your WordPress maintenance checklist might be hassle but its necessary. If youre running a business on a WordPress website then its probably time to let experts take care of maintenance and other menial tasks while you focus on your business.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/MaintenanceSupport.jpg",
     },
   ];
 
@@ -43,7 +43,7 @@ const Worpress = () => {
       <Navs />
       <div className="wordpressSlider mt-2">
         <div className="wordpressImg">
-          <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+          <img src="public/Images/SolutionImplementation/Wordpress/wordpress.png" alt="Slider" />
         </div>
         <div className="wordpresscontent">
           <h1 style={{fontSize:"3.9rem"}}>

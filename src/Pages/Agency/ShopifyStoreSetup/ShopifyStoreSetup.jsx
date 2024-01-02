@@ -15,7 +15,7 @@ const ShopifyStoreSetup = () => {
       <div className="shopify-content-StoreSetup-main mt-4">
 
       <div className="StoreSetup-img">
-          <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="" />
+          <img src="public/Images/SolutionImplementation/Shopify/ShopifyStoreSetup.jpg" alt="" />
         </div> 
                <div className="StoreSetup-content">
         <h1 class="StoreSetup-custom-heading">

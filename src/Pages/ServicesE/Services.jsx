@@ -20,17 +20,15 @@ const Services = () => {
           </div>
           <div className="Service-content">
             <h1 style={{ color: "black" }}>
-              We <span style={{ color: "rgb(234, 90, 27)" }}>Engineer</span>{" "}
+              Crafting{" "}
+              <span style={{ color: "rgb(234, 90, 27)" }}>Cutting-Edge</span>{" "}
               Software Solutions
             </h1>
-            <p>
-              We help you envision technology that powers the future of your
-              business
-            </p>
+            <p>Envisioning the Future of Your Business Through Technology</p>
           </div>
         </div>
         <div className="whatWedo">
-          <h1 style={{ color: "black", textAlign: "center" }}>What We Do</h1>
+          <h1 style={{ color: "black", textAlign: "center" }}>Our Expertise</h1>
           <div className="solution mt-5">
             <ul
               className="sol-link"
@@ -121,9 +119,10 @@ const Services = () => {
               </span>
             </h1>
             <p style={{ fontSize: "20px" }}>
-              As a trusted partner of world's leading CRM solutions, we can help
-              you customize and implement business solutions 3x faster and
-              smarter.
+              Seamlessly bring your business vision to life with our solution
+              implementation services. As trusted partners with the world's
+              leading CRM solutions, we excel in customizing and implementing
+              business solutions three times faster and smarter.
             </p>
           </div>
 
@@ -204,8 +203,10 @@ const Services = () => {
               </span>
             </h1>
             <p style={{ fontSize: "20px" }}>
-              Named among top 1% global companies by Clutch, we have the trust
-              of 500+ companies when it comes to bespoke software solutions.
+              Recognized among the top 1% of global companies by Clutch, we
+              proudly hold the trust of over 500 companies for delivering
+              bespoke software solutions. Our expertise spans UI/UX design,
+              custom software development, and mobile development.
             </p>
           </div>
 
@@ -287,9 +288,11 @@ const Services = () => {
               </span>
             </h1>
             <p style={{ fontSize: "20px" }}>
-              Our SEO solutions build a website's relevance and trust with
-              search engines. Every task performed has a specific purpose that
-              improves your website's ranking. Some of these tasks include:
+              Elevate your online presence with our SEO solutions designed to
+              enhance your website's relevance and trust with search engines.
+              Our strategic approach includes tasks such as keyword research,
+              content creation, onsite optimization, and backlink building, all
+              aimed at improving your website's ranking.
             </p>
           </div>
 
@@ -378,9 +381,14 @@ const Services = () => {
               </span>
             </h1>
             <p style={{ fontSize: "20px" }}>
-              From content creation to community management, we will help you
-              establish a strong social media presence, build brand awareness,
-              and drive more traffic to your website.
+              From content creation to community management, our social media
+              management services are designed to establish a robust online
+              presence, enhance brand awareness, and drive increased traffic to
+              your website. We are your partners in building a strong social
+              media foundation for your business. Empower your business with our
+              comprehensive range of services, ensuring that your technology
+              landscape not only meets current needs but also paves the way for
+              future growth.
             </p>
           </div>
 

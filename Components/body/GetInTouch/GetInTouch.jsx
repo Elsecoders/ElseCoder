@@ -46,12 +46,16 @@ const GetInTouch = () => {
       <div className="GiT-div">
         <div className="contact-boxC">
           <div className="contact-headingC">Get in touch</div>
-          {showSuccessMessage && <h1 style={{color:"#EA5A1B"}}>Thanks for joining!</h1>}
+          {showSuccessMessage && (
+            <h1 style={{ color: "#EA5A1B" }}>Thanks for joining!</h1>
+          )}
           <div className="contact-textC">
             <p>
-              Our team of regional experts is here to support you with your
-              global expansion plans. If you have any questions, just get in
-              touch, and we will be delighted to help.
+              Got any questions? Reach out to our team who is ready to support
+              your global expansion plans. If you have any questions or need
+              assistance, reach out to us, and we'll be delighted to help.
+              Elevate your online presence with our comprehensive WordPress
+              development services.
             </p>
           </div>
           <form

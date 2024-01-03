@@ -17,18 +17,18 @@ const CustomReactCMS = () => {
 
     },
     {
-      title: "Template Creation",
+      title: "Template Design",
       text: "Design custom templates with the power of React, delivering visually stunning and engaging layouts. Elevate your content management to new heights, creating a unique digital experience that resonates with your brand.",
       imageSrc: "public/Images/SolutionImplementation/CMS/TemplateCreation.png",
     },
     {
-      title: "Page Management",
-      text: "Seamlessly create, organize, and update web pages using the strength of React. Enjoy intuitive controls and dynamic layouts that ensure your online presence remains impactful, responsive, and aligned with your unique vision.",
+      title: "Page Control",
+      text: "Utilize the robust features of React to seamlessly generate, organize, and refresh web pages. Revel in intuitive controls and dynamic layouts, ensuring your online footprint remains impactful, responsive, and in harmony with your unique vision.",
       imageSrc: "public/Images/SolutionImplementation/CMS/PageManagement.png",
     },
     {
-      title: "Custom Development",
-      text: "Leverage advanced customization for your web applications, achieving seamless functionality and exceptional user experiences. Elevate your digital presence with bespoke development that aligns precisely with your vision and goals.",
+      title: "Tailored Development",
+      text: "Opt for advanced customization in your web applications, achieving flawless functionality and delivering extraordinary user experiences. Elevate your digital presence with tailor-made development solutions that align precisely with your vision and aspirations.",
       imageSrc: "public/Images/SolutionImplementation/CMS/CustomDevelopment.png",
     },
   

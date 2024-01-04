@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ShopifyThemeCustomization.css';
 import Navs from '../../../../Components/Navbar/Navs';
 import Card from 'react-bootstrap/Card';
@@ -8,6 +8,9 @@ import Footer from "../../../../Components/footer/Footer";
 import GetInTouch from "../../../../Components/body/GetInTouch/GetInTouch";
 
 const ShopifyThemeCustomization = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   const datacards = [
     {
       imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/Tailored Design.png",

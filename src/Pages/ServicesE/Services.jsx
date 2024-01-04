@@ -7,8 +7,13 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CodeIcon from "@mui/icons-material/Code";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import Footer from "../../../Components/footer/Footer";
+import { useEffect } from "react";
+import Box from '@mui/material/Box';
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
   return (
     <>
       <Navs />
@@ -127,7 +132,7 @@ const Services = () => {
           </div>
 
           <div className="service-div-sol">
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/wordpress"
@@ -141,9 +146,9 @@ const Services = () => {
                 Word Press
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
 
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/customreactcms"
@@ -157,10 +162,10 @@ const Services = () => {
                 Custom React CMS
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
           </div>
           <div className="service-div-sol">
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/shopify"
@@ -174,7 +179,7 @@ const Services = () => {
                 Shopify
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
             {/* <box className="box-1">
                 <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <CodeIcon />
@@ -211,7 +216,7 @@ const Services = () => {
           </div>
 
           <div className="service-div-sol">
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/uiuxdesign"
@@ -225,9 +230,9 @@ const Services = () => {
                 UI/UX Design
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
 
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/customsoftwaredevelopment"
@@ -241,10 +246,10 @@ const Services = () => {
                 Custom Software Development
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
           </div>
           <div className="service-div-sol">
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/mobileapplication"
@@ -258,7 +263,7 @@ const Services = () => {
                 Mobile Development
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
             {/* <box className="box-1">
                 <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
                 <CodeIcon />
@@ -297,7 +302,7 @@ const Services = () => {
           </div>
 
           <div className="service-div-sol">
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/keywordresearch"
@@ -311,9 +316,9 @@ const Services = () => {
                 Keyword Research
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
 
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/contentcreation"
@@ -327,10 +332,10 @@ const Services = () => {
                 Content Creation
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
           </div>
           <div className="service-div-sol">
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/onsiteoptimization"
@@ -344,8 +349,8 @@ const Services = () => {
                 Onsite Optimization
                 <NorthEastIcon />
               </NavLink>
-            </box>
-            <box className="box-1">
+            </Box>
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/backlinkbuilding"
@@ -359,7 +364,7 @@ const Services = () => {
                 Backlink Building
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
           </div>
         </Element>
 
@@ -393,7 +398,7 @@ const Services = () => {
           </div>
 
           <div className="service-div-sol">
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/socialMediacontent"
@@ -407,9 +412,9 @@ const Services = () => {
                 Social Media Content
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
 
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/socialmediastrategies"
@@ -423,10 +428,10 @@ const Services = () => {
                 Social Media Strategy
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
           </div>
           <div className="service-div-sol">
-            <box className="box-1">
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/copywriting"
@@ -440,8 +445,8 @@ const Services = () => {
                 Copywriting
                 <NorthEastIcon />
               </NavLink>
-            </box>
-            <box className="box-1">
+            </Box>
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/graphicdesigning"
@@ -455,7 +460,7 @@ const Services = () => {
                 Graphic Designing
                 <NorthEastIcon />
               </NavLink>
-            </box>
+            </Box>
           </div>
         </Element>
       </div>

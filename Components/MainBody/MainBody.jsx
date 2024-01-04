@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navs from '../Navbar/Navs';
 import Footer from '../footer/Footer';
 import SliderSection from '../body/SliderSection/SliderSection';
@@ -13,6 +13,9 @@ import Parallax from '../body/Parallax/Parallax';
 
 
 const MainBody = () => {
+  useEffect(() => {
+    window.scrollTo(0, 1); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
    <>
    <Navs/>

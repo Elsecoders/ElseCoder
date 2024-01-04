@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Wordpress.css";
 import Navs from "../../../../../Components/Navbar/Navs";
 import Footer from "../../../../../Components/footer/Footer";
@@ -9,6 +9,9 @@ import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch";
 
  
 const Worpress = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   const cardsData = [
     { 
       

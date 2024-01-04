@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navs from '../../../Components/Navbar/Navs';
 import Footer from '../../../Components/footer/Footer';
 import GetInTouch from '../../../Components/body/GetInTouch/GetInTouch'
 import "./contactus.css";
 
 const Contactus = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <>
       <Navs />
@@ -13,7 +16,7 @@ const Contactus = () => {
           <img src="public/Images/Contact-us/ContactUs.jpg" alt="" />
         </div>
         <div className="Contactus-content">
-          <p style={{fontSize: "18px"}}>
+          <p style={{fontSize: "18px"}}></p>
             Behind the powerful{' '}
             <h1 style={{fontWeight:"800"}}>
               <span style={{ color: "black" }}>{`<`}</span>
@@ -21,7 +24,7 @@ const Contactus = () => {
               <span style={{ color: "#EA5A1B" }}>{`Coder`}</span>
               <span style={{ color: "black" }}>{`/>`}</span>
             </h1>{' '}
-            platform is a team of experts ready to help
+        <p style={{fontSize: "18px"}}>    platform is a team of experts ready to help
           </p>
           <h1 />
         </div>

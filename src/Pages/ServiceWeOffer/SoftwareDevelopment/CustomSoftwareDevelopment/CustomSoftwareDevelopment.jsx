@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CustomSoftwareDevelopment.css';
 import Navs from '../../../../../Components/Navbar/Navs';
 import Footer from '../../../../../Components/footer/Footer';
@@ -7,6 +7,9 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 const CustomSoftwareDevelopment = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   const boxData=[
     { 
       

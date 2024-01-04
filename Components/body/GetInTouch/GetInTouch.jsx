@@ -140,7 +140,7 @@ const GetInTouch = () => {
             </div>
             <div className="form-rowC">
               <div className="form-fieldC full-width">
-                <label htmtFor="message">
+                <label htmlFor="message">
                   How can we help and what are your challenges?
                   <span style={{ color: "red" }}> *</span>
                 </label>

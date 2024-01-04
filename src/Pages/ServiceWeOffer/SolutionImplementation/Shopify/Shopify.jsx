@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Shopify.css";
 import Navs from "../../../../../Components/Navbar/Navs";
 import Footer from "../../../../../Components/footer/Footer";
@@ -7,6 +7,9 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch";
 const Shopify = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   const cardsData = [
     {
       title: "Shopify Store Setup",

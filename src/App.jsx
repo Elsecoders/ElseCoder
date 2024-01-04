@@ -1,12 +1,6 @@
 // import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
- 
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Aboutus from "./Pages/AboutUs/Aboutus";
 import MainBody from "../Components/MainBody/MainBody";
 import Services from "./Pages/ServicesE/Services";
@@ -42,10 +36,8 @@ const App = () => {
           <Route path="/home" element={<MainBody />} />
 
           <Route path="/aboutus" element={<Aboutus />} />
-          
-            <Route path="/services" element={<Services />} />
-           
-         
+
+          <Route path="/services" element={<Services />} />
 
           <Route path="/contactus" element={<Contactus />} />
           <Route path="/shopifycontentseo" element={<ShopifyContentSEO />} />

@@ -32,6 +32,9 @@ import ContentCreation from "./Pages/ServiceWeOffer/SEO/ContentCreation/ContentC
 import KeywordResearch from "./Pages/ServiceWeOffer/SEO/KeywordResearch/KeywordResearch";
 import OnsiteOptimization from "./Pages/ServiceWeOffer/SEO/OnsiteOptimization/Onsiteoptimization";
 import CustomReactCMS from "./Pages/ServiceWeOffer/SolutionImplementation/CustomReactCMS/CustomReactCMS";
+import ApplicaionDevelopment from "./Pages/AboutUs/AboutUsServices/ApplicationDevelopment/ApplicaionDevelopment";
+import SeoDevelopment from "./Pages/AboutUs/AboutUsServices/SEO Development/SeoDevelopment";
+import SocialMediaDevelopment from "./Pages/AboutUs/SocialMediaDevelopment/SocialMediaDevelopment";
 
 const App = () => {
   return (
@@ -79,6 +82,9 @@ const App = () => {
           <Route path="/onsiteoptimization" element={<OnsiteOptimization />} />
           <Route path="/customreactcms" element={<CustomReactCMS />} />
           <Route path="/copywriting" element={<Copywriting />} />
+          <Route path="/applicationdevelopment" element={<ApplicaionDevelopment/>}/>
+          <Route path="/seodevelopment" element={<SeoDevelopment/>}/>
+          <Route path="/socialmediadevelopment" element={<SocialMediaDevelopment/>}/>
         </Routes>
       </BrowserRouter>
     </>

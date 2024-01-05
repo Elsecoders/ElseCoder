@@ -94,14 +94,14 @@ const Services = () => {
              <div className="service-div-sol">
               <box className="box-1">
 
-                <NavLinkLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" }}>
+                <NavLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000" }} />
 
-                <NaLink className="box-link" to="#" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
+                <NavLink className="box-link" to="#" style={{ textDecoration: "none", color: "#000" , fontSize: "12px" }}>
 
                 <IntegrationInstructionsIcon />
                 Word Press
                 <NorthEastIcon />
-                </NaLink>
+                </NavLink>
               </box>
               
               <box className="box-1" >

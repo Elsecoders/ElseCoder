@@ -1,86 +1,184 @@
-import React, { useState } from 'react';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+import "./Button.css";
+import TextField from "@mui/material/TextField";
+// import { useForm } from "@formspree/react";
 
-import Modal from 'react-bootstrap/Modal';
-import Form from 'react-bootstrap/Form';
-import './Button.css';
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+  "& > :not(style)": { m: 1, width: "25ch" },
+};
+
 const CustomButton = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [open, setOpen] = React.useState(false);
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [enquiryFor, setEnquiryFor] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [errors, setErrors] = React.useState({
+    name: false,
+    email: false,
+    enquiryFor: false,
+    message: false,
+  });
 
+  const handleOpen = () => setOpen(true);
   const handleClose = () => {
-    setShowModal(false);
-    setErrorMessage('');
+    setOpen(false);
+    // Reset the form and errors when closing the modal
+    setName("");
+    setEmail("");
+    setEnquiryFor("");
+    setMessage("");
+    setErrors({
+      name: false,
+      email: false,
+      enquiryFor: false,
+      message: false,
+    });
   };
-
-  const handleShow = () => setShowModal(true);
-
   const handleSubmit = () => {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const enquireFor = document.getElementById('enquireFor').value;
-    const message = document.getElementById('message').value;
+    // Validate form fields
+    const newErrors = {
+      name: !name,
+      email: !email,
+      enquiryFor: !enquiryFor,
+      message: !message,
+      
+    };
 
-    if (!name || !email || !enquireFor || !message) {
-      setErrorMessage('All fields are mandatory');
-      return;
+    if (Object.values(newErrors).some((error) => error)) {
+      // If any field is empty, set errors
+      setErrors(newErrors);
+    } else {
+      // Handle form submission logic here
+      // For example, send data to an API or perform other actions
+      // Reset form and close modal
+      handleClose();
+      handleSuccessOpen();
     }
-
-    // Perform your form submission logic here
-
-    handleClose(); // Close the modal after form submission
   };
+
+  const [successOpen, setSuccessOpen] = React.useState(false);
+
+  const handleSuccessOpen = () => {
+    setSuccessOpen(true);
+    setTimeout(() => {
+      setSuccessOpen(false);
+    }, 4000); // Close the success modal after 4 seconds
+  };
+
+  const handleCloseSuccessModal = () => {
+    setSuccessOpen(false);
+  };
+
+
 
   return (
     <>
       <div>
-        <button className="inqury-btn" onClick={handleShow}>
+        <button className="inqury-btn" onClick={handleOpen}>
           GET INQUIRY
         </button>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style} component="form" noValidate autoComplete="off">
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              Get The Enquiry
+            </Typography>
+            <Typography>
+              <TextField
+                fullWidth
+                id="standard-basic"
+                label="Name"
+                required
+                variant="standard"
+                value={name}
+                error={errors.name}
+                helperText={errors.name ? "Please fill this field" : ""}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </Typography>
+            <Typography>
+              <TextField
+                fullWidth
+                id="standard-basic"
+                label="Email"
+                required
+                variant="standard"
+                value={email}
+                error={errors.email}
+                helperText={errors.email ? "Please fill this field" : ""}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Typography>
+            <Typography>
+              <TextField
+                fullWidth
+                id="standard-basic"
+                label="EnquiryFor"
+                required
+                variant="standard"
+                value={enquiryFor}
+                error={errors.enquiryFor}
+                helperText={errors.enquiryFor ? "Please fill this field" : ""}
+                onChange={(e) => setEnquiryFor(e.target.value)}
+              />
+            </Typography>
+            <Typography>
+              <TextField
+                fullWidth
+                multiline
+                rows={4}
+                id="outlined-multiline-static"
+                label="Message"
+                required
+                variant="standard"
+                value={message}
+                error={errors.message}
+                helperText={errors.message ? "Please fill this field" : ""}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </Typography>
+            <Typography>
+              <Button
+                className="inqury-btn"
+                sx={{ color: "white" }}
+                onClick={handleSubmit}
+              >
+                Submit
+              </Button>
+            </Typography>
+          </Box>
+        </Modal>
+        <Modal
+          open={successOpen}
+          onClose={handleCloseSuccessModal}
+          aria-labelledby="success-modal-title"
+          aria-describedby="success-modal-description"
+        >
+          <Box sx={style} component="form" noValidate autoComplete="off">
+            <Typography id="success-modal-title" variant="h6" component="h2">
+              Thanks for the enquiry
+            </Typography>
+          </Box>
+        </Modal>
       </div>
-
-      <Modal className='modal' show={showModal} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title style={{color:"black", fontFamily:"Inter"}}>Get In Touch</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form className='form-box'>
-            <Form.Group className="mb-3" controlId="name">
-              <Form.Label>
-                Name <span style={{ color: 'red' }}>*</span>
-                <small style={{ color: 'red', marginLeft: '5px' }}> </small>
-              </Form.Label>
-              <Form.Control type="text" autoFocus />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="email">
-              <Form.Label>
-                Email <span style={{ color: 'red' }}>*</span>
-                <small style={{ color: 'red', marginLeft: '5px' }}> </small>
-              </Form.Label>
-              <Form.Control type="email" autoFocus />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="enquireFor">
-              <Form.Label>
-                Enquire For <span style={{ color: 'red' }}>*</span>
-                <small style={{ color: 'red', marginLeft: '5px' }}></small>
-              </Form.Label>
-              <Form.Control type="text" autoFocus />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="message">
-              <Form.Label>
-                Message <span style={{ color: 'red' }}>*</span>
-                <small style={{ color: 'red', marginLeft: '5px' }}> </small>
-              </Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-            {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <button className="inqury-btn" onClick={handleSubmit}>
-            Submit
-          </button>
-        </Modal.Footer>
-      </Modal>
     </>
   );
 };

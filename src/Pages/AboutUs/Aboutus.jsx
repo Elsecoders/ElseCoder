@@ -9,6 +9,16 @@ import { NavLink } from "react-router-dom";
 
 const Aboutus = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const handleMouseEnter = () => {
+      carousel.pause();
+    };
+  
+    const handleMouseLeave = () => {
+      carousel.cycle();
+    };
+
     const initCarousel = () => {
       const carouselElement = document.getElementById(
         "carouselMultiItemExample"
@@ -32,11 +42,11 @@ const Aboutus = () => {
 
     // Destroy the carousel when the component unmounts
     return () => {
-      const carouselElement = document.getElementById(
-        "carouselMultiItemExample"
-      );
-      carouselElement.removeEventListener("mouseenter", () => {});
-      carouselElement.removeEventListener("mouseleave", () => {});
+      const carouselElement = document.getElementById("carouselMultiItemExample");
+      if (carouselElement) {
+        carouselElement.removeEventListener("mouseenter", handleMouseEnter);
+        carouselElement.removeEventListener("mouseleave", handleMouseLeave);
+      }
     };
   }, []); // Empty dependency array ensures the effect runs only once after initial render
   return (
@@ -45,10 +55,10 @@ const Aboutus = () => {
       <div className="about-container">
         <div className="aboutus-page mt-2">
           <div className="about-img">
-            <img src="/Images/aboutUs/aboutUs-page.jpg" alt="Slider" />
+            <img src="/Images/aboutUs/AboutUs.jpg" alt="Slider" />
           </div>
           <div className="about-content">
-            <h1 className="about-content-head">
+            <h1 style={{ fontWeight: "800" }} className="about-content-head">
               <span style={{ color: "black" }}>{`About `}</span>
               <span style={{ color: "black" }}>{`<`}</span>
               <span style={{ color: "#2CA3CC" }}>{`E!se`}</span>

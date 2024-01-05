@@ -38,15 +38,14 @@
   margin-left: 15px;
 }
 .socialmediastrategy-content-head {
-  font-size: 65px;
-  text-align: left;
-  color: #444;
+  font-size: 3.9rem;
+  color: black;
 }
 .socialmediastrategy-content-para {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: x-large;
   color: #777;
-  text-align: left;
+
 }
 .socialmediastrategy-countainer1 {
   display: flex;
@@ -68,6 +67,9 @@
   width: 50%; /* Adjust width as needed */
   margin-left: 85px;
   height: 10%;
+}
+.socialmediastrategy-detail{
+  color: black;
 }
 .socialmediastrategy-detail-img img {
   width: 50%;

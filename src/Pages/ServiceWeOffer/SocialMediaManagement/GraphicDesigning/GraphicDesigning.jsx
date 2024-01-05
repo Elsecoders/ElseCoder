@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./GraphicDesigning.css";
 import Navs from "../../../../../Components/Navbar/Navs";
 import Footer from "../../../../../Components/footer/Footer";
 import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch"
 const GraphicDesigning = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <>
       <Navs />
@@ -30,7 +33,7 @@ const GraphicDesigning = () => {
         </div>
         <div className="graphic-countainer1">
           <div className="graphic-detail-container">
-            <h2 className="graphic-detail">Crafting <span style={{ color: "#EA5A1B" }}> Stories </span> Through <span style={{ color: "#EA5A1B" }}> Visual </span><br/> Innovation</h2>
+            <h2 className="graphic-detail">Crafting <span style={{ color: "#EA5A1B" }}> Stories Through</span> Visual <br/> Innovation</h2>
             <p className="graphic-detail-para">
               Our graphic designing service is a creative hub where imagination
               and innovation blend seamlessly to bring your ideas to life. With

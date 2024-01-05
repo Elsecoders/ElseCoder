@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Navbar.css";
-import Button from "../body/Button/Button";
+//import Button from "../body/Button/Button";
 import { Link, NavLink } from "react-router-dom";
 //import Button from 'react-bootstrap/Button';
 const Navs = () => {
@@ -18,9 +18,7 @@ const Navs = () => {
                 alt="ElseCoder"
                 className="d-inline-block align-top logo"
               />
-              {/* <div className='slide'>
-            <p>WHERE ALOGORITHMS MEET IMAGINATION </p>
-          </div> */}
+              
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -39,9 +37,9 @@ const Navs = () => {
                 CONTACT US
               </Nav.Link>
             </Nav>
-            <Nav>
+            {/* <Nav>
               <Button />
-            </Nav>
+            </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

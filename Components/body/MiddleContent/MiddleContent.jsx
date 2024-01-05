@@ -12,7 +12,7 @@ const MiddleContent = () => {
             Harness the power of Shopify and make a name for your brand in the
             hyper-competitive eCommerce market.
           </h2>
-          {/* <Image style={{height:"350px", width:"350px" }} src="/public/Images/2.png"></Image> */}
+          <Image style={{height:"350px", width:"350px" }} src="/public/Images/2.png"></Image>
         </div>
         <div className="ContentWriting">
           <p>

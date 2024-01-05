@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CustomSoftwareDevelopment.css';
 import Navs from '../../../../../Components/Navbar/Navs';
 import Footer from '../../../../../Components/footer/Footer';
@@ -7,6 +7,9 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 const CustomSoftwareDevelopment = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   const boxData=[
     { 
       
@@ -27,29 +30,27 @@ const CustomSoftwareDevelopment = () => {
     <Navs/>
     <div className="CustomSoftwareDevelopmentSlider mt-2">
         <div className="CustomSoftwareDevelopmentImg">
-          <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+          <img src="public/Images/SoftwareDevelopment/CustomSoftwareDevelopment/CustomSoftwareDevelopment.jpg" alt="Slider" />
         </div>
         <div className="CustomSoftwareDevelopmentcontent">
-          <h1>
-            <span style={{ color: "black" }}>{`<`}</span>
-            <span style={{ color: "#2CA3CC" }}>{`Expert UI/UX`}</span>
-            <span style={{ color: "#EA5A1B" }}>{`Design Solutions`}</span>
-            <span style={{ color: "black" }}>{`/>`}</span>
+          <h1 style={{fontSize:"3.9rem"}}>
+            <span style={{ color: "black" }}></span>
+            <span style={{ color: "black" }}>{`Tailored`}</span>
+            <span style={{ color: "#EA5A1B" }}> {`Software Solutions`}</span>
+            <span style={{ color: "black" }}> for Your Needs</span>
           </h1>
-          <h3>
-            Unlock the full potential of your digital presence with our expert
-            UI/UX Design service.
+          <h3 style={{fontSize:"x-large"}}>
+          Our Custom Software Development service offers personalized solutions designed to precisely meet your unique business requirements.
           </h3>
           <h1 />
         </div>
       </div>
       <div className="ProductDescriptionCustomSoftwareDevelopment ">
         <div className="CustomSoftwareDevelopmentContent">
-          <h3 style={{ color: "#000" }}>
-            Comprehensive UI/UX Design Services for Crafting Exceptional Digital
-            Experiences that Captivate, Engage, and Convert
-          </h3>
-          <p>
+          <h2 style={{ color: "#000" , fontSize:"2rem", textAlign:"left" }}>
+          Your <span style={{ color: "#EA5A1B" }}> {`Custom Software Development`}</span> Partner
+          </h2>
+          <p style={{fontSize:"15px", textAlign:"left" }}>
             Our comprehensive UI/UX Design services are dedicated to the art of
             creating exceptional digital experiences that go beyond aesthetics.
             With a strategic blend of user-centered design principles and
@@ -75,13 +76,13 @@ const CustomSoftwareDevelopment = () => {
        </div>
        <div className='CustomSoftwareDevelopmentBox m-4'>
           <div className='CustomSoftwareDevelopmentBoxHeading'>
-            <h2>Innovative Solutions For Reliable Growth</h2>
+            <h2 style={{color:"Black" , fontSize:"2rem" , textAlign:"left"}}>Innovative Solutions For Reliable Growth</h2>
           </div>
           <div className='CustomSoftwareDevelopmentboximg'>
           <Row xs={1} md={2} className="">
       {boxData.map((card, idx) => (
         <Col key={idx}>
-          <Card style={{height:"270px", width:"320px"}}>
+          <Card style={{height:"270px", width:"320px" , backgroundColor: "#e0e0e0"}}>
             <Card.Img variant="top"  src={card.imageSrc} style={{height:"170px", width:"160px",marginTop:"-40px"}} />
             <Card.Body>
               <Card.Title style={{marginTop:"-40px", fontWeight:"800"}}>{card.title}</Card.Title>

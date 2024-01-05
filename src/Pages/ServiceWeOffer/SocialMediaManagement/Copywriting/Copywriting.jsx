@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Copywriting.css";
 import Navs from "../../../../../Components/Navbar/Navs";
 import Footer from "../../../../../Components/footer/Footer";
 import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch";
 const Copywriting = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <>
       <Navs />
@@ -31,9 +34,8 @@ const Copywriting = () => {
         <div className="copywriting-countainer1">
           <div className="copywriting-detail-container">
             <h2 className="copywriting-detail">
-              Crafting <span style={{ color: "#EA5A1B" }}> Stories </span>{" "}
-              Through <span style={{ color: "#EA5A1B" }}> Visual </span>
-              <br /> Innovation
+              Crafting <span style={{ color: "#EA5A1B" }}> Stories Through</span>{" "}
+               Visual <br /> Innovation
             </h2>
             <p className="copywriting-detail-para">
               Our graphic designing service is a creative hub where imagination

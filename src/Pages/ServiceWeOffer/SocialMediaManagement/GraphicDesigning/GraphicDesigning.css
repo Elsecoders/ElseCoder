@@ -38,15 +38,13 @@
   margin-left: 15px;
 }
 .graphic-content-head {
-  font-size: 65px;
-  text-align: left;
-  color: #444;
+  font-size: 3.9rem;
+  color: black
 }
 .graphic-content-para {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: x-large;
   color: #777;
-  text-align: left;
 }
 .graphic-countainer1 {
   display: flex;
@@ -68,6 +66,9 @@
   width: 50%; /* Adjust width as needed */
   margin-left: 85px;
   height: 10%;
+}
+.graphic-detail{
+  color: black;
 }
 .graphic-detail-img img {
   width: 50%;

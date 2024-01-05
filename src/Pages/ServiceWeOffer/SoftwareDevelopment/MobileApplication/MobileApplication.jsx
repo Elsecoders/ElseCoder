@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./MobileApplication.css";
 import Navs from "../../../../../Components/Navbar/Navs";
 import Footer from "../../../../../Components/footer/Footer";
@@ -7,47 +7,56 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 const MobileApplication = () => {
-  const boxData = [
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
+  const dataBox = [
     {
-      title: "Wordpress Setup",
-      text: "From domain registration and hosting configuration to theme installation and essential plugin setup, our experts guide you through the process, enabling you to focus on crafting captivating content and engaging experiences for your visitors.",
-      
+      imageSrc: "/public/Images/serviceweoffer/MobileApplication/hybridMobileApplogo.png",
+      title: "Hybrid Mobile App Development",
+      text: "Unlock the full potential of mobile technology with our native app development expertise.",
     },
     {
-      title: "Theme Customization",
-      text: "Tailoring your website to reflect your unique vision and brand identity is effortless with our expert assistance. We go beyond the basics, personalizing every aspect of your chosen WordPress theme - from layout and color schemes to fonts and interactive elements.",
-      bulletPoints: [
-        "Bullet point 1",
-        "Bullet point 2",
-        "Bullet point 3"
-      ]
+      imageSrc: "/public/Images/serviceweoffer/MobileApplication/nativeMobileApplogo.png",
+      title: "Hybrid Mobile App Development",
+      text: "Elevate your digital presence with our hybrid mobile app development, seamlessly blending.",
     },
   ];
-  const exploreData=[
+
+  const dataBbox2 =[
     {
-      title: "Theme Customization",
-      text: "Tailoring your website to reflect your unique vision and brand identity is effortless with our expert assistance. We go beyond the basics, personalizing every aspect of your chosen WordPress theme - from layout and color schemes to fonts and interactive elements.",
-    },
+      title:"Android App Development",
+      paragraph:"Utilizing cutting-edge technology to empower businesses in establishing their footprint across diverse Android devices and platforms.",
+      text:["• Android Mobile App Development ",
+      " • Android TV App Development ",
+      " • Android Tablet App Development ",
+      " • Android Wear App Development ",
+  ]},
     {
-      title: "Theme Customization",
-      text: "Tailoring your website to reflect your unique vision and brand identity is effortless with our expert assistance. We go beyond the basics, personalizing every aspect of your chosen WordPress theme - from layout and color schemes to fonts and interactive elements.",
-    },
+      title:"IOS App Development",
+      paragraph:"With our comprehensive expertise and leading-edge technologies, we offer everything required to create IOS apps that are feature-rich and scalable.",
+      text:[
+        "• iPhone App Development. ",
+        " • iPad App Development " ,
+        "• Apple Watch App Development ",
+        "• Apple TV App Development ",
+   ] }
   ]
   return (
     <>
       <Navs />
       <div className="MobileApplicationSlider mt-2">
         <div className="MobileApplicationImg">
-          <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+          <img src="public/Images/SoftwareDevelopment/MobileApplication/MobileApplication.jpg" alt="Slider" />
         </div>
         <div className="MobileApplicationcontent">
-          <h1>
-            <span style={{ color: "black" }}>{`<`}</span>
-            <span style={{ color: "#2CA3CC" }}>{`Transforming`}</span>
-            <span style={{ color: "#EA5A1B" }}>{`Ideas into Apps`}</span>
-            <span style={{ color: "black" }}>{`/>`}</span>
+          <h1 style={{ fontSize: "3.9rem" }}>
+            <span style={{ color: "black" }}></span>
+            <span style={{ color: "black" }}>{`Transforming`}</span>
+            <span style={{ color: "#EA5A1B" }}> {`Ideas `}</span>
+            <span style={{ color: "black" }}>into Apps</span>
           </h1>
-          <h3>
+          <h3 style={{ fontSize: "x-large" }}>
             Apps that Amaze, Experiences that Engage - Beyond Apps, We Deliver
             Experiences. Our agile, responsive, and scalable mobile app
             development accelerates your competitive edge.
@@ -57,10 +66,14 @@ const MobileApplication = () => {
       </div>
       <div className="ProductDescriptionMobileApplication ">
         <div className="MobileApplicationContent">
-          <h3 style={{ color: "#000" }}>
-            Turning Ideas into Functional Mobile Apps
-          </h3>
-          <p>
+          <h2 style={{ color: "#000", textAlign: "left", fontSize: "2rem" }}>
+            Turning Ideas into{" "}
+            <span style={{ color: "#EA5A1B" }}>
+              {" "}
+              {`Functional Mobile Apps`}
+            </span>
+          </h2>
+          <p style={{ textAlign: "left", fontSize: "15px" }}>
             Experience excellence in mobile app development with our
             cutting-edge services. We specialize in transforming ideas into
             fully functional, user-centric apps that drive engagement and
@@ -72,58 +85,68 @@ const MobileApplication = () => {
           </p>
         </div>
         <div className="MobileApplication-Img">
-          <Image src="/public/Images/2.png" style={{height:"400px", }}></Image>
+          <Image src="public/Images/SoftwareDevelopment/MobileApplication/MobileApplication2.jpg" style={{height:"500px", }}></Image>
         </div>
       </div>
-      {/* <div className="MobileApplicationExplore mt-5" style={{backgroundColor:"rgb(248, 248, 248)", height:"300px"}}>
-<div className="ExploreContent" style={{margin:"40px", textAlign:"center"}}>
-    <h2>Explore Our Services in Mobile App Development</h2>
-    <p>Crafting mobile experiences through our comprehensive development services.</p>
-    <Row xs={1} md={2} className="g-4">
-      {exploreData.map((card, idx) => (
-        <Col key={idx}>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>{card.title}</Card.Title>
-              <Card.Text>
-               {card.text}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      ))}
-    </Row>
-</div>
-      </div> */}
-      {/* <div className="MobileApplicationBox m-4">
-        <div className="MobileApplicationBoxHeading">
-          <h2>How may our assistance serve you?</h2>
+
+      <div
+        className="mb-4 mt-4"
+        style={{ backgroundColor: "rgba(243, 243, 243, 0.688)" }}
+      >
+        <div
+          className="Mobile-app-development-head"
+          style={{ textAlign: "center" }}
+        >
+          <h1 style={{ color: "black" }}>
+            Explore Our Services in{" "}
+            <span style={{ color: "#EA5A1B" }}>Mobile App Development</span>
+          </h1>
           <p>
-            Delivering Innovative App Development for Enhanced User Experiences.
+            Crafting mobile experiences through our comprehensive development
+            services.
           </p>
         </div>
-        <div className="MobileApplicationboximg" >
-          <Row xs={1} md={2} className="">
-            {boxData.map((card, idx) => (
+        <div className="Mobile-app-development-Box">
+          <Row xs={1} md={2} className="g-4 px-4 pe-4 pb-4">
+            {dataBox.map((card, idx) => (
               <Col key={idx}>
-                <Card style={{ height: "270px", width: "320px" }}>
-              
+                <Card>
+                  <Card.Img src={card.imageSrc} style={{height:"70px", width:"70px", padding:"10px"}} />
                   <Card.Body>
-                    <Card.Title
-                      style={{ marginTop: "-40px", fontWeight: "800" }}
-                    >
-                      {card.title}
-                    </Card.Title>
+                    <Card.Title>{card.title}</Card.Title>
                     <Card.Text>{card.text}</Card.Text>
-                   
                   </Card.Body>
                 </Card>
               </Col>
             ))}
           </Row>
         </div>
-      </div> */}
+      </div>
+
+      <div className=" " style={{color:"black", display:"flex",justifyContent:"center", flexWrap:"wrap"}}>
+        <div className="" style={{paddingLeft:"40px", paddingRight:"40px"}}>
+          <h1 className="">How may our assistance serve you?</h1>
+          <p>
+            Delivering Innovative App Development for Enhanced User Experiences.
+          </p>
+        </div>
+        <div className="">
+        <Row xs={1} md={2} className="g-4 px-4 pe-4 pb-4">
+            {dataBbox2.map((card1, idx) => (
+              <Col key={idx}>
+                <Card style={{ padding:"10px"}}>
+                  <Card.Title >{card1.title}</Card.Title>
+                  <Card.Body>
+                    <Card.Text>{card1.paragraph}</Card.Text>
+                    <Card.Text>{card1.text}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+           </div>
+      </div>
+
       <Footer />
     </>
   );

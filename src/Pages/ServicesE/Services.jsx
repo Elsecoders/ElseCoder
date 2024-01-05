@@ -104,6 +104,29 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <div className="service-div mt-5" >
+          <Element name="solution-implementation" className="service-div-1" id="solution-implementation" style={{ backgroundColor: "#fafafb" }}>
+            <div className="service-div-content" >
+              <h1 className="service-box-heading" style={{fontSize:"60px"}}>
+                <span>Solution</span>
+                <br></br>
+
+                <span style={{ color: "rgb(234, 90, 27)" }}>Implementation</span>
+
+                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Implementation</span>
+
+              </h1>
+              <p style={{fontSize:"20px"}}>
+                As a trusted partner of world's leading CRM solutions, 
+                we can help you customize and implement business solutions 3x
+                faster and smarter.
+              </p>
+            </div>
+            
+             <div className="service-div-sol">
+              <box className="box-1">
+
+                <NavLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000", fontSize: "12px" }}
       <div className="service-div mt-5">
         <Element
           name="solution-implementation"
@@ -145,7 +168,11 @@ const Services = () => {
                 <IntegrationInstructionsIcon />
                 Word Press
                 <NorthEastIcon />
-              </NavLink>
+                </NavLink>
+              </box>
+              
+              <box className="box-1" >
+                <NavLink className="box-link" to="" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}} />
             </Box>
 
             <Box className="box-1">
@@ -157,7 +184,6 @@ const Services = () => {
                   color: "#000",
                   fontSize: "12px",
                 }}
-              >
                 <CodeIcon />
                 Custom React CMS
                 <NorthEastIcon />

@@ -214,10 +214,12 @@ const Aboutus = () => {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
                 neque.
               </p>
-              <span className="service-more">
-                Learn More
-                <i> &#8594;</i>
-              </span>
+              <NavLink to="/applicationdevelopment">
+                <span className="service-more">
+                  Learn More
+                  <i> &#8594;</i>
+                </span>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -237,10 +239,12 @@ const Aboutus = () => {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
                 neque.
               </p>
-              <span className="service-more">
-                Learn More
-                <i> &#8594;</i>
-              </span>
+              <NavLink to="/seodevelopment">
+                <span className="service-more">
+                  Learn More
+                  <i> &#8594;</i>
+                </span>
+              </NavLink>
             </div>
             <div className="countainer12">
               <div className="image-service">
@@ -250,15 +254,17 @@ const Aboutus = () => {
                   alt="development"
                 />
               </div>
-              <h5 className="service-head">Social Media Marketing</h5>
+              <h5 className="service-head">Social Media Development</h5>
               <p className="service-para">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
                 neque.
               </p>
-              <span className="service-more">
-                Learn More
-                <i> &#8594;</i>
-              </span>
+              <NavLink to="/socialmediadevelopment">
+                <span className="service-more">
+                  Learn More
+                  <i> &#8594;</i>
+                </span>
+              </NavLink>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ const Worpress = () => {
       
       title: "Wordpress Setup",
       text: "From domain registration and hosting configuration to theme installation and essential plugin setup, our experts guide you through the process, enabling you to focus on crafting captivating content and engaging experiences for your visitors.",
-      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressSetup.jpg",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressSetup.png",
     },
     {
       title: "Theme Customization",
@@ -34,7 +34,7 @@ const Worpress = () => {
     {
       title: "Maintenance & Support",
       text: "Keeping up with your WordPress maintenance checklist might be hassle but its necessary. If youre running a business on a WordPress website then its probably time to let experts take care of maintenance and other menial tasks while you focus on your business.",
-      imageSrc: "public/Images/SolutionImplementation/Wordpress/MaintenanceSupport.jpg",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/MaintenanceSupport.png",
     },
   ];
 

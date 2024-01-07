@@ -13,6 +13,38 @@ const Shopify = () => {
   const cardsData = [
     {
       title: "Shopify Store Setup",
+      text: "Launch Your Shopify Storefront with Ease! Quick Setup Services for a Seamless Online Presence.",
+      imageSrc: "public/Images/SolutionImplementation/Shopify/ShopifyStoreCreation.png",
+    },
+    {
+      title: "Themes Customization",
+      text: "Our Themes Customization Service offers unparalleled design refinement. Elevate your brand with tailor-made themes, captivating visuals, and seamless user experiences that leave a lasting impression.",
+      imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/ShopifyTheme.png",
+    },
+    {
+      title: "Shopify Integration",
+      text: "Integrate third-party tools, apps, and systems to optimize your online store's performance and create a unified and efficient e-commerce ecosystem",
+      imageSrc: "public/Images/SolutionImplementation/Shopify/ShopifyIntegration.png",
+    },
+    {
+      title: "Custom Shopify Development",
+      text: "Our Custom Shopify Development Service brings your vision to life. From tailored themes to advanced functionalities, we create a one-of-a-kind online store that resonates with your brand.",
+      imageSrc: "public/Images/SolutionImplementation/CMS/CustomDevelopment.png",
+    },
+    {
+      title: "Shopify App Development",
+      text: "Elevate your store's capabilities with tailor-made apps that enhance functionality, engage customers, and drive growth.",
+      imageSrc: "public/Images/SolutionImplementation/Shopify/ShopifyAppDevelopment.png",
+    },
+    {
+      title: "Shopify Migration",
+      text: "Our Shopify Migration Service ensures a smooth shift. Seamlessly move your e-commerce store, preserving data, products, and customer information. Experience a seamless transition without disruption",
+      imageSrc: "public/Images/SolutionImplementation/Shopify/ShopifyMigration.png",
+    },
+    {
+      title: "Maintenance & Support",
+      text: "Ensures your store's consistent performance. Rely on our expert team to handle updates, security, and technical upkeep, so you can focus on growing your business.",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/MaintenanceSupport.png",
       text: "Get Started with Your Shopify Store in No Time! Start and Setup Your Services for a Robust Online Presence.",
       imageSrc: "/public/Images/2.png",
     },
@@ -45,6 +77,7 @@ const Shopify = () => {
       title: "Maintenance & Support",
       text: "Ensure your store's consistent performance with our expert Maintenance and Support services. Rely on our team to handle updates, security, and technical upkeep, allowing you to channel your focus into growing your business without the worry of technical intricacies.",
       imageSrc: "/public/Images/2.png",
+      main
     },
   ];
   return (

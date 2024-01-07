@@ -13,8 +13,12 @@ const ShopifyStoreSetup = () => {
   }, []);
   const datacards = [
     {
+
+      imageSrc: "public/Images/SolutionImplementation/Shopify/ShopifyStoreCreation.png",
+
       imageSrc:
         "public/Images/SolutionImplementation/Shopify/ShopifyStoreCreation.jpg",
+      main
       title: "Tailored Store Creation",
       text: "We understand that no two businesses are the same. That's why our expert team crafts a unique, custom Shopify store that perfectly aligns with your brand and vision.",
     },
@@ -31,13 +35,17 @@ const ShopifyStoreSetup = () => {
       text: "Leave the technicalities to us. We'll handle the setup, configurations, and integration of payment gateways, ensuring a smooth and secure transaction process.",
     },
     {
-      imageSrc: "public/Images/SolutionImplementation/ShopifySEO/SEO.jpg",
+      imageSrc: "public/Images/SolutionImplementation/Shopify/SEO.png",
       title: "SEO Optimization",
       text: "Your success starts with visibility. Our SEO specialists will optimize your store to rank higher in search engines, boosting your online presence.",
     },
     {
+
+      imageSrc: "public/Images/SolutionImplementation/Shopify/MobileResposivness.png",
+
       imageSrc:
         "public/Images/SolutionImplementation/Shopify/MobileRepsonsivness.png",
+      main
       title: "Mobile Responsiveness",
       text: "In today's mobile-driven world, we make sure your store looks and works flawlessly on all devices, keeping your customers engaged wherever they are.",
     },

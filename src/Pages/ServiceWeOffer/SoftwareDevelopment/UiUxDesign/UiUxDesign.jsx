@@ -56,7 +56,7 @@ const UiUxDesign = () => {
           </p>
         </div>
         <div className="Ui-Img">
-          <Image src='/public/Images/2.png'></Image>
+          <Image src='public/Images/SoftwareDevelopment/UIUXDesign/UIUX2.jpg'></Image>
         </div>
        </div>
       <GetInTouch />

@@ -15,12 +15,12 @@ const CustomSoftwareDevelopment = () => {
       
       title: "Wordpress Setup",
       text: "From domain registration and hosting configuration to theme installation and essential plugin setup, our experts guide you through the process, enabling you to focus on crafting captivating content and engaging experiences for your visitors.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressSetup.png",
     },
     {
       title: "Theme Customization",
       text: "Tailoring your website to reflect your unique vision and brand identity is effortless with our expert assistance. We go beyond the basics, personalizing every aspect of your chosen WordPress theme - from layout and color schemes to fonts and interactive elements.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressThemeSetup.png",
     },
   ]
 
@@ -71,7 +71,7 @@ const CustomSoftwareDevelopment = () => {
           </p>
         </div>
         <div className="CustomSoftwareDevelopment-Img">
-          <Image src='/public/Images/2.png'></Image>
+          <Image src='public/Images/SoftwareDevelopment/CustomSoftwareDevelopment/CustomSoftwareDevelopment2.png'></Image>
         </div>
        </div>
        <div className='CustomSoftwareDevelopmentBox m-4'>

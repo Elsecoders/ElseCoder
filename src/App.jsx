@@ -1,12 +1,6 @@
 // import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
- 
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Aboutus from "./Pages/AboutUs/Aboutus";
 import MainBody from "../Components/MainBody/MainBody";
 import Services from "./Pages/ServicesE/Services";
@@ -32,6 +26,9 @@ import ContentCreation from "./Pages/ServiceWeOffer/SEO/ContentCreation/ContentC
 import KeywordResearch from "./Pages/ServiceWeOffer/SEO/KeywordResearch/KeywordResearch";
 import OnsiteOptimization from "./Pages/ServiceWeOffer/SEO/OnsiteOptimization/Onsiteoptimization";
 import CustomReactCMS from "./Pages/ServiceWeOffer/SolutionImplementation/CustomReactCMS/CustomReactCMS";
+import ApplicaionDevelopment from "./Pages/AboutUs/AboutUsServices/ApplicationDevelopment/ApplicaionDevelopment";
+import SeoDevelopment from "./Pages/AboutUs/AboutUsServices/SEO Development/SeoDevelopment";
+import SocialMediaDevelopment from "./Pages/AboutUs/SocialMediaDevelopment/SocialMediaDevelopment";
 
 const App = () => {
   return (
@@ -42,10 +39,8 @@ const App = () => {
           <Route path="/home" element={<MainBody />} />
 
           <Route path="/aboutus" element={<Aboutus />} />
-          
-            <Route path="/services" element={<Services />} />
-           
-         
+
+          <Route path="/services" element={<Services />} />
 
           <Route path="/contactus" element={<Contactus />} />
           <Route path="/shopifycontentseo" element={<ShopifyContentSEO />} />
@@ -80,6 +75,9 @@ const App = () => {
           <Route path="/onsiteoptimization" element={<OnsiteOptimization />} />
           <Route path="/customreactcms" element={<CustomReactCMS />} />
           <Route path="/copywriting" element={<Copywriting />} />
+          <Route path="/applicationdevelopment" element={<ApplicaionDevelopment/>}/>
+          <Route path="/seodevelopment" element={<SeoDevelopment/>}/>
+          <Route path="/socialmediadevelopment" element={<SocialMediaDevelopment/>}/>
         </Routes>
       </BrowserRouter>
     </>

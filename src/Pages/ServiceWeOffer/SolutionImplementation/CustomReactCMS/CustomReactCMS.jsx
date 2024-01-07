@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CustomReactCMS.css';
 import Navs from '../../../../../Components/Navbar/Navs';
 import Footer from '../../../../../Components/footer/Footer';
@@ -7,27 +7,30 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch";
 const CustomReactCMS = () => {
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   const cardsData = [
     { 
       
-      title: "Content Management",
-      text: "Our Custom React CMS Service offers precision control. Seamlessly create, edit, and organize content with tailored solutions that harness the power of React.",
-      imageSrc: "public/Images/SolutionImplementation/CMS/ContentManagement.png",
+      title: "Content Administration",
+      text: "Experience precision control with our Custom React CMS Service. Effortlessly generate, modify, and organize content using tailored solutions that tap into the dynamic capabilities of React.",
+      imageSrc: "/public/Images/2.png",
+
     },
     {
-      title: "Template Creation",
+      title: "Template Design",
       text: "Design custom templates with the power of React, delivering visually stunning and engaging layouts. Elevate your content management to new heights, creating a unique digital experience that resonates with your brand.",
       imageSrc: "public/Images/SolutionImplementation/CMS/TemplateCreation.png",
     },
     {
-      title: "Page Management",
-      text: "Seamlessly create, organize, and update web pages using the strength of React. Enjoy intuitive controls and dynamic layouts that ensure your online presence remains impactful, responsive, and aligned with your unique vision.",
+      title: "Page Control",
+      text: "Utilize the robust features of React to seamlessly generate, organize, and refresh web pages. Revel in intuitive controls and dynamic layouts, ensuring your online footprint remains impactful, responsive, and in harmony with your unique vision.",
       imageSrc: "public/Images/SolutionImplementation/CMS/PageManagement.png",
     },
     {
-      title: "Custom Development",
-      text: "Leverage advanced customization for your web applications, achieving seamless functionality and exceptional user experiences. Elevate your digital presence with bespoke development that aligns precisely with your vision and goals.",
+      title: "Tailored Development",
+      text: "Opt for advanced customization in your web applications, achieving flawless functionality and delivering extraordinary user experiences. Elevate your digital presence with tailor-made development solutions that align precisely with your vision and aspirations.",
       imageSrc: "public/Images/SolutionImplementation/CMS/CustomDevelopment.png",
     },
   
@@ -42,7 +45,7 @@ const CustomReactCMS = () => {
       <div className="wordpresscontent">
         <h1 style={{fontSize:"3.9rem"}}>
           <span style={{ color: "black" }}></span>
-          <span style={{ color: "#2CA3CC" }}>{`Tailored React`}</span>
+          <span style={{ color: "#000000" }}>{`Tailored React`}</span>
           <span style={{ color: "#EA5A1B" }}> {`CMS Solutions`}</span>
           <span style={{ color: "black" }}></span>
         </h1>

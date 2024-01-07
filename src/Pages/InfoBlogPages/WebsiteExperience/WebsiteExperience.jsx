@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './websiteExperience.css';
 import Navs from "../../../../Components/Navbar/Navs";
 import Footer from "../../../../Components/footer/Footer";
 const WebsiteExperience = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <>
     <Navs />

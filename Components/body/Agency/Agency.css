@@ -2,7 +2,7 @@
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
-  background-color: rgb(255, 248, 248);
+  background-color: rgb(255, 254, 254);
   font-family: "Inter";
 }
 .paragraph-agency {
@@ -38,6 +38,11 @@ gap: 20px;
 .shopify-rm{
   color: #111;
   margin-right: 180px;
+  transition: color 0.3s ease-in-out;
+}
+.shopify-rm:hover{
+  color: #000000;
+  transition: color 0.3s ease-in-out;
 }
 .card-1,
 .card-2,
@@ -46,34 +51,22 @@ gap: 20px;
   border-radius: 40px;
   box-shadow: -3px -3px 7px #ffffff42, 3px 3px 5px rgba(0,0,0, 0.374);
   outline-color: aqua;
-  background-color: rgb(255, 248, 248);
-  
+  background-color: rgb(255, 254, 254);
+ 
 }
 
 .card-1,
 .card-2,
-.card-3 > img {
+.card-3:hover > :not(:hover) {
 aspect-ratio: 1/1;
 object-fit: cover;
-transition: transform 350ms ease, filter 350ms linear;
+
 }
 
-.card-1,
-.card-2,
-.card-3 :has(img:hover) img:not(:hover){
-  transform: scale(0.8);
-  filter: opacity(0.7);
-}
-
-.service-box .card-1,
-.service-box .card-2,
-.service-box .card-3 {
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
 
 /* Styles on hover */
 .service-box .card-1:hover {
-  background: linear-gradient(#EA5A1B,#2CA3CC); /* Change background color on hover */
+  background-color: rgb(255, 254, 254); /* Change background color on hover */
   color: white; /* Change text color on hover */
 }
 

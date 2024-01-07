@@ -9,6 +9,16 @@ import { NavLink } from "react-router-dom";
 
 const Aboutus = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const handleMouseEnter = () => {
+      carousel.pause();
+    };
+  
+    const handleMouseLeave = () => {
+      carousel.cycle();
+    };
+
     const initCarousel = () => {
       const carouselElement = document.getElementById(
         "carouselMultiItemExample"
@@ -32,11 +42,11 @@ const Aboutus = () => {
 
     // Destroy the carousel when the component unmounts
     return () => {
-      const carouselElement = document.getElementById(
-        "carouselMultiItemExample"
-      );
-      carouselElement.removeEventListener("mouseenter", () => {});
-      carouselElement.removeEventListener("mouseleave", () => {});
+      const carouselElement = document.getElementById("carouselMultiItemExample");
+      if (carouselElement) {
+        carouselElement.removeEventListener("mouseenter", handleMouseEnter);
+        carouselElement.removeEventListener("mouseleave", handleMouseLeave);
+      }
     };
   }, []); // Empty dependency array ensures the effect runs only once after initial render
   return (
@@ -45,10 +55,10 @@ const Aboutus = () => {
       <div className="about-container">
         <div className="aboutus-page mt-2">
           <div className="about-img">
-            <img src="public/Images/aboutUs/AboutUs.jpg" alt="Slider" />
+            <img src="/Images/aboutUs/AboutUs.jpg" alt="Slider" />
           </div>
           <div className="about-content">
-            <h1 style={{fontWeight:"800"}} className="about-content-head">
+            <h1 style={{ fontWeight: "800" }} className="about-content-head">
               <span style={{ color: "black" }}>{`About `}</span>
               <span style={{ color: "black" }}>{`<`}</span>
               <span style={{ color: "#2CA3CC" }}>{`E!se`}</span>
@@ -193,22 +203,23 @@ const Aboutus = () => {
             </div>
             <div className="countainer12">
               <div className="image-service">
-                  <img
-                    className="service-image"
-                    src="/public/Images/aboutUs/online-shopping.png"
-                    alt="development"
-                  />
-              
+                <img
+                  className="service-image"
+                  src="/public/Images/aboutUs/online-shopping.png"
+                  alt="development"
+                />
               </div>
               <h5 className="service-head">Application Development</h5>
               <p className="service-para">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
                 neque.
               </p>
-              <span className="service-more">
-                Learn More
-                <i> &#8594;</i>
-              </span>
+              <NavLink to="/applicationdevelopment">
+                <span className="service-more">
+                  Learn More
+                  <i> &#8594;</i>
+                </span>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -228,10 +239,12 @@ const Aboutus = () => {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
                 neque.
               </p>
-              <span className="service-more">
-                Learn More
-                <i> &#8594;</i>
-              </span>
+              <NavLink to="/seodevelopment">
+                <span className="service-more">
+                  Learn More
+                  <i> &#8594;</i>
+                </span>
+              </NavLink>
             </div>
             <div className="countainer12">
               <div className="image-service">
@@ -241,23 +254,27 @@ const Aboutus = () => {
                   alt="development"
                 />
               </div>
-              <h5 className="service-head">Social Media Marketing</h5>
+              <h5 className="service-head">Social Media Development</h5>
               <p className="service-para">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
                 neque.
               </p>
-              <span className="service-more">
-                Learn More
-                <i> &#8594;</i>
-              </span>
+              <NavLink to="/socialmediadevelopment">
+                <span className="service-more">
+                  Learn More
+                  <i> &#8594;</i>
+                </span>
+              </NavLink>
             </div>
           </div>
         </div>
         <div className="form-row">
           <div className="service-buttuon">
-           <NavLink to="/services"> <button className="service-btn" type="button">
-              See All Services
-            </button>
+            <NavLink to="/services">
+              {" "}
+              <button className="service-btn" type="button">
+                See All Services
+              </button>
             </NavLink>
           </div>
         </div>

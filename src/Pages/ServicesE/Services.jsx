@@ -111,9 +111,8 @@ const Services = () => {
                 <span>Solution</span>
                 <br></br>
 
-                <span style={{ color: "rgb(234, 90, 27)" }}>Implementation</span>
-
-                <span className="service-box-span-heading" style={{ color: "#2CA3CC" }}>Implementation</span>
+            
+                <span className="service-box-span-heading" style={{ color: "rgb(234, 90, 27)" }}>Implementation</span>
 
               </h1>
               <p style={{fontSize:"20px"}}>
@@ -124,58 +123,14 @@ const Services = () => {
             </div>
             
              <div className="service-div-sol">
-              <box className="box-1">
+              <Box className="box-1">
 
-                <NavLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000", fontSize: "12px" }}
-      <div className="service-div mt-5">
-        <Element
-          name="solution-implementation"
-          className="service-div-1"
-          id="solution-implementation-1"
-          style={{ backgroundColor: "#fafafb" }}
-        >
-          <div className="service-div-content">
-            <h1 className="service-box-heading" style={{ fontSize: "60px" }}>
-              <span>Solution</span>
-              <br></br>
-
-              <span
-                className="service-box-span-heading"
-                style={{ color: "rgb(234, 90, 27)" }}
-              >
-                Implementation
-              </span>
-            </h1>
-            <p style={{ fontSize: "20px" }}>
-              Seamlessly bring your business vision to life with our solution
-              implementation services. As trusted partners with the world's
-              leading CRM solutions, we excel in customizing and implementing
-              business solutions three times faster and smarter.
-            </p>
-          </div>
-
-          <div className="service-div-sol">
-            <Box className="box-1">
-              <NavLink
-                className="box-link"
-                to="/wordpress"
-                style={{
-                  textDecoration: "none",
-                  color: "#000",
-                  fontSize: "12px",
-                }}
-              >
-                <IntegrationInstructionsIcon />
+                <NavLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000", fontSize: "12px" }}> <IntegrationInstructionsIcon />
                 Word Press
                 <NorthEastIcon />
                 </NavLink>
-              </box>
-              
-              <box className="box-1" >
-                <NavLink className="box-link" to="" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}} />
-            </Box>
-
-            <Box className="box-1">
+               </Box> 
+               <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/customreactcms"
@@ -184,6 +139,7 @@ const Services = () => {
                   color: "#000",
                   fontSize: "12px",
                 }}
+              >
                 <CodeIcon />
                 Custom React CMS
                 <NorthEastIcon />
@@ -206,16 +162,10 @@ const Services = () => {
                 <NorthEastIcon />
               </NavLink>
             </Box>
-            {/* <box className="box-1">
-                <Link className="box-link" style={{ textDecoration: "none", color: "#000" , fontSize: "12px"}}>
-                <CodeIcon />
-                Custom React CMS
-                <NorthEastIcon />
-                </Link>
-              </box> */}
-          </div>
-        </Element>
-
+            </div>
+            </Element>
+     
+     
         <Element
           name="software-development"
           className="service-div-1"
@@ -489,9 +439,10 @@ const Services = () => {
             </Box>
           </div>
         </Element>
+   
       </div>
       <Footer />
-    </>
+  </>
   );
 };
 

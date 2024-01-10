@@ -133,6 +133,7 @@ h3 {
     padding-left: 0;
     list-style: none
 }
+
 .tabs-nav{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -236,7 +237,30 @@ a.boximageicon-seo{
     display: inline;
     align-items: center;
   }
-  .box-bullits li{
+  .underline{
+    position: relative; /* Necessary for pseudo-element */
+  transition: color 0.3s ease-in-out;
+  }
+  .underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the underline thickness */
+    bottom: -2px; /* Adjust the distance from the text */
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.588);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out; /* Transition the underline appearance */
+  }
+  
+  .underline:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .underline:hover {
+    color: rgb(255, 0, 0); /* Optional: Change color on hover */
   }
 
   .third-container {

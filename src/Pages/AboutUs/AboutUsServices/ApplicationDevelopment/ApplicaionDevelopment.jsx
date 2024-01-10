@@ -1,5 +1,5 @@
 import Navs from "../../../../../Components/Navbar/Navs";
-import { useState } from "react";
+import { useState ,  useEffect  } from "react";
 import Footer from "../../../../../Components/footer/Footer";
 import "./ApplicationDevelopment.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,34 +7,74 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { FaJava, FaSwift } from "react-icons/fa";
 import { TbBrandKotlin, TbBrandJavascript } from "react-icons/tb";
 import { TfiApple } from "react-icons/tfi";
+import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch";
 const ApplicaionDevelopment = () => {
-  const [selectedTechnology, setSelectedTechnology] = useState("mobile");
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
+  const [selectedTechnology, setSelectedTechnology] = useState("food");
+  const [blink, setBlink] = useState(false);
+
+  const technologyContent = {
+    food: {
+      head: "Food",
+      description:
+        "We build innovative on-demand food apps with intuitive features, including order tracking, multiple payment options, vendor management, and delivery tracking.",
+      image: "../../../../../public/Images/aboutUs/food-seoooo1.jpg",
+    },
+    ecommerce: {
+      head: "eCommerce",
+      description:
+        "Our e-commerce apps are packed with modern features and latest technologies, including a wish list, order tracking, user profiles, multiple payment options, and more.",
+      image: "../../../../../public/Images/aboutUs/e-commerce-seoooo1.jpg",
+    },
+    marketplace: {
+      head: "MarketPlace",
+      description:
+        "We build marketplaces with intuitive vendor and client profiles, interactive user interface, multiple payment options, product listings, simple checkout, and more.",
+      image: "../../../../../public/Images/aboutUs/marketplace-seoooo1.jpg",
+    },
+    education: {
+      head: "Education",
+      description: "We take e-learning to the next level with our educational apps that target learning behaviors outside a classroom, enabling students to study at their pace without peer pressure.",
+      image: "../../../../../public/Images/aboutUs/education-seoooo11.jpg",
+    },
+    social: {
+      head: "Social",
+      description: "Our social apps are built with an engaging and straightforward user interface that allows millions of users to share pictures, videos, and other media without lag, app crash, or other errors.",
+      image: "../../../../../public/Images/aboutUs/social-seoooo11.jpg",
+    },
+  };
 
   const handleTechnologyClick = (technology) => {
-    setSelectedTechnology(technology);
+    setBlink(true); // Set blink to true when content changes
+    setTimeout(() => {
+      setSelectedTechnology(technology);
+      setBlink(false); // Set blink back to false after 200ms
+    }, 200);
   };
+ 
   return (
     <>
       <Navs />
-      <div className="app-container">
+      <div className="app-container mt-4">
         <div className="first-container col-lg-12 col-md-12 col-xs-8">
           <div className="first-img-container">
-            <img
-              src="../../../../../public/Images/aboutUs/food-seoooo1.jpg"
-              alt=""
-            />
+            {technologyContent[selectedTechnology] && (
+              <img src={technologyContent[selectedTechnology].image} alt="" />
+            )}
           </div>
-          <div className="first-container-text">
+          <div className={`first-img-container ${blink ? 'blink active' : 'blink'}`}>
             <div>
               <h2>
-                <b>Your Trusted Mobile Application Development Company</b>
+                <b style={{color:"black"}}>Your Trusted Mobile Application Development Company</b>
               </h2>
               <p>
                 Delivering result-driven software application development
                 services to our diverse clientele spanning all major industries.
               </p>
             </div>
-            <div className="cms-list">
+            <div className="cms-list" style={{color:"black"}}>
               <ul
                 style={{
                   listStyle: "none",
@@ -46,25 +86,40 @@ const ApplicaionDevelopment = () => {
                   fontSize: "19px",
                 }}
               >
-                <li onClick={() => handleTechnologyClick("food")}>Food</li>
-                <li onClick={() => handleTechnologyClick("ecommerce")}>
+                <li
+                  className="underline"
+                  onClick={() => handleTechnologyClick("food")}
+                >
+                  Food
+                </li>
+                <li
+                  className="underline"
+                  onClick={() => handleTechnologyClick("ecommerce")}
+                >
                   Ecommerce
                 </li>
-                <li onClick={() => handleTechnologyClick("marketplace")}>
+                <li
+                  className="underline"
+                  onClick={() => handleTechnologyClick("marketplace")}
+                >
                   Marketplaces
                 </li>
-                <li onClick={() => handleTechnologyClick("social")}>Social</li>
-                <li onClick={() => handleTechnologyClick("education")}>
+                <li
+                  className="underline"
+                  onClick={() => handleTechnologyClick("social")}
+                >
+                  Social
+                </li>
+                <li
+                  className="underline"
+                  onClick={() => handleTechnologyClick("education")}
+                >
                   Education
                 </li>
               </ul>
             </div>
-            <h3>Food</h3>
-            <p>
-              We build innovative on-demand food apps with intuitive features,
-              including order tracking, multiple payment options, vendor
-              management, and delivery tracking.
-            </p>
+            <h3 style={{color:"black"}}>{technologyContent[selectedTechnology]?.head}</h3>
+            <p>{technologyContent[selectedTechnology]?.description}</p>
           </div>
         </div>
         <div className="secound-container">
@@ -253,16 +308,15 @@ const ApplicaionDevelopment = () => {
               </div>
             </div>
             <div className="col-md-7">
-                    <div className="tabs-content mt-sm7">
-                      <div className="backgroundwhite-tabsd bgafters bgbefores p-50">
-
-                      </div>
-                    </div>
+              <div className="tabs-content mt-sm7">
+                <div className="backgroundwhite-tabsd bgafters bgbefores p-50"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {selectedTechnology === "mobile" && <food />}
+      {selectedTechnology === "mobile" && <Food />}
+      <GetInTouch/>
       <Footer />
     </>
   );

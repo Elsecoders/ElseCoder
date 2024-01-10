@@ -29,6 +29,7 @@ import CustomReactCMS from "./Pages/ServiceWeOffer/SolutionImplementation/Custom
 import ApplicaionDevelopment from "./Pages/AboutUs/AboutUsServices/ApplicationDevelopment/ApplicaionDevelopment";
 import SeoDevelopment from "./Pages/AboutUs/AboutUsServices/SEO Development/SeoDevelopment";
 import SocialMediaDevelopment from "./Pages/AboutUs/SocialMediaDevelopment/SocialMediaDevelopment";
+import EcommerceshopifyWp from "./Pages/AboutUs/AboutUsServices/EcommerceShopifyWp/EcommerceshopifyWp";
 
 const App = () => {
   return (
@@ -78,6 +79,7 @@ const App = () => {
           <Route path="/applicationdevelopment" element={<ApplicaionDevelopment/>}/>
           <Route path="/seodevelopment" element={<SeoDevelopment/>}/>
           <Route path="/socialmediadevelopment" element={<SocialMediaDevelopment/>}/>
+          <Route path="/ecommerceshopifyWp" element={<EcommerceshopifyWp/>}/>
         </Routes>
       </BrowserRouter>
     </>

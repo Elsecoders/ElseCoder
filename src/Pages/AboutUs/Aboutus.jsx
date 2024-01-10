@@ -14,7 +14,7 @@ const Aboutus = () => {
     const handleMouseEnter = () => {
       carousel.pause();
     };
-  
+
     const handleMouseLeave = () => {
       carousel.cycle();
     };
@@ -42,7 +42,9 @@ const Aboutus = () => {
 
     // Destroy the carousel when the component unmounts
     return () => {
-      const carouselElement = document.getElementById("carouselMultiItemExample");
+      const carouselElement = document.getElementById(
+        "carouselMultiItemExample"
+      );
       if (carouselElement) {
         carouselElement.removeEventListener("mouseenter", handleMouseEnter);
         carouselElement.removeEventListener("mouseleave", handleMouseLeave);
@@ -191,15 +193,20 @@ const Aboutus = () => {
                   alt="development"
                 />
               </div>
-              <h5 className="service-head">Application Development</h5>
+              <h5 className="service-head">
+                Ecommerce (Shopify, Wordpress and RCMS)
+              </h5>
               <p className="service-para">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
                 neque.
               </p>
-              <span className="service-more">
-                Learn More
-                <i> &#8594;</i>
-              </span>
+              <NavLink to="/ecommerceshopifyWp">
+                {" "}
+                <span className="service-more">
+                  Learn More
+                  <i> &#8594;</i>
+                </span>
+              </NavLink>
             </div>
             <div className="countainer12">
               <div className="image-service">

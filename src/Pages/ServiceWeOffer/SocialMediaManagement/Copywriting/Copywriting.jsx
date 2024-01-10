@@ -14,7 +14,7 @@ const Copywriting = () => {
         <div className="copywriting-page mt-2">
           <div className="copywriting-img">
             <img
-              src="/public/Images/serviceweoffer/graphicDesigner-banner.png"
+              src="public/Images/SocialMediaManagement/Copywriting/Copywriting.png"
               alt="Slider"
             />
           </div>
@@ -55,7 +55,7 @@ const Copywriting = () => {
           </div>
           <div className="copywriting-detail-img">
             <img
-              src="/public/Images/serviceweoffer/graphicDesigner-content.webp"
+              src="public/Images/SocialMediaManagement/Copywriting/Copywriting2.png"
               alt=""
             />
           </div>

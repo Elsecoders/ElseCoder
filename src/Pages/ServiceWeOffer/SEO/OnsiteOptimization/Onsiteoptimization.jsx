@@ -12,7 +12,7 @@ const Onsiteoptimization = () => {
     <Navs/>
     <div className="container-OnsiteOptimization mt-4" style={{width:"90%" , margin: "auto auto 50px auto"}}>
         <div className="img2">
-          <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+          <img src="public/Images/SEO/OnsiteOptimization/OnSiteOptimization.jpg" alt="Slider" />
         </div>
         <div className="content-OnsiteOptimization">
           <h1>
@@ -35,7 +35,7 @@ const Onsiteoptimization = () => {
           Unlock the full potential of your website's online presence through our comprehensive On-Site SEO Optimization Services. In today's digital landscape, visibility is paramount, and our expert team is dedicated to propelling your website to the forefront of search engine results. Our proven strategies delve deep into the core of your website, meticulously fine-tuning every element to align with the latest SEO best practices. From optimizing meta tags, titles, and descriptions to improving site structure and URL hierarchy, we leave no stone unturned in our quest to elevate your website's search engine ranking. With a keen focus on relevant keywords, quality content, and seamless user experience, we seamlessly merge technical prowess with creative excellence. Whether it's enhancing site speed for optimal performance, implementing schema markup for enriched search snippets, or ensuring mobile responsiveness for a diverse audience, we tailor our approach to suit your unique needs.</p>
         </div>
         <div className="img2-1">
-          <img src="/Images/SliderImg/slider.jpg" alt="Slider" />
+          <img src="public/Images/SEO/OnsiteOptimization/OnSiteOptimization2.png" alt="Slider" />
         </div>
       </div>
 

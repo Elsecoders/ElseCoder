@@ -11,7 +11,7 @@ const SocialMediaContent = () => {
         <div className="socialmediacontent-page mt-2">
           <div className="socialmediacontent-img">
             <img
-              src="/public/Images/serviceweoffer/graphicDesigner-banner.png"
+              src="public/Images/SocialMediaManagement/SocialMediaContent/SocialMediaContent.png"
               alt="Slider"
             />
           </div>
@@ -48,7 +48,7 @@ const SocialMediaContent = () => {
             </p>
           </div>
           <div className="socialmediacontent-detail-img">
-            <img src="/public/Images/serviceweoffer/graphicDesigner-content.webp" alt="" />
+            <img src="public/Images/SocialMediaManagement/SocialMediaContent/SocialMediaContent2.png" alt="" />
           </div>
         </div>
       </div>

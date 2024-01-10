@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 const Agency = () => {
   return (
     <>
-      <div className="agency mt-5 ">
+      <div className="agency mt-5 pb-3 pt-4">
         <div className="heading-agency">
           <h1>
           Collaborate with the Finest eCommerce Development Agency{" "}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ShopifyContentSEO.css';
 import Navs from '../../../../Components/Navbar/Navs';
 import Card from 'react-bootstrap/Card';
@@ -8,6 +8,9 @@ import Footer from "../../../../Components/footer/Footer";
 import GetInTouch from "../../../../Components/body/GetInTouch/GetInTouch";
 
 const ShopifyContentSEO = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   const datacards = [
     {
       imageSrc: "public/Images/SolutionImplementation/ShopifySEO/EnhancedVisibility.png",
@@ -46,15 +49,15 @@ const ShopifyContentSEO = () => {
           <img src="public/Images/SolutionImplementation/ShopifySEO/SEO.png" alt="" />
         </div> 
                <div className="seo-content">
-        <h1 class="seo-custom-heading">
+        <h1 className="seo-custom-heading">
         Expert 
-        <span class="seo-color-theme"> Shopify SEO </span> Services </h1>
+        <span className="seo-color-theme"> Shopify SEO </span> Services </h1>
         <p className='shopify-seo-para'>Unlock the full potential of your e-commerce empire with our tailored, results-driven Shopify SEO services. We specialize in optimizing your online store for search engines, ensuring that your products and brand stand out in a crowded digital marketplace.</p>
         </div>
        
       </div>
-      <div class="my-4 text-center w-100 ">
-        <h2 class="fw-bolder fs-1">What you can expect from our Shopify SEO services</h2></div>
+      <div className="my-4 text-center w-100 ">
+        <h2 className="fw-bolder fs-1">What you can expect from our Shopify SEO services</h2></div>
 
         <div className="seo-cards">
         <Row xs={1} md={3} className="g-4" style={{margin :"40px 60px 0px 60px" }}>

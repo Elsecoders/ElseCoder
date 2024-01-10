@@ -43,10 +43,9 @@ const Shopify = () => {
     },
     {
       title: "Maintenance & Support",
-      text: "Ensures your store's consistent performance. Rely on our expert team to handle updates, security, and technical upkeep, so you can focus on growing your business.",
       imageSrc: "public/Images/SolutionImplementation/Wordpress/MaintenanceSupport.png",
       text: "Get Started with Your Shopify Store in No Time! Start and Setup Your Services for a Robust Online Presence.",
-      imageSrc: "/public/Images/2.png",
+      
     },
     {
       title: "Customized Theme Solutions",

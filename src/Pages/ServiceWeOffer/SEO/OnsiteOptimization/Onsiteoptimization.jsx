@@ -15,7 +15,7 @@ const Onsiteoptimization = () => {
           <img src="public/Images/SEO/OnsiteOptimization/OnSiteOptimization.jpg" alt="Slider" />
         </div>
         <div className="content-OnsiteOptimization">
-          <h1>
+          <h1 style={{ fontWeight:"800"}}>
           Enhance Your Website's Visibility with Our On-Site
         <span class="OnsiteOptimization-color-theme"> SEO Optimization </span> Services
           </h1>
@@ -27,7 +27,7 @@ const Onsiteoptimization = () => {
 
       <div className="container-OnsiteOptimization-1 " style={{width:"90%" , margin: "auto" , marginTop:"70px" }}>
       <div className="content-OnsiteOptimization-1">
-          <h1>
+          <h1 style={{ fontWeight:"800"}}>
           Unleash Potential with Our Comprehensive 
           <span class="OnsiteOptimization-color-theme"> On-Site SEO Optimization Service </span>
           </h1>

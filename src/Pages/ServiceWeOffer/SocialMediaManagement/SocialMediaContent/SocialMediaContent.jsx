@@ -19,7 +19,7 @@ const SocialMediaContent = () => {
             />
           </div>
           <div className="socialmediacontent-content">
-            <h1 className="socialmediacontent-content-head">
+            <h1 className="socialmediacontent-content-head" style={{fontWeight:"800"}}>
               Transforming
               <br /> Ideas into <br />
               <span style={{ color: "#EA5A1B" }}> Visual </span>
@@ -33,7 +33,7 @@ const SocialMediaContent = () => {
         </div>
         <div className="socialmediacontent-countainer1">
           <div className="socialmediacontent-detail-container">
-            <h2 className="socialmediacontent-detail">Crafting <span style={{ color: "#EA5A1B" }}> Stories Through </span>Visual Innovation</h2>
+            <h2 className="socialmediacontent-detail" style={{fontWeight:"800"}}>Crafting <span style={{ color: "#EA5A1B" }}> Stories Through </span>Visual Innovation</h2>
             <p className="socialmediacontent-detail-para">
               Our graphic designing service is a creative hub where imagination
               and innovation blend seamlessly to bring your ideas to life. With

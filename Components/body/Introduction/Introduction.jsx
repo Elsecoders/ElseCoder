@@ -8,7 +8,7 @@ const Introduction = () => {
       <div className="intro-Dock ">
         <div className="introduction">
           <div className="heading ">
-            <h1 className="heads">OUR IMPRESSION.</h1>
+            <h1 className="heads" >OUR IMPRESSION.</h1>
           </div>
           <div className="paragraph">
             <p>

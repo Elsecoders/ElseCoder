@@ -39,27 +39,27 @@ const InformationalBolg = () => {
   }, []);
 
   const cards = [
-    { img:'/public/Images/2.png',title: 'Card 1 Title', description: 'Card 1 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', link: '#' },
+    { img:'/public/Images/2.png',title: 'eCommerce Website', description: 'Card 1 Description', link: '#' },
+    { img:'/public/Images/2.png',title: 'Social Media Strategies', description: 'Card 2 Description', link: '#' },
+    { img:'/public/Images/2.png',title: 'Website Experience', description: 'Card 2 Description', link: '#' },
+    { img:'/public/Images/2.png',title: 'Seo Keyword Research', description: 'Card 2 Description', link: '#' },
+    { img:'/public/Images/2.png',title: 'Seo BackLink Buildings', description: 'Card 2 Description', link: '#' },
+    { img:'/public/Images/2.png',title: 'Web Application Block', description: 'Card 2 Description', link: '#' },
+    { img:'/public/Images/2.png',title: 'Social Media Campaign', description: 'Card 2 Description', link: '#' },
+    { img:'/public/Images/2.png',title: 'Backend Framework', description: 'Card 2 Description', link: '#' },
+    { img:'/public/Images/2.png',title: 'Mobile App development', description: 'Card 2 Description', link: '#' },
     // Add more cards as needed with different content
   ];
   return (
     <>
       <div className="InformationalBlog">
         <div className="Info-Blog-heading">
-          <h3>Insights to help you stay ahead of change</h3>
+          <h2 style={{fontWeight: "800"}}>Insights to help you stay ahead of change</h2>
           <p>Informational Blogs</p>
           <div className="main-countainer">
             <div className="col-12 col-md-3 col-lg-2  card-mini">
               <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
+                <h5 className="card-title">Informational Blogs</h5>
                 <p className="card-text">
                   With supporting text below as a natural lead-in to additional
                   content.

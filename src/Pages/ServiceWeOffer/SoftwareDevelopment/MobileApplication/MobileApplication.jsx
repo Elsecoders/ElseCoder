@@ -50,7 +50,7 @@ const MobileApplication = () => {
           <img src="public/Images/SoftwareDevelopment/MobileApplication/MobileApplication.jpg" alt="Slider" />
         </div>
         <div className="MobileApplicationcontent">
-          <h1 style={{ fontSize: "3.9rem" }}>
+          <h1 style={{ fontSize: "3.9rem", fontWeight:"800" }}>
             <span style={{ color: "black" }}></span>
             <span style={{ color: "black" }}>{`Transforming`}</span>
             <span style={{ color: "#EA5A1B" }}> {`Ideas `}</span>
@@ -66,7 +66,7 @@ const MobileApplication = () => {
       </div>
       <div className="ProductDescriptionMobileApplication ">
         <div className="MobileApplicationContent">
-          <h2 style={{ color: "#000", textAlign: "left", fontSize: "2rem" }}>
+          <h2 style={{ color: "#000", textAlign: "left", fontSize: "2rem", fontWeight:"800" }}>
             Turning Ideas into{" "}
             <span style={{ color: "#EA5A1B" }}>
               {" "}
@@ -97,7 +97,7 @@ const MobileApplication = () => {
           className="Mobile-app-development-head"
           style={{ textAlign: "center" }}
         >
-          <h1 style={{ color: "black" }}>
+          <h1 style={{ color: "black" , fontWeight:"800"}}>
             Explore Our Services in{" "}
             <span style={{ color: "#EA5A1B" }}>Mobile App Development</span>
           </h1>
@@ -113,7 +113,7 @@ const MobileApplication = () => {
                 <Card>
                   <Card.Img src={card.imageSrc} style={{height:"70px", width:"70px", padding:"10px"}} />
                   <Card.Body>
-                    <Card.Title>{card.title}</Card.Title>
+                    <Card.Title style={{ fontWeight:"800"}}>{card.title}</Card.Title>
                     <Card.Text>{card.text}</Card.Text>
                   </Card.Body>
                 </Card>
@@ -125,7 +125,7 @@ const MobileApplication = () => {
 
       <div className=" " style={{color:"black", display:"flex",justifyContent:"center", flexWrap:"wrap"}}>
         <div className="" style={{paddingLeft:"40px", paddingRight:"40px"}}>
-          <h1 className="">How may our assistance serve you?</h1>
+          <h1 className="" style={{ fontWeight:"800"}}>How may our assistance serve you?</h1>
           <p>
             Delivering Innovative App Development for Enhanced User Experiences.
           </p>
@@ -135,7 +135,7 @@ const MobileApplication = () => {
             {dataBbox2.map((card1, idx) => (
               <Col key={idx}>
                 <Card style={{ padding:"10px"}}>
-                  <Card.Title >{card1.title}</Card.Title>
+                  <Card.Title style={{ fontWeight:"800"}}>{card1.title}</Card.Title>
                   <Card.Body>
                     <Card.Text>{card1.paragraph}</Card.Text>
                     <Card.Text>{card1.text}</Card.Text>

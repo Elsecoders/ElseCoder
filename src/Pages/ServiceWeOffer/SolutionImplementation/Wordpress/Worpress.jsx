@@ -52,7 +52,7 @@ const Worpress = () => {
           <img src="public/Images/SolutionImplementation/Wordpress/wordpress.png" alt="Slider" />
         </div>
         <div className="wordpresscontent">
-          <h1 style={{fontSize:"3.9rem"}}>
+          <h1 style={{fontSize:"3.9rem", fontWeight:"800"}}>
             <span style={{ color: "black" }}></span>
             <span style={{ color: "#2CA3CC" }}>{`Wordpress`}</span> 
             <span style={{ color: "#EA5A1B" }}> {`Development`}</span>

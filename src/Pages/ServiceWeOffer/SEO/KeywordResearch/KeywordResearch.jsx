@@ -15,7 +15,7 @@ const KeywordResearch = () => {
           <img src="public/Images/SEO/KeywordResearch/KeywordResearch.jpg" alt="Slider" />
         </div>
         <div className="content-keywordResearch">
-          <h1>
+          <h1 style={{ fontWeight:"800"}}>
           Our Expert
         <span class="keywordResearch-color-theme"> Keyword Research </span> Services
           </h1>
@@ -27,7 +27,7 @@ const KeywordResearch = () => {
 
       <div className="container-keywordResearch-1 " style={{width:"90%" , margin: "auto" , marginTop:"70px" }}>
       <div className="content-keywordResearch-1">
-          <h1>
+          <h1 style={{ fontWeight:"800"}}>
           Dominate <span class="Backlinkbuilding-color-theme"> Your Digital </span> Landscape
           </h1>
           <p>

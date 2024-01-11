@@ -19,7 +19,7 @@ const Copywriting = () => {
             />
           </div>
           <div className="copywriting-content">
-            <h1 className="copywriting-content-head">
+            <h1 className="copywriting-content-head" style={{fontWeight:"800"}}>
               Transforming
               <br /> Ideas into <br />
               <span style={{ color: "#EA5A1B" }}> Visual </span>
@@ -33,7 +33,7 @@ const Copywriting = () => {
         </div>
         <div className="copywriting-countainer1">
           <div className="copywriting-detail-container">
-            <h2 className="copywriting-detail">
+            <h2 className="copywriting-detail" style={{fontWeight:"800"}}>
               Crafting <span style={{ color: "#EA5A1B" }}> Stories Through</span>{" "}
                Visual <br /> Innovation
             </h2>

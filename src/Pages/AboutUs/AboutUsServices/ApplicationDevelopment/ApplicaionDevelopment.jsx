@@ -1,5 +1,5 @@
 import Navs from "../../../../../Components/Navbar/Navs";
-import { useState ,  useEffect  } from "react";
+import { useState, useEffect } from "react";
 import Footer from "../../../../../Components/footer/Footer";
 import "./ApplicationDevelopment.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -36,12 +36,14 @@ const ApplicaionDevelopment = () => {
     },
     education: {
       head: "Education",
-      description: "We take e-learning to the next level with our educational apps that target learning behaviors outside a classroom, enabling students to study at their pace without peer pressure.",
+      description:
+        "We take e-learning to the next level with our educational apps that target learning behaviors outside a classroom, enabling students to study at their pace without peer pressure.",
       image: "../../../../../public/Images/aboutUs/education-seoooo11.jpg",
     },
     social: {
       head: "Social",
-      description: "Our social apps are built with an engaging and straightforward user interface that allows millions of users to share pictures, videos, and other media without lag, app crash, or other errors.",
+      description:
+        "Our social apps are built with an engaging and straightforward user interface that allows millions of users to share pictures, videos, and other media without lag, app crash, or other errors.",
       image: "../../../../../public/Images/aboutUs/social-seoooo11.jpg",
     },
   };
@@ -53,7 +55,7 @@ const ApplicaionDevelopment = () => {
       setBlink(false); // Set blink back to false after 200ms
     }, 200);
   };
- 
+
   return (
     <>
       <Navs />
@@ -64,17 +66,23 @@ const ApplicaionDevelopment = () => {
               <img src={technologyContent[selectedTechnology].image} alt="" />
             )}
           </div>
-          <div className={`first-img-container ${blink ? 'blink active' : 'blink'}`}>
+          <div
+            className={`first-img-container ${
+              blink ? "blink active" : "blink"
+            }`}
+          >
             <div>
               <h2>
-                <b style={{color:"black"}}>Your Trusted Mobile Application Development Company</b>
+                <b style={{ color: "black" }}>
+                  Your Trusted Mobile Application Development Company
+                </b>
               </h2>
               <p>
                 Delivering result-driven software application development
                 services to our diverse clientele spanning all major industries.
               </p>
             </div>
-            <div className="cms-list" style={{color:"black"}}>
+            <div className="cms-list" style={{ color: "black" }}>
               <ul
                 style={{
                   listStyle: "none",
@@ -118,7 +126,9 @@ const ApplicaionDevelopment = () => {
                 </li>
               </ul>
             </div>
-            <h3 style={{color:"black"}}>{technologyContent[selectedTechnology]?.head}</h3>
+            <h3 style={{ color: "black" }}>
+              {technologyContent[selectedTechnology]?.head}
+            </h3>
             <p>{technologyContent[selectedTechnology]?.description}</p>
           </div>
         </div>
@@ -179,7 +189,10 @@ const ApplicaionDevelopment = () => {
         </div>
         <div className="third-container">
           <div className="mb-5">
-            <h2 className="mt--0 mb-3">
+            <h2
+              style={{ color: "black", fontWeight: "800" }}
+              className="mt--0 mb-3"
+            >
               Mobile App Development - Technology Stack
             </h2>
             <p className="mb-3">
@@ -190,7 +203,12 @@ const ApplicaionDevelopment = () => {
           <div className="row tabs tabs-nav-left tabs-nav-lg m0_auto">
             <div className="col-md-5">
               <div className="mb-3 mb-sm-4 mb-xs-5">
-                <h3 className="mt-0 font-size-24 mb-sm-4 mt-sm-4">Language</h3>
+                <h3
+                  className="mt-0 font-size-24 mb-sm-4 mt-sm-4"
+                  style={{ color: "black", fontWeight: "800" }}
+                >
+                  Language
+                </h3>
                 <div className="nav tabs-nav" role="tablelist">
                   <ul
                     style={{
@@ -222,6 +240,7 @@ const ApplicaionDevelopment = () => {
                       flexWrap: "wrap",
                       gap: "25px",
                       justifyContent: "left",
+                      cursor: "pointer",
                     }}
                   >
                     <li onClick={() => handleTechnologyClick("backend")}>
@@ -233,7 +252,10 @@ const ApplicaionDevelopment = () => {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="mt-0 font-size-24 mb-sm-4 mt-sm-4">
+                  <h3
+                    className="mt-0 font-size-24 mb-sm-4 mt-sm-4"
+                    style={{ color: "black", fontWeight: "800" }}
+                  >
                     Database
                   </h3>
                 </div>
@@ -246,6 +268,7 @@ const ApplicaionDevelopment = () => {
                       flexWrap: "wrap",
                       gap: "25px",
                       justifyContent: "center",
+                      cursor: "pointer",
                     }}
                   >
                     <li onClick={() => handleTechnologyClick("mobile")}>
@@ -268,6 +291,7 @@ const ApplicaionDevelopment = () => {
                       flexWrap: "wrap",
                       gap: "25px",
                       justifyContent: "left",
+                      cursor: "pointer",
                     }}
                   >
                     <li onClick={() => handleTechnologyClick("backend")}>
@@ -279,7 +303,10 @@ const ApplicaionDevelopment = () => {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="mt-0 font-size-24 mb-sm-4 mt-sm-4">
+                  <h3
+                    className="mt-0 font-size-24 mb-sm-4 mt-sm-4"
+                    style={{ color: "black", fontWeight: "800" }}
+                  >
                     Framework
                   </h3>
                 </div>
@@ -292,6 +319,7 @@ const ApplicaionDevelopment = () => {
                       flexWrap: "wrap",
                       gap: "25px",
                       justifyContent: "center",
+                      cursor: "pointer",
                     }}
                   >
                     <li onClick={() => handleTechnologyClick("mobile")}>
@@ -316,7 +344,7 @@ const ApplicaionDevelopment = () => {
         </div>
       </div>
       {selectedTechnology === "mobile" && <Food />}
-      <GetInTouch/>
+      <GetInTouch />
       <Footer />
     </>
   );

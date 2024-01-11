@@ -19,7 +19,7 @@ const GraphicDesigning = () => {
             />
           </div>
           <div className="graphic-content">
-            <h1 className="graphic-content-head">
+            <h1 className="graphic-content-head" style={{fontWeight:"800"}}>
               Transforming
               <br /> Ideas into <br />
               <span style={{ color: "#EA5A1B" }}> Visual </span>
@@ -33,7 +33,7 @@ const GraphicDesigning = () => {
         </div>
         <div className="graphic-countainer1">
           <div className="graphic-detail-container">
-            <h2 className="graphic-detail">Crafting <span style={{ color: "#EA5A1B" }}> Stories Through</span> Visual <br/> Innovation</h2>
+            <h2 className="graphic-detail" style={{fontWeight:"800"}}>Crafting <span style={{ color: "#EA5A1B" }}> Stories Through</span> Visual <br/> Innovation</h2>
             <p className="graphic-detail-para">
               Our graphic designing service is a creative hub where imagination
               and innovation blend seamlessly to bring your ideas to life. With

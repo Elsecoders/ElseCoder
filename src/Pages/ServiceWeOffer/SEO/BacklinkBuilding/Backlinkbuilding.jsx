@@ -16,7 +16,7 @@ const Backlinkbuilding = () => {
           <img src="public/Images/SEO/BackNavLinkBuilding/BackLinkNavigation.jpg" alt="Slider" />
         </div>
         <div className="content-Backlinkbuilding">
-          <h1>
+          <h1 style={{ fontWeight:"800"}}>
           High-Quality SEO
         <span class="Backlinkbuilding-color-theme"> Backlink Building </span> Service for Enhanced Online Visibility
           </h1>
@@ -28,7 +28,7 @@ const Backlinkbuilding = () => {
 
       <div className="container-Backlinkbuilding-1 " style={{width:"90%" , margin: "auto" , marginTop:"70px" }}>
       <div className="content-Backlinkbuilding-1">
-          <h1>
+          <h1 style={{ fontWeight:"800"}}>
           Transform Your SEO with Our
           <span class="Backlinkbuilding-color-theme"> Professional Backlink Building </span>Service
           </h1>

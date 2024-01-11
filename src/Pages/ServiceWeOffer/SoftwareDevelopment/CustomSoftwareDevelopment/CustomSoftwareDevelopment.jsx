@@ -33,7 +33,7 @@ const CustomSoftwareDevelopment = () => {
           <img src="public/Images/SoftwareDevelopment/CustomSoftwareDevelopment/CustomSoftwareDevelopment.jpg" alt="Slider" />
         </div>
         <div className="CustomSoftwareDevelopmentcontent">
-          <h1 style={{fontSize:"3.9rem"}}>
+          <h1 style={{fontSize:"3.9rem", fontWeight:"800"}}>
             <span style={{ color: "black" }}></span>
             <span style={{ color: "black" }}>{`Tailored`}</span>
             <span style={{ color: "#EA5A1B" }}> {`Software Solutions`}</span>
@@ -47,7 +47,7 @@ const CustomSoftwareDevelopment = () => {
       </div>
       <div className="ProductDescriptionCustomSoftwareDevelopment ">
         <div className="CustomSoftwareDevelopmentContent">
-          <h2 style={{ color: "#000" , fontSize:"2rem", textAlign:"left" }}>
+          <h2 style={{ color: "#000" , fontSize:"2rem", textAlign:"left", fontWeight:"800" }}>
           Your <span style={{ color: "#EA5A1B" }}> {`Custom Software Development`}</span> Partner
           </h2>
           <p style={{fontSize:"15px", textAlign:"left" }}>
@@ -76,7 +76,7 @@ const CustomSoftwareDevelopment = () => {
        </div>
        <div className='CustomSoftwareDevelopmentBox m-4'>
           <div className='CustomSoftwareDevelopmentBoxHeading'>
-            <h2 style={{color:"Black" , fontSize:"2rem" , textAlign:"left"}}>Innovative Solutions For Reliable Growth</h2>
+            <h2 style={{color:"Black" , fontSize:"2rem" , textAlign:"left", fontWeight:"800"}}>Innovative Solutions For Reliable Growth</h2>
           </div>
           <div className='CustomSoftwareDevelopmentboximg'>
           <Row xs={1} md={2} className="">

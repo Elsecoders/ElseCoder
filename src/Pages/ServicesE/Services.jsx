@@ -8,11 +8,11 @@ import CodeIcon from "@mui/icons-material/Code";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import Footer from "../../../Components/footer/Footer";
 import { useEffect } from "react";
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box";
 
 const Services = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
@@ -24,7 +24,7 @@ const Services = () => {
             <img src="public/Images/Services/Handshake.jpg" alt="Slider" />
           </div>
           <div className="Service-content">
-            <h1 style={{ color: "black" }}>
+            <h1 style={{ color: "black", fontWeight:"800" }}>
               Crafting{" "}
               <span style={{ color: "rgb(234, 90, 27)" }}>Cutting-Edge</span>{" "}
               Software Solutions
@@ -33,7 +33,7 @@ const Services = () => {
           </div>
         </div>
         <div className="whatWedo">
-          <h1 style={{ color: "black", textAlign: "center" }}>Our Expertise</h1>
+          <h1 style={{ color: "black", textAlign: "center", fontWeight:"800" }}>Our Expertise</h1>
           <div className="solution mt-5">
             <ul
               className="sol-link"
@@ -104,33 +104,50 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="service-div mt-5" >
-          <Element name="solution-implementation" className="service-div-1" id="solution-implementation" style={{ backgroundColor: "#fafafb" }}>
-            <div className="service-div-content" >
-              <h1 className="service-box-heading" style={{fontSize:"60px"}}>
-                <span>Solution</span>
-                <br></br>
+      <div className="service-div mt-5">
+        <Element
+          name="solution-implementation"
+          className="service-div-1"
+          id="solution-implementation"
+          style={{ backgroundColor: "#fafafb" }}
+        >
+          <div className="service-div-content">
+            <h1 className="service-box-heading" style={{ fontSize: "60px" }}>
+              <span>Solution</span>
+              <br></br>
 
-            
-                <span className="service-box-span-heading" style={{ color: "rgb(234, 90, 27)" }}>Implementation</span>
+              <span
+                className="service-box-span-heading"
+                style={{ color: "rgb(234, 90, 27)" }}
+              >
+                Implementation
+              </span>
+            </h1>
+            <p style={{ fontSize: "20px" }}>
+              As a trusted partner of world's leading CRM solutions, we can help
+              you customize and implement business solutions 3x faster and
+              smarter.
+            </p>
+          </div>
 
-              </h1>
-              <p style={{fontSize:"20px"}}>
-                As a trusted partner of world's leading CRM solutions, 
-                we can help you customize and implement business solutions 3x
-                faster and smarter.
-              </p>
-            </div>
-            
-             <div className="service-div-sol">
-              <Box className="box-1">
-
-                <NavLink className="box-link" to="/wordpress" style={{ textDecoration: "none", color: "#000", fontSize: "12px" }}> <IntegrationInstructionsIcon />
+          <div className="service-div-sol">
+            <Box className="box-1">
+              <NavLink
+                className="box-link"
+                to="/wordpress"
+                style={{
+                  textDecoration: "none",
+                  color: "#000",
+                  fontSize: "12px",
+                }}
+              >
+                {" "}
+                <IntegrationInstructionsIcon />
                 Word Press
                 <NorthEastIcon />
-                </NavLink>
-               </Box> 
-               <Box className="box-1">
+              </NavLink>
+            </Box>
+            <Box className="box-1">
               <NavLink
                 className="box-link"
                 to="/customreactcms"
@@ -162,10 +179,9 @@ const Services = () => {
                 <NorthEastIcon />
               </NavLink>
             </Box>
-            </div>
-            </Element>
-     
-     
+          </div>
+        </Element>
+
         <Element
           name="software-development"
           className="service-div-1"
@@ -439,10 +455,9 @@ const Services = () => {
             </Box>
           </div>
         </Element>
-   
       </div>
       <Footer />
-  </>
+    </>
   );
 };
 

@@ -16,7 +16,7 @@ const Technologies = () => {
 <>
         <div className='Technologies mt-5'>
             <div className='Tech-Heading' style={{textAlign:"center", color:"black"}}>
-                <h1>Technologies we work with</h1>
+                <h1 style={{fontWeight: "800"}}>Technologies we work with</h1>
             </div>
             <div className='Tech-Nav mt-5 mb-5' >
                 <div className='Tech-name'>

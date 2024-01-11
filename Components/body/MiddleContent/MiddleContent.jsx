@@ -7,7 +7,7 @@ const MiddleContent = () => {
     <>
       <div className="MiddleContent mt-5 ">
         <div className="ContentHeading">
-          <h2>
+          <h2 style={{fontWeight: "800"}}>
             {" "}
             Harness the power of Shopify and make a name for your brand in the
             hyper-competitive eCommerce market.

@@ -15,7 +15,7 @@ const ContentCreation = () => {
           <img src="public/Images/SEO/ContentCreation/ContentCreation.png" alt="Slider" />
         </div>
         <div className="content-ContentCreation">
-          <h1>
+          <h1 style={{ fontWeight:"800"}}>
           Expert SEO
         <span class="ContentCreation-color-theme"> Content Creation </span> Services for Enhanced Online Visibility
           </h1>
@@ -27,7 +27,7 @@ const ContentCreation = () => {
 
       <div className="container-ContentCreation-1 " style={{width:"90%" , margin: "auto" , marginTop:"70px" }}>
       <div className="content-ContentCreation-1">
-          <h1>
+          <h1 style={{ fontWeight:"800"}}>
           Amplify Visibility and <span class="Backlinkbuilding-color-theme"> Engagement with Our Expert Creation </span> Services
           </h1>
           <p>

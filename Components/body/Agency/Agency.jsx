@@ -10,7 +10,7 @@ const Agency = () => {
     <>
       <div className="agency mt-5 pb-3 pt-4">
         <div className="heading-agency">
-          <h1>
+          <h1 style={{fontWeight: "800"}}>
           Collaborate with the Finest eCommerce Development Agency{" "}
           </h1>
           <p className="paragraph-agency">

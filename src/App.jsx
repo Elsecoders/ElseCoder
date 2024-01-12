@@ -31,6 +31,9 @@ import SeoDevelopment from "./Pages/AboutUs/AboutUsServices/SEO Development/SeoD
 import SocialMediaDevelopment from "./Pages/AboutUs/SocialMediaDevelopment/SocialMediaDevelopment";
 import EcommerceshopifyWp from "./Pages/AboutUs/AboutUsServices/EcommerceShopifyWp/EcommerceshopifyWp";
 
+import BackLinkBuildings from "./Pages/InfoBlogPages/BacklinkBuildings/BackLinkBuilding";
+
+
 const App = () => {
   return (
     <>
@@ -75,12 +78,14 @@ const App = () => {
           <Route path="/keywordresearch" element={<KeywordResearch />} />
           <Route path="/onsiteoptimization" element={<OnsiteOptimization />} />
           <Route path="/customreactcms" element={<CustomReactCMS />} />
-          <Route path="/copywriting" element={<Copywriting />} />
+          <Route path="/copywriting" element={<Copywriting />} />       
+        <Route path= "/backlinkbuildingblog" element={<BackLinkBuildings/>}/> 
           <Route path="/applicationdevelopment" element={<ApplicaionDevelopment/>}/>
           <Route path="/seodevelopment" element={<SeoDevelopment/>}/>
           <Route path="/socialmediadevelopment" element={<SocialMediaDevelopment/>}/>
           <Route path="/ecommerceshopifyWp" element={<EcommerceshopifyWp/>}/>
         </Routes>
+
       </BrowserRouter>
     </>
   );

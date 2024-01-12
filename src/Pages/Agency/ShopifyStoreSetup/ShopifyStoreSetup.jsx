@@ -54,6 +54,27 @@ const ShopifyStoreSetup = () => {
     },
   ];
   return (
+<<<<<<< HEAD
+   <>
+    <div>
+        <Navs />
+        <div className="shopify-content-StoreSetup-main mt-4">
+          <div className="StoreSetup-img">
+            <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="" />
+          </div>
+          <div className="StoreSetup-content">
+            <h1 class="StoreSetup-custom-heading">
+              Setup Your
+              <span class="StoreSetup-color-theme"> Shopify Store </span>
+            </h1>
+            <p className="shopify-StoreSetup-para">
+              Welcome to the world of seamless, stress-free online selling!
+              Unlock the full potential of your business with our Shopify Store
+              Setup Services, where we transform your e-commerce vision into a
+              captivating reality.
+            </p>
+          </div>
+=======
     <>
       <Navs />
       <div className="shopify-content-StoreSetup-main mt-4">
@@ -62,6 +83,7 @@ const ShopifyStoreSetup = () => {
             src="public/Images/SolutionImplementation/Shopify/ShopifyStoreSetup.jpg"
             alt=""
           />
+>>>>>>> 18306b74c910bc7f401ddf13d17df7e480deaea6
         </div>
         <div className="StoreSetup-content">
           <h1 class="StoreSetup-custom-heading">
@@ -113,7 +135,11 @@ const ShopifyStoreSetup = () => {
       <GetInTouch />
 
       <Footer />
-    </>
+      </div>
+   </>
+
+     
+   
   );
 };
 

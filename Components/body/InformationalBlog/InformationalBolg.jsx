@@ -39,6 +39,17 @@ const InformationalBolg = () => {
   }, []);
 
   const cards = [
+ 
+    { img:'/public/Images/2.png',title: 'How to create a successful e-commerce website for your business', description: 'Card 2 Description', link: '/ecommercewebsite' },
+    { img:'/public/Images/2.png',title: 'The role of social media in modern marketing strategies', description: 'Card 1 Description', Navlink: '/socialmediastrategies' },
+    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
+    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
+    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
+    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
+    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
+    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
+    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
+
     { img:'/public/Images/2.png',title: 'eCommerce Website', description: 'Card 1 Description', link: '#' },
     { img:'/public/Images/2.png',title: 'Social Media Strategies', description: 'Card 2 Description', link: '#' },
     { img:'/public/Images/2.png',title: 'Website Experience', description: 'Card 2 Description', link: '#' },
@@ -48,6 +59,7 @@ const InformationalBolg = () => {
     { img:'/public/Images/2.png',title: 'Social Media Campaign', description: 'Card 2 Description', link: '#' },
     { img:'/public/Images/2.png',title: 'Backend Framework', description: 'Card 2 Description', link: '#' },
     { img:'/public/Images/2.png',title: 'Mobile App development', description: 'Card 2 Description', link: '#' },
+
     // Add more cards as needed with different content
   ];
   return (

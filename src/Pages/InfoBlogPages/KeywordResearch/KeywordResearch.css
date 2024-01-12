@@ -1,0 +1,14 @@
+.SocialMedia{
+    font-family: "Inter";
+    margin: 40px;
+    
+}
+
+.SocialMedia-Heading{
+    text-align: center;
+    color: #000;
+}
+.SocialMedia-Image{
+    display: flex;
+    justify-content: center;
+}

@@ -41,9 +41,8 @@ const ShopifyStoreSetup = () => {
     },
   ];
   return (
-    <>
-
-      <div>
+   <>
+    <div>
         <Navs />
         <div className="shopify-content-StoreSetup-main mt-4">
           <div className="StoreSetup-img">
@@ -100,7 +99,11 @@ const ShopifyStoreSetup = () => {
       <GetInTouch />
 
       <Footer />
-    </>
+      </div>
+   </>
+
+     
+   
   );
 };
 

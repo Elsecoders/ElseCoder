@@ -33,6 +33,9 @@ import KeywordResearch from "./Pages/ServiceWeOffer/SEO/KeywordResearch/KeywordR
 import OnsiteOptimization from "./Pages/ServiceWeOffer/SEO/OnsiteOptimization/Onsiteoptimization";
 import CustomReactCMS from "./Pages/ServiceWeOffer/SolutionImplementation/CustomReactCMS/CustomReactCMS";
 
+import BackLinkBuildings from "./Pages/InfoBlogPages/BacklinkBuildings/BackLinkBuilding";
+
+
 const App = () => {
   return (
     <>
@@ -80,7 +83,10 @@ const App = () => {
           <Route path="/onsiteoptimization" element={<OnsiteOptimization />} />
           <Route path="/customreactcms" element={<CustomReactCMS />} />
           <Route path="/copywriting" element={<Copywriting />} />
+        
+        <Route path= "/backlinkbuildingblog" element={<BackLinkBuildings/>}/> 
         </Routes>
+
       </BrowserRouter>
     </>
   );

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ECommercewebsite.css";
 import Navs from "../../../../Components/Navbar/Navs";
 import Footer from "../../../../Components/footer/Footer";
 const ECommerceWebsite = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <>
       <Navs />

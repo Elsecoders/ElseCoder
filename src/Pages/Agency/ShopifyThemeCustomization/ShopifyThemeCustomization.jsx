@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ShopifyThemeCustomization.css';
 import Navs from '../../../../Components/Navbar/Navs';
 import Card from 'react-bootstrap/Card';
@@ -8,29 +8,32 @@ import Footer from "../../../../Components/footer/Footer";
 import GetInTouch from "../../../../Components/body/GetInTouch/GetInTouch";
 
 const ShopifyThemeCustomization = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   const datacards = [
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/TailoredDesign.png",
       title: "Tailored Design",
       text: "We'll craft a custom look and feel for your Shopify store, ensuring it aligns perfectly with your brand identity and values",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/MobileOptimization.png",
       title: "Mobile-Optimized",
       text: "With the majority of shoppers browsing on mobile devices, we'll make sure your site is responsive and looks exceptional on all screens.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/UIUX.png",
       title: "Enhanced User Experience",
       text: "We optimize navigation, page load times, and user interfaces to keep your customers engaged and satisfied.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifyTheme/ConversionBoosting.png",
       title: "Conversion-Boosting Features",
       text: "Implement the latest eCommerce best practices to increase sales, from intuitive product pages to a seamless checkout process.",
     },
     {
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/ShopifySEO/SEO.png",
       title: "SEO Optimization",
       text: "Improve your store's search engine visibility to attract more organic traffic and potential customers.",
     },
@@ -46,15 +49,15 @@ const ShopifyThemeCustomization = () => {
     <img src="public/Images/SolutionImplementation/ShopifyTheme/ShopifyTheme.png" alt="" />
   </div> 
          <div className="shopify-theme-content">
-  <h1 class="shopify-theme-custom-heading">
+  <h1 className="shopify-theme-custom-heading">
   Expert 
-  <span class="shopify-theme-color-theme"> Shopify </span> Theme Customization</h1>
+  <span className="shopify-theme-color-theme"> Shopify </span> Theme Customization</h1>
   <p className='shopify-theme-para'>Our team of skilled designers and developers is here to transform your Shopify store into a visually stunning and user-friendly masterpiece.</p>
   </div>
  
 </div>
-<div class="my-4 text-center w-100 ">
-  <h2 class="fw-bolder fs-1">What We Offer</h2></div>
+<div className="my-4 text-center w-100 ">
+  <h2 className="fw-bolder fs-1">What We Offer</h2></div>
 
   <div className="shopify-theme-cards">
   <Row xs={1} md={3} className="g-4" style={{margin :"40px 60px 0px 60px" }}>

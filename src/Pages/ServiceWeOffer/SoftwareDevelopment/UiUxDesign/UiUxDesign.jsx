@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./UiUxDesign.css";
 import Navs from "../../../../../Components/Navbar/Navs";
 import Footer from "../../../../../Components/footer/Footer";
 import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch";
 import Image from 'react-bootstrap/Image';
 const UiUxDesign = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <>
       <Navs />
@@ -13,7 +16,7 @@ const UiUxDesign = () => {
           <img src="public/Images/SoftwareDevelopment/UIUXDesign/UIUX.jpg" alt="Slider" />
         </div>
         <div className="UiUxDesigncontent">
-          <h1 style={{fontSize:"3.9rem"}}>
+          <h1 style={{fontSize:"3.9rem", fontWeight:"800"}}>
             <span style={{ color: "black" }}> </span>
             <span style={{ color: "black" }}>{`Expert `}</span>
             <span style={{ color: "#EA5A1B" }}> {`UI/UX `}</span>
@@ -28,7 +31,7 @@ const UiUxDesign = () => {
       </div>
       <div className="ProductDescriptionUiUx ">
         <div className="UIContent">
-          <h2 style={{ color: "#000" , textAlign:"left"}}>
+          <h2 style={{ color: "#000" , textAlign:"left", fontWeight:"800"}}>
             Comprehensive <span style={{ color: "#EA5A1B", fontSize:"2rem" , }}> {`UI/UX Design Services `}</span> for Crafting Exceptional Digital
             Experiences that Captivate, Engage, and Convert
           </h2>
@@ -53,7 +56,7 @@ const UiUxDesign = () => {
           </p>
         </div>
         <div className="Ui-Img">
-          <Image src='/public/Images/2.png'></Image>
+          <Image src='public/Images/SoftwareDevelopment/UIUXDesign/UIUX2.jpg'></Image>
         </div>
        </div>
       <GetInTouch />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CustomSoftwareDevelopment.css';
 import Navs from '../../../../../Components/Navbar/Navs';
 import Footer from '../../../../../Components/footer/Footer';
@@ -7,17 +7,20 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 const CustomSoftwareDevelopment = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   const boxData=[
     { 
       
       title: "Wordpress Setup",
       text: "From domain registration and hosting configuration to theme installation and essential plugin setup, our experts guide you through the process, enabling you to focus on crafting captivating content and engaging experiences for your visitors.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressSetup.png",
     },
     {
       title: "Theme Customization",
       text: "Tailoring your website to reflect your unique vision and brand identity is effortless with our expert assistance. We go beyond the basics, personalizing every aspect of your chosen WordPress theme - from layout and color schemes to fonts and interactive elements.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressThemeSetup.png",
     },
   ]
 
@@ -30,7 +33,7 @@ const CustomSoftwareDevelopment = () => {
           <img src="public/Images/SoftwareDevelopment/CustomSoftwareDevelopment/CustomSoftwareDevelopment.jpg" alt="Slider" />
         </div>
         <div className="CustomSoftwareDevelopmentcontent">
-          <h1 style={{fontSize:"3.9rem"}}>
+          <h1 style={{fontSize:"3.9rem", fontWeight:"800"}}>
             <span style={{ color: "black" }}></span>
             <span style={{ color: "black" }}>{`Tailored`}</span>
             <span style={{ color: "#EA5A1B" }}> {`Software Solutions`}</span>
@@ -44,7 +47,7 @@ const CustomSoftwareDevelopment = () => {
       </div>
       <div className="ProductDescriptionCustomSoftwareDevelopment ">
         <div className="CustomSoftwareDevelopmentContent">
-          <h2 style={{ color: "#000" , fontSize:"2rem", textAlign:"left" }}>
+          <h2 style={{ color: "#000" , fontSize:"2rem", textAlign:"left", fontWeight:"800" }}>
           Your <span style={{ color: "#EA5A1B" }}> {`Custom Software Development`}</span> Partner
           </h2>
           <p style={{fontSize:"15px", textAlign:"left" }}>
@@ -68,12 +71,12 @@ const CustomSoftwareDevelopment = () => {
           </p>
         </div>
         <div className="CustomSoftwareDevelopment-Img">
-          <Image src='/public/Images/2.png'></Image>
+          <Image src='public/Images/SoftwareDevelopment/CustomSoftwareDevelopment/CustomSoftwareDevelopment2.png'></Image>
         </div>
        </div>
        <div className='CustomSoftwareDevelopmentBox m-4'>
           <div className='CustomSoftwareDevelopmentBoxHeading'>
-            <h2 style={{color:"Black" , fontSize:"2rem" , textAlign:"left"}}>Innovative Solutions For Reliable Growth</h2>
+            <h2 style={{color:"Black" , fontSize:"2rem" , textAlign:"left", fontWeight:"800"}}>Innovative Solutions For Reliable Growth</h2>
           </div>
           <div className='CustomSoftwareDevelopmentboximg'>
           <Row xs={1} md={2} className="">

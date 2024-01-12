@@ -1,9 +1,12 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './SocialMediaStrategy.css';
 import Navs from '../../../../../Components/Navbar/Navs';
 import Footer from '../../../../../Components/footer/Footer';
 import GetInTouch from '../../../../../Components/body/GetInTouch/GetInTouch';
 const SocialMediaStrategy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <>
     <Navs/>
@@ -11,12 +14,12 @@ const SocialMediaStrategy = () => {
         <div className="socialmediastrtegy-page mt-2">
           <div className="socialmediastrategy-img">
             <img
-              src="/public/Images/serviceweoffer/graphicDesigner-banner.png"
+              src="public/Images/SocialMediaManagement/SocialMediaStrategy/SocialMediaStrategy2.jpg"
               alt="Slider"
             />
           </div>
           <div className="socialmediastrategy-content">
-            <h1 className="socialmediastrategy-content-head">
+            <h1 className="socialmediastrategy-content-head" style={{fontWeight:"800"}}>
               Transforming
               <br /> Ideas into <br />
               <span style={{ color: "#EA5A1B" }}> Visual </span>
@@ -30,7 +33,7 @@ const SocialMediaStrategy = () => {
         </div>
         <div className="socialmediastrategy-countainer1">
           <div className="socialmediastrategy-detail-container">
-            <h2 className="socialmediastrategy-detail">Crafting <span style={{ color: "#EA5A1B" }}> Stories Through  </span>Visual Innovation</h2>
+            <h2 className="socialmediastrategy-detail" style={{fontWeight:"800"}}>Crafting <span style={{ color: "#EA5A1B" }}> Stories Through  </span>Visual Innovation</h2>
             <p className="socialmediastrategy-detail-para">
               Our graphic designing service is a creative hub where imagination
               and innovation blend seamlessly to bring your ideas to life. With
@@ -48,7 +51,7 @@ const SocialMediaStrategy = () => {
             </p>
           </div>
           <div className="socialmediastrategy-detail-img">
-            <img src="/public/Images/serviceweoffer/graphicDesigner-content.webp" alt="" />
+            <img src="public/Images/SocialMediaManagement/SocialMediaStrategy/SocialMediaStrategy.png" alt="" />
           </div>
         </div>
       </div>

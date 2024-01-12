@@ -13,7 +13,7 @@ const ServicesWeOffer = () => {
       <div className="ServiceWeOffer">
         <div className="Serviceheading">
           {" "}
-          <h2>Services We Offer</h2>
+          <h2 style={{fontWeight: "800"}}>Services We Offer</h2>
         </div>
         <div className="Services-Box mt-3">
           <Card className="cardbox"style={{ width: "35rem", height: "18rem" }}>
@@ -144,7 +144,7 @@ const ServicesWeOffer = () => {
                     style={{ color: "black", textDecoration: "none" }}
                     to="/backlinkbuilding"
                   >
-                    BackNavLink Building
+                    BackLink Building
                   </NavLink>
                 </div>
               </div>

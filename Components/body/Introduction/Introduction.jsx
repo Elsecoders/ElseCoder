@@ -5,10 +5,10 @@ import Card from "react-bootstrap/Card";
 const Introduction = () => {
   return (
     <>
-      <div className="intro-Dock">
+      <div className="intro-Dock ">
         <div className="introduction">
           <div className="heading ">
-            <h1 className="heads">OUR IMPRESSION.</h1>
+            <h1 className="heads" >OUR IMPRESSION.</h1>
           </div>
           <div className="paragraph">
             <p>
@@ -59,7 +59,7 @@ const Introduction = () => {
             <Card.Img
               variant="center"
               src="/public/Images/Intro/emer.png"
-              style={{ width: "10rem", height: "10rem" }}
+              style={{ width: "8rem", height: "8rem" , paddingLeft:"30px", paddingTop:"30px" }}
             />
           </Card>
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
@@ -72,8 +72,8 @@ const Introduction = () => {
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
               variant="center"
-              src="/Images/2.png"
-              style={{ width: "10rem", height: "10rem" }}
+              src="/Images/Intro/walletking1.png"
+              style={{ width: "8rem", height: "8rem" , paddingLeft:"30px", paddingTop:"30px" }}
             />
           </Card>
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
@@ -81,21 +81,21 @@ const Introduction = () => {
           
               variant="center"
               src="/public/Images/Intro/TJM.svg"
-              style={{ width: "10rem", height: "10rem" }}
+              style={{ width: "8rem", height: "8rem" , paddingLeft:"30px", paddingTop:"30px" }}
             />
           </Card>
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
               variant="center"
               src="/public/Images/Intro/face3face.png"
-              style={{ width: "10rem", height: "10rem" }}
+              style={{ width: "8rem", height: "8rem" , paddingLeft:"30px", paddingTop:"30px" }}
             />
           </Card>
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
               variant="center"
-              src="/Images/2.png"
-              style={{ width: "10rem", height: "10rem" }}
+              src="/Images/Intro/Modora.png"
+              style={{ width: "8rem", height: "8rem" , paddingLeft:"30px", paddingTop:"30px" }}
             />
           </Card>
           

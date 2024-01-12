@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Copywriting.css";
 import Navs from "../../../../../Components/Navbar/Navs";
 import Footer from "../../../../../Components/footer/Footer";
 import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch";
 const Copywriting = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
+  }, []);
   return (
     <>
       <Navs />
@@ -11,12 +14,12 @@ const Copywriting = () => {
         <div className="copywriting-page mt-2">
           <div className="copywriting-img">
             <img
-              src="/public/Images/serviceweoffer/graphicDesigner-banner.png"
+              src="public/Images/SocialMediaManagement/Copywriting/Copywriting.png"
               alt="Slider"
             />
           </div>
           <div className="copywriting-content">
-            <h1 className="copywriting-content-head">
+            <h1 className="copywriting-content-head" style={{fontWeight:"800"}}>
               Transforming
               <br /> Ideas into <br />
               <span style={{ color: "#EA5A1B" }}> Visual </span>
@@ -30,7 +33,7 @@ const Copywriting = () => {
         </div>
         <div className="copywriting-countainer1">
           <div className="copywriting-detail-container">
-            <h2 className="copywriting-detail">
+            <h2 className="copywriting-detail" style={{fontWeight:"800"}}>
               Crafting <span style={{ color: "#EA5A1B" }}> Stories Through</span>{" "}
                Visual <br /> Innovation
             </h2>
@@ -52,7 +55,7 @@ const Copywriting = () => {
           </div>
           <div className="copywriting-detail-img">
             <img
-              src="/public/Images/serviceweoffer/graphicDesigner-content.webp"
+              src="public/Images/SocialMediaManagement/Copywriting/Copywriting2.png"
               alt=""
             />
           </div>

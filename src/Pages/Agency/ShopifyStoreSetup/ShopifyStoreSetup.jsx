@@ -16,8 +16,8 @@ const ShopifyStoreSetup = () => {
       imageSrc:
         "public/Images/SolutionImplementation/Shopify/ShopifyStoreCreation.png",
 
-      imageSrc:
-        "public/Images/SolutionImplementation/Shopify/ShopifyStoreCreation.jpg",
+      // :imageSrc
+      //   "public/Images/SolutionImplementation/Shopify/ShopifyStoreCreation.jpg",
 
       title: "Tailored Store Creation",
       text: "We understand that no two businesses are the same. That's why our expert team crafts a unique, custom Shopify store that perfectly aligns with your brand and vision.",
@@ -54,18 +54,20 @@ const ShopifyStoreSetup = () => {
     },
   ];
   return (
-<<<<<<< HEAD
    <>
     <div>
         <Navs />
         <div className="shopify-content-StoreSetup-main mt-4">
           <div className="StoreSetup-img">
-            <img src="/Public/Images/Contact-us/contactUs-img.jpg" alt="" />
+          <img
+            src="public/Images/SolutionImplementation/Shopify/ShopifyStoreSetup.jpg"
+            alt=""
+          />
           </div>
           <div className="StoreSetup-content">
-            <h1 class="StoreSetup-custom-heading">
+            <h1 className="StoreSetup-custom-heading">
               Setup Your
-              <span class="StoreSetup-color-theme"> Shopify Store </span>
+              <span className="StoreSetup-color-theme"> Shopify Store </span>
             </h1>
             <p className="shopify-StoreSetup-para">
               Welcome to the world of seamless, stress-free online selling!
@@ -74,21 +76,11 @@ const ShopifyStoreSetup = () => {
               captivating reality.
             </p>
           </div>
-=======
-    <>
-      <Navs />
-      <div className="shopify-content-StoreSetup-main mt-4">
-        <div className="StoreSetup-img">
-          <img
-            src="public/Images/SolutionImplementation/Shopify/ShopifyStoreSetup.jpg"
-            alt=""
-          />
->>>>>>> 18306b74c910bc7f401ddf13d17df7e480deaea6
         </div>
         <div className="StoreSetup-content">
-          <h1 class="StoreSetup-custom-heading">
+          <h1 className="StoreSetup-custom-heading">
             Setup Your
-            <span class="StoreSetup-color-theme"> Shopify Store </span>
+            <span className="StoreSetup-color-theme"> Shopify Store </span>
           </h1>
           <p className="shopify-StoreSetup-para">
             Welcome to the world of seamless, stress-free online selling! Unlock
@@ -98,8 +90,8 @@ const ShopifyStoreSetup = () => {
           </p>
         </div>
       </div>
-      <div class="my-4 text-center w-100 ">
-        <h2 class="fw-bolder fs-1">What we Offer</h2>
+      <div className="my-4 text-center w-100 ">
+        <h2 className="fw-bolder fs-1">What we Offer</h2>
 
         <div className="StoreSetup-cards">
           <Row
@@ -135,7 +127,8 @@ const ShopifyStoreSetup = () => {
       <GetInTouch />
 
       <Footer />
-      </div>
+      
+    
    </>
 
      

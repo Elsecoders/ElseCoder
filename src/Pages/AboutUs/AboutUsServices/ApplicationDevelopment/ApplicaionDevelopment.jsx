@@ -8,11 +8,13 @@ import { FaJava, FaSwift } from "react-icons/fa";
 import { TbBrandKotlin, TbBrandJavascript } from "react-icons/tb";
 import { TfiApple } from "react-icons/tfi";
 import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch";
+import { width } from "@mui/system";
 const ApplicaionDevelopment = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
   }, []);
   const [selectedTechnology, setSelectedTechnology] = useState("food");
+  const [selectedLanguage, setSelectedLanguage] = useState("java");
   const [blink, setBlink] = useState(false);
 
   const technologyContent = {
@@ -46,12 +48,44 @@ const ApplicaionDevelopment = () => {
         "Our social apps are built with an engaging and straightforward user interface that allows millions of users to share pictures, videos, and other media without lag, app crash, or other errors.",
       image: "../../../../../public/Images/aboutUs/social-seoooo11.jpg",
     },
+    java:{
+     head: "Java" ,
+     description: "We offer SMBs, startups, and enterprises, innovation to digitize their businesses, through our expertise in Java for mobile apps, game apps, and much more.<br /> <br /> Java is the easiest official language to work with when developing your first mobile app from our best mobile app development company in USA.",
+     image:'../../../../../public/Images/aboutUs/javalogo.png' 
+    },
+    kotlin:{
+      head: "Kotlin" ,
+      description: "With a diverse team of programmers, we offer exceptional skills in Kotlin and other programming languages to design innovative solutions for startups, enterprises, and Fortune 500s.<br /> <br /> Kotlin works well for cross-platform applications, allowing businesses to target both Android and iOS simultaneously.",
+      image:'../../../../../public/Images/aboutUs/kotlin-logo-2.png' 
+     },    
+     javascript:{
+      head:  'Javascript',
+      description: "Whether it’s a website or a web app, our designers and developers have experience in designing exceptional solutions using HTML5 and other web programming languages.<br /> <br /> With new elements and attributes, HTML5 offers more creative freedom for designers to craft your app as you imagined it.",
+      image:'../../../../../public/Images/aboutUs/js-logo.png' 
+     },    
+     swift:{
+      head: 'Swift' ,
+      description: "Are you looking to invest in iOS apps? Cubix offers exceptional iOS app development services, designing mobile games, finance apps, and more for startups, SMBs, and enterprises.<br /> <br /> Swift is easy to use with a simple learning curve and allows agile development, convenient scalability, and flexibility in app design.",
+      image:'../../../../../public/Images/aboutUs/swift-logo.png' 
+     },    
+     objectivec:{
+      head:  "Objective C",
+      description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
+      image:'../../../../../public/Images/aboutUs/objective-c.png' 
+     },   
   };
 
   const handleTechnologyClick = (technology) => {
     setBlink(true); // Set blink to true when content changes
     setTimeout(() => {
       setSelectedTechnology(technology);
+      setBlink(false); // Set blink back to false after 200ms
+    }, 200);
+  };
+  const handleLanguageClick = (language) => {
+    setBlink(true); // Set blink to true when content changes
+    setTimeout(() => {
+      setSelectedLanguage(language);
       setBlink(false); // Set blink back to false after 200ms
     }, 200);
   };
@@ -141,7 +175,7 @@ const ApplicaionDevelopment = () => {
               <p className="para">
                 Being a quality-focused Mobile App Development Company, Cubix
                 guarantees intuitive mobile apps that are performance-oriented
-                and a valuable addition to users' lives.
+                and a valuable addition to users lives.
               </p>
             </div>
           </div>
@@ -220,18 +254,25 @@ const ApplicaionDevelopment = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <li onClick={() => handleTechnologyClick("mobile")}>
-                      <FaJava size={40} />
+                    
+                    <li
+                    className="underline"
+                     onClick={() => handleLanguageClick("java")}>
+                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/javalogo.png" alt="java-logo" />
                     </li>
-                    <li onClick={() => handleTechnologyClick("frontend")}>
-                      <TbBrandKotlin size={40} />
+                    <li
+                    className="underline"
+                     onClick={() => handleLanguageClick("kotlin")}>
+                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/kotlin-logo-2.png" alt="kotlin-logo" />
                     </li>
-                    <li onClick={() => handleTechnologyClick("database")}>
-                      <TbBrandJavascript size={40} />
+                    <li
+                    className="underline"
+                    onClick={() => handleLanguageClick("javascript")}>
+                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/js-logo.png" alt="javascript-logo" />
                     </li>
                   </ul>
                 </div>
-                <div>
+                <div className="nav tabs-nav" role="tablelist">
                   <ul
                     style={{
                       listStyle: "none",
@@ -243,11 +284,15 @@ const ApplicaionDevelopment = () => {
                       cursor: "pointer",
                     }}
                   >
-                    <li onClick={() => handleTechnologyClick("backend")}>
-                      <FaSwift size={40} />
+                    <li
+                    className="underline"
+                     onClick={() => handleLanguageClick("swift")}>
+                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/swift-logo.png" alt="swift-logo" />
                     </li>
-                    <li onClick={() => handleTechnologyClick("cms")}>
-                      <TfiApple size={40} />
+                    <li
+                    className="underline"
+                     onClick={() => handleLanguageClick("objectivec")}>
+                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/objective-c.png" alt="objectivec-logo" />
                     </li>
                   </ul>
                 </div>
@@ -282,7 +327,7 @@ const ApplicaionDevelopment = () => {
                     </li>
                   </ul>
                 </div>
-                <div>
+                <div className="nav tabs-nav" role="tablelist">
                   <ul
                     style={{
                       listStyle: "none",
@@ -290,7 +335,7 @@ const ApplicaionDevelopment = () => {
                       display: "flex",
                       flexWrap: "wrap",
                       gap: "25px",
-                      justifyContent: "left",
+                      justifyContent: "center",
                       cursor: "pointer",
                     }}
                   >
@@ -337,13 +382,18 @@ const ApplicaionDevelopment = () => {
             </div>
             <div className="col-md-7">
               <div className="tabs-content mt-sm7">
-                <div className="backgroundwhite-tabsd bgafters bgbefores p-50"></div>
+              <div style={{ backgroundColor: '#fff', borderRadius: '4px' }} className="backgroundwhite-tabsd bgafters bgbefores p-50">
+                <div className="boxseo-data">
+                      <img src={technologyContent[selectedLanguage].image} alt=""  />
+                      <h3>{technologyContent[selectedLanguage]?.head}</h3>
+                      <p dangerouslySetInnerHTML={{ __html: technologyContent[selectedLanguage]?.description }}></p>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {selectedTechnology === "mobile" && <Food />}
       <GetInTouch />
       <Footer />
     </>

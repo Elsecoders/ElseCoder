@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./informationalBlog.css";
 
 import Card from "react-bootstrap/Card";
@@ -32,13 +32,14 @@ const InformationalBolg = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const cards = [
+
  
     { img:'/public/Images/InfoblogPages/Ecom/Ecom.jpg',title: 'eCommerce Website', description: 'Elevate sales with a captivating online shopping experience.', link: '/ecommercewebsite-blog' },
     { img:'/public/Images/InfoblogPages/SocialMediaStrategies/socialmediastrategies.jpg',title: 'Social Media Strategies', description: 'Tailored strategies for maximum social media impact.', link: '/socialmediastrategies-blog' },
@@ -50,13 +51,16 @@ const InformationalBolg = () => {
     { img:'/public/Images/InfoblogPages/BackendFramework/backendframe.jpg',title: 'Backend Framework', description: 'Powering seamless operations with robust backend solutions.', link: '/backend-framework-blog' },
     { img:'/public/Images/InfoblogPages/MobileAppDevelopment/mobileapp.jpg',title: 'Mobile App development', description: 'Elevate user satisfaction through a seamless website journey.', link: '/mobile-app-development-blog' },
 
+
     // Add more cards as needed with different content
   ];
   return (
     <>
       <div className="InformationalBlog">
         <div className="Info-Blog-heading">
-          <h2 style={{fontWeight: "800"}}>Insights to help you stay ahead of change</h2>
+          <h2 style={{ fontWeight: "800" }}>
+            Insights to help you stay ahead of change
+          </h2>
           <p>Informational Blogs</p>
           <div className="main-countainer">
             <div className="col-12 col-md-3 col-lg-2  card-mini">
@@ -69,6 +73,7 @@ const InformationalBolg = () => {
                 </p>
               </div>
             </div>
+
             <div className="mini-card-grid col-12">
       {cards.map((card, index) => (
         <div
@@ -86,6 +91,7 @@ const InformationalBolg = () => {
         </div>
       ))}
     </div>
+
           </div>
           {/* <Card style={{ width: "18rem" }} className="fles">
               <Card.Img variant="top" src="/Images/2.png" />

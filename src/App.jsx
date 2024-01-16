@@ -30,8 +30,12 @@ import ApplicaionDevelopment from "./Pages/AboutUs/AboutUsServices/ApplicationDe
 import SeoDevelopment from "./Pages/AboutUs/AboutUsServices/SEO Development/SeoDevelopment";
 import SocialMediaDevelopment from "./Pages/AboutUs/SocialMediaDevelopment/SocialMediaDevelopment";
 import EcommerceshopifyWp from "./Pages/AboutUs/AboutUsServices/EcommerceShopifyWp/EcommerceshopifyWp";
-
+import WebAppblog from "./Pages/InfoBlogPages/WebAppblog/WebAppblog";
 import BackLinkBuildings from "./Pages/InfoBlogPages/BacklinkBuildings/BackLinkBuilding";
+import BackendFrameWorkBlog from "./Pages/InfoBlogPages/Backendframeworkblog/BackendFrameWorkBlog";
+import Seokeywordblog from"./Pages/InfoBlogPages/SeoKeywordBlog/Seokeywordblog";
+import WebsiteDesignBlog from "./Pages/InfoBlogPages/WebsiteDesignBlog/WebsiteDesignblog";
+import SocialMediaCampaign from"./Pages/InfoBlogPages/SocialMediaCampaignblogs/SocialMediaCampblog";
 
 
 const App = () => {
@@ -53,12 +57,12 @@ const App = () => {
             path="/shopifythemecustomization"
             element={<ShopifyThemeCustomization />}
           />
-          <Route path="/ecommercewebsite" element={<ECommerceWebsite />} />
+          <Route path="/ecommercewebsite-blog" element={<ECommerceWebsite />} />
           <Route
-            path="/socialmediastrategies"
+            path="/socialmediastrategies-blog"
             element={<SocialMediaStrategies />}
           />
-          <Route path="/websiteexperience" element={<WebsiteExperience />} />
+          <Route path="/websiteexperience-blog" element={<WebsiteExperience />} />
           <Route path="/wordpress" element={<Wordpress />} />
           <Route path="/shopify" element={<Shopify />} />
           <Route
@@ -84,6 +88,11 @@ const App = () => {
           <Route path="/seodevelopment" element={<SeoDevelopment/>}/>
           <Route path="/socialmediadevelopment" element={<SocialMediaDevelopment/>}/>
           <Route path="/ecommerceshopifyWp" element={<EcommerceshopifyWp/>}/>
+          <Route path="/backend-framework-blog" element={<BackendFrameWorkBlog/>} />
+         <Route path="/seokeywordresearch-blog" element={<Seokeywordblog/>}/>
+         <Route path="/mobile-app-development-blog" element={<WebAppblog/>}/>
+         <Route path="/web-application-blog" element={<WebsiteDesignBlog/>}/>
+        <Route path="/social-media-campaign-blog" element={<SocialMediaCampaign/>}/>
         </Routes>
 
       </BrowserRouter>

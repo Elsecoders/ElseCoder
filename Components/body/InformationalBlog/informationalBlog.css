@@ -21,24 +21,19 @@ p {
   justify-content: column;
 }
 
+
 .card-mini{
     content: "";
     top: 0;
     left: 0;
     padding-top: 14.5rem;
     border-radius: 16px;
-    background: linear-gradient(85deg, #434343, #262626);
+    background: linear-gradient(85deg, #ffffff, #ffffff);
     color: #fff;
-    /* background: #000; */
     z-index: 2;
-    /* border-radius: 8px; */
+   border:  2px solid #777;
 }
-body::-webkit-scrollbar{
-  /* background:linear-gradient(
-    90deg
-    ,#434343,#434343 1px,#111 0,#111); */
-   background-color: transparent;
-  }
+
 body::-webkit-scrollbar-thumb{
   background:#434343;
   border-radius: 16px;
@@ -51,13 +46,15 @@ body::-webkit-scrollbar-thumb{
   display: flex;
   overflow-x: scroll;
   box-sizing: border-box;
+  
 }
 
 .mini-card {
+  border: 2px solid #777;
   position: relative;
   padding: 1.5rem;
   border-radius: 16px;
-  background: linear-gradient(85deg, #434343, #262626);
+  background: linear-gradient(85deg, #ffffff, #ffffff);
   color: #fff;
   display: flex;
   flex-direction: column;

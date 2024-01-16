@@ -42,14 +42,6 @@ const InformationalBolg = () => {
  
     { img:'/public/Images/2.png',title: 'How to create a successful e-commerce website for your business', description: 'Card 2 Description', link: '/ecommercewebsite' },
     { img:'/public/Images/2.png',title: 'The role of social media in modern marketing strategies', description: 'Card 1 Description', Navlink: '/socialmediastrategies' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
-    { img:'/public/Images/2.png',title: 'Card 2 Title', description: 'Card 2 Description', Navlink: '' },
-
     { img:'/public/Images/2.png',title: 'eCommerce Website', description: 'Card 1 Description', link: '#' },
     { img:'/public/Images/2.png',title: 'Social Media Strategies', description: 'Card 2 Description', link: '#' },
     { img:'/public/Images/2.png',title: 'Website Experience', description: 'Card 2 Description', link: '#' },
@@ -78,7 +70,7 @@ const InformationalBolg = () => {
                 </p>
               </div>
             </div>
-            <div className="mini-card-grid col-12">
+            <div className="mini-card-grid col-10">
       {cards.map((card, index) => (
         <div
           key={index}

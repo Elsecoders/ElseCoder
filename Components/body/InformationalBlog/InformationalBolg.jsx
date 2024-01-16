@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./informationalBlog.css";
 
 import Card from "react-bootstrap/Card";
@@ -32,25 +32,79 @@ const InformationalBolg = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const cards = [
- 
-    { img:'/public/Images/2.png',title: 'How to create a successful e-commerce website for your business', description: 'Card 2 Description', link: '/ecommercewebsite' },
-    { img:'/public/Images/2.png',title: 'The role of social media in modern marketing strategies', description: 'Card 1 Description', Navlink: '/socialmediastrategies' },
-    { img:'/public/Images/2.png',title: 'eCommerce Website', description: 'Card 1 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Social Media Strategies', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Website Experience', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Seo Keyword Research', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Seo BackLink Buildings', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Web Application Block', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Social Media Campaign', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Backend Framework', description: 'Card 2 Description', link: '#' },
-    { img:'/public/Images/2.png',title: 'Mobile App development', description: 'Card 2 Description', link: '#' },
+    {
+      img: "/public/Images/2.png",
+      title: "How to create a successful e-commerce website for your business",
+      description: "Card 2 Description",
+      link: "/ecommercewebsite",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "The role of social media in modern marketing strategies",
+      description: "Card 1 Description",
+      Navlink: "/socialmediastrategies",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "eCommerce Website",
+      description: "Card 1 Description",
+      link: "#",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "Social Media Strategies",
+      description: "Card 2 Description",
+      link: "#",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "Website Experience",
+      description: "Card 2 Description",
+      link: "#",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "Seo Keyword Research",
+      description: "Card 2 Description",
+      link: "#",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "Seo BackLink Buildings",
+      description: "Card 2 Description",
+      link: "#",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "Web Application Block",
+      description: "Card 2 Description",
+      link: "#",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "Social Media Campaign",
+      description: "Card 2 Description",
+      link: "#",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "Backend Framework",
+      description: "Card 2 Description",
+      link: "#",
+    },
+    {
+      img: "/public/Images/2.png",
+      title: "Mobile App development",
+      description: "Card 2 Description",
+      link: "#",
+    },
 
     // Add more cards as needed with different content
   ];
@@ -58,7 +112,9 @@ const InformationalBolg = () => {
     <>
       <div className="InformationalBlog">
         <div className="Info-Blog-heading">
-          <h2 style={{fontWeight: "800"}}>Insights to help you stay ahead of change</h2>
+          <h2 style={{ fontWeight: "800" }}>
+            Insights to help you stay ahead of change
+          </h2>
           <p>Informational Blogs</p>
           <div className="main-countainer">
             <div className="col-12 col-md-3 col-lg-2  card-mini">
@@ -70,23 +126,27 @@ const InformationalBolg = () => {
                 </p>
               </div>
             </div>
-            <div className="mini-card-grid col-10">
-      {cards.map((card, index) => (
-        <div
-          key={index}
-          className={`col-9 col-md-4 col-lg-3 mini-card ${hoveredCards[index] ? 'hovered' : ''} ${scrollPosition > 50 ? 'hidden' : ''}`}
-          onMouseEnter={() => handleMouseEnter(index)}
-          onMouseLeave={() => handleMouseLeave(index)}
-        >
-          <div className="card-content">
-          <Card.Img variant="top" src={card.img} />
-            <h5 className="card-title">{card.title}</h5>
-            <p className="card-text">{card.description}</p>
-            <NavLink to={card.link} ><ReadMoreButton /></NavLink>
-          </div>
-        </div>
-      ))}
-    </div>
+            <div className="mini-card-grid col-12 col-md-10 col-lg-10">
+              {cards.map((card, index) => (
+                <div
+                  key={index}
+                  className={`col-6 col-md-4 col-lg-3 mini-card ${
+                    hoveredCards[index] ? "hovered" : ""
+                  } ${scrollPosition > 50 ? "hidden" : ""}`}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={() => handleMouseLeave(index)}
+                >
+                  <div className="card-content">
+                    <Card.Img variant="top" src={card.img} />
+                    <h5 className="card-title">{card.title}</h5>
+                    <p className="card-text">{card.description}</p>
+                    <NavLink to={card.link}>
+                      <ReadMoreButton />
+                    </NavLink>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           {/* <Card style={{ width: "18rem" }} className="fles">
               <Card.Img variant="top" src="/Images/2.png" />

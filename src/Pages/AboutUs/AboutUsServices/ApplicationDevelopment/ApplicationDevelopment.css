@@ -12,7 +12,7 @@
 }
 .first-container-text {
   margin-top: 2%;
-  margin-left: -9%;
+  margin-left: 4%;
 }
 h2 {
   font-size: 35px;
@@ -75,8 +75,8 @@ h3 {
   
   .row.div-centers {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    /* align-items: center;
   }
   
   .box-bullits {

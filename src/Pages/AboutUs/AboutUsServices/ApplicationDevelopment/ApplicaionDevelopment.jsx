@@ -4,11 +4,7 @@ import Footer from "../../../../../Components/footer/Footer";
 import "./ApplicationDevelopment.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { FaJava, FaSwift } from "react-icons/fa";
-import { TbBrandKotlin, TbBrandJavascript } from "react-icons/tb";
-import { TfiApple } from "react-icons/tfi";
 import GetInTouch from "../../../../../Components/body/GetInTouch/GetInTouch";
-import { width } from "@mui/system";
 const ApplicaionDevelopment = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
@@ -72,6 +68,31 @@ const ApplicaionDevelopment = () => {
       head:  "Objective C",
       description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
       image:'../../../../../public/Images/aboutUs/objective-c.png' 
+     }, 
+     mongodb:{
+      head:  "MongoDB",
+      description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
+      image:'../../../../../public/Images/aboutUs/mangoDb.png' 
+     }, 
+     mysql:{
+      head:  "MySQL",
+      description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
+      image:'../../../../../public/Images/aboutUs/mysql.png' 
+     }, 
+     react:{
+      head:  "React Js",
+      description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
+      image:'../../../../../public/Images/aboutUs/icons8-react-80.png' 
+     }, 
+     vue:{
+      head:  "Vue Js",
+      description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
+      image:'../../../../../public/Images/aboutUs/icons8-vue-js-48.png' 
+     }, 
+     node:{
+      head:  "Node Js",
+      description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
+      image:'../../../../../public/Images/aboutUs/icons8-node-js-48.png' 
      },   
   };
 
@@ -105,7 +126,8 @@ const ApplicaionDevelopment = () => {
               blink ? "blink active" : "blink"
             }`}
           >
-            <div>
+            <div className="first-container-text">
+              <div>
               <h2>
                 <b style={{ color: "black" }}>
                   Your Trusted Mobile Application Development Company
@@ -164,6 +186,7 @@ const ApplicaionDevelopment = () => {
               {technologyContent[selectedTechnology]?.head}
             </h3>
             <p>{technologyContent[selectedTechnology]?.description}</p>
+          </div>
           </div>
         </div>
         <div className="secound-container">
@@ -316,34 +339,13 @@ const ApplicaionDevelopment = () => {
                       cursor: "pointer",
                     }}
                   >
-                    <li onClick={() => handleTechnologyClick("mobile")}>
-                      <FaJava size={40} />
+                    <li className="underline"
+                    onClick={() => handleLanguageClick("mongodb")}>
+                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/mangoDb.png" alt="mongodb" />
                     </li>
-                    <li onClick={() => handleTechnologyClick("frontend")}>
-                      <TbBrandKotlin size={40} />
-                    </li>
-                    <li onClick={() => handleTechnologyClick("database")}>
-                      <TbBrandJavascript size={40} />
-                    </li>
-                  </ul>
-                </div>
-                <div className="nav tabs-nav" role="tablelist">
-                  <ul
-                    style={{
-                      listStyle: "none",
-                      padding: "0",
-                      display: "flex",
-                      flexWrap: "wrap",
-                      gap: "25px",
-                      justifyContent: "center",
-                      cursor: "pointer",
-                    }}
-                  >
-                    <li onClick={() => handleTechnologyClick("backend")}>
-                      <FaSwift size={40} />
-                    </li>
-                    <li onClick={() => handleTechnologyClick("cms")}>
-                      <TfiApple size={40} />
+                    <li className="underline"
+                    onClick={() => handleLanguageClick("mysql")}>
+                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/mysql.png" alt="mysql" />
                     </li>
                   </ul>
                 </div>
@@ -367,14 +369,19 @@ const ApplicaionDevelopment = () => {
                       cursor: "pointer",
                     }}
                   >
-                    <li onClick={() => handleTechnologyClick("mobile")}>
-                      <FaJava size={40} />
+                    <li className="underline"
+                    onClick={() => handleLanguageClick("react")}>
+                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-react-80.png" alt="react" />
                     </li>
-                    <li onClick={() => handleTechnologyClick("frontend")}>
-                      <TbBrandKotlin size={40} />
+                    <li className="underline"
+                    onClick={() => handleLanguageClick("vue")}>
+                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-vue-js-48.png" alt="vue" />
+                    
                     </li>
-                    <li onClick={() => handleTechnologyClick("database")}>
-                      <TbBrandJavascript size={40} />
+                    <li className="underline"
+                    onClick={() => handleLanguageClick("node")}>
+                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-node-js-48.png" alt="node" />
+                    
                     </li>
                   </ul>
                 </div>

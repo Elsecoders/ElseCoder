@@ -74,11 +74,11 @@ const InformationalBolg = () => {
               </div>
             </div>
 
-            <div className="mini-card-grid col-12">
+            <div className="mini-card-grid col-13">
       {cards.map((card, index) => (
         <div
           key={index}
-          className={`col-9 col-md-4 col-lg-3 mini-card ${hoveredCards[index] ? 'hovered' : ''} ${scrollPosition > 50 ? 'hidden' : ''}`}
+          className={`col-8 col-md-4 col-lg-3 mini-card ${hoveredCards[index] ? 'hovered' : ''} ${scrollPosition > 50 ? 'hidden' : ''}`}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={() => handleMouseLeave(index)}
         >

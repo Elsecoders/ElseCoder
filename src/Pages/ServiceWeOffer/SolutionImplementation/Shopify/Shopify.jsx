@@ -82,16 +82,17 @@ const Shopify = () => {
                   variant="top"
                   src={card.imageSrc}
                   style={{
-                    height: "170px",
-                    width: "160px",
+                    width: "45%",
+                    aspectRatio: "3/2",
+                    objectFit: "contain",
                     marginTop: "-40px",
                   }}
                 />
                 <Card.Body>
-                  <Card.Title style={{ marginTop: "-40px", fontWeight: "800" }}>
+                  <Card.Title style={{fontWeight: "800" }}>
                     {card.title}
                   </Card.Title>
-                  <Card.Text>{card.text}</Card.Text>
+                  <Card.Text style={{ fontSize: "15px" }}>{card.text}</Card.Text>
                 </Card.Body>
               </Card>
             </Col>

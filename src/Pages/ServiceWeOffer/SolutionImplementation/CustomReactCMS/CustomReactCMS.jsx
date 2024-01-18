@@ -15,23 +15,23 @@ const CustomReactCMS = () => {
       
       title: "Content Administration",
       text: "Experience precision control with our Custom React CMS Service. Effortlessly generate, modify, and organize content using tailored solutions that tap into the dynamic capabilities of React.",
-      imageSrc: "/public/Images/2.png",
+      imageSrc: "/Images/SolutionImplementation/CMS/CMS.ContentManagement.png",
 
     },
     {
       title: "Template Design",
       text: "Design custom templates with the power of React, delivering visually stunning and engaging layouts. Elevate your content management to new heights, creating a unique digital experience that resonates with your brand.",
-      imageSrc: "public/Images/SolutionImplementation/CMS/TemplateCreation.png",
+      imageSrc: "/Images/SolutionImplementation/CMS/TemplateCreation.png",
     },
     {
       title: "Page Control",
       text: "Utilize the robust features of React to seamlessly generate, organize, and refresh web pages. Revel in intuitive controls and dynamic layouts, ensuring your online footprint remains impactful, responsive, and in harmony with your unique vision.",
-      imageSrc: "public/Images/SolutionImplementation/CMS/PageManagement.png",
+      imageSrc: "/Images/SolutionImplementation/CMS/PageManagement.png",
     },
     {
       title: "Tailored Development",
       text: "Opt for advanced customization in your web applications, achieving flawless functionality and delivering extraordinary user experiences. Elevate your digital presence with tailor-made development solutions that align precisely with your vision and aspirations.",
-      imageSrc: "public/Images/SolutionImplementation/CMS/CustomDevelopment.png",
+      imageSrc: "/Images/SolutionImplementation/CMS/CustomDevelopment.png",
     },
   
   ];
@@ -40,7 +40,7 @@ const CustomReactCMS = () => {
     <Navs />
     <div className="wordpressSlider mt-2">
       <div className="wordpressImg">
-        <img src="public/Images/SolutionImplementation/CMS/CMS.jpg" alt="Slider" />
+        <img src="/Images/SolutionImplementation/CMS/CMS.jpg" alt="Slider" />
       </div>
       <div className="wordpresscontent">
         <h1 style={{fontSize:"3.9rem", fontWeight:"800"}}>
@@ -61,10 +61,13 @@ const CustomReactCMS = () => {
         {cardsData.map((card, idx) => (
           <Col key={idx}>
             <Card style={{height:"270px"}}>
-              <Card.Img variant="top" src={card.imageSrc} style={{height:"170px", width:"160px",marginTop:"-40px"}}/>
+              <Card.Img variant="top" src={card.imageSrc} style={{width: "45%",
+                    aspectRatio: "3/2",
+                    objectFit: "contain",
+                    marginTop: "-40px",}}/>
               <Card.Body>
-                <Card.Title style={{marginTop:"-40px", fontWeight:"800"}}>{card.title}</Card.Title>
-                <Card.Text>{card.text}</Card.Text>
+                <Card.Title style={{ fontWeight:"800"}}>{card.title}</Card.Title>
+                <Card.Text style={{ fontSize: "15px" }}>{card.text}</Card.Text>
               </Card.Body>
             </Card>
           </Col>

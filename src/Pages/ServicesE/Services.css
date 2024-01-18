@@ -8,12 +8,14 @@
   align-items: center;
   font-family: "Inter";
   font-weight: 600;
+  height: 80%;
+  padding-bottom: 40px;
 }
 
 .ServiceImg {
   width: 100%; /* Adjust width as needed */
   overflow: hidden;
-  border-radius: 50% 0 50% 50%;
+  border-radius: 0 50% 0 50%;
   object-fit: cover;
   padding-left: 10px;
 }

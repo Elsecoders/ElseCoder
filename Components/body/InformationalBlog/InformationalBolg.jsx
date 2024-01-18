@@ -141,6 +141,7 @@ const InformationalBolg = () => {
               </div>
             </div>
 
+
             <div className="mini-card-grid col-12">
               {cards.map((card, index) => (
                 <div
@@ -177,6 +178,7 @@ const InformationalBolg = () => {
                 </div>
               ))}
             </div>
+
           </div>
           {/* <Card style={{ width: "18rem" }} className="fles">
               <Card.Img variant="top" src="/Images/2.png" />

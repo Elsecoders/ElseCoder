@@ -9,37 +9,37 @@ const EcommerceshopifyWp = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top of the page when the component mounts
   }, []);
-  const [selectedTechnology, setSelectedTechnology] = useState("food");
+  const [selectedTechnology, setSelectedTechnology] = useState("Emerence");
   const [selectedLanguage, setSelectedLanguage] = useState("java");
   const [blink, setBlink] = useState(false);
 
   const technologyContent = {
-    food: {
-      head: "Food",
+    Emerence: {
+      head: "Emerence",
       description:
         "We build innovative on-demand food apps with intuitive features, including order tracking, multiple payment options, vendor management, and delivery tracking.",
       image: "../../../../../public/Images/aboutUs/food-seoooo1.jpg",
     },
-    ecommerce: {
-      head: "eCommerce",
+    SSFebrics: {
+      head: "SS Febrics",
       description:
         "Our e-commerce apps are packed with modern features and latest technologies, including a wish list, order tracking, user profiles, multiple payment options, and more.",
       image: "../../../../../public/Images/aboutUs/e-commerce-seoooo1.jpg",
     },
-    marketplace: {
-      head: "MarketPlace",
+    WalletKing: {
+      head: "Wallet King",
       description:
         "We build marketplaces with intuitive vendor and client profiles, interactive user interface, multiple payment options, product listings, simple checkout, and more.",
       image: "../../../../../public/Images/aboutUs/marketplace-seoooo1.jpg",
     },
-    education: {
-      head: "Education",
+    TheJacketMaker: {
+      head: "The Jacket Maker",
       description:
         "We take e-learning to the next level with our educational apps that target learning behaviors outside a classroom, enabling students to study at their pace without peer pressure.",
       image: "../../../../../public/Images/aboutUs/education-seoooo11.jpg",
     },
-    social: {
-      head: "Social",
+    Madora: {
+      head: "Madora",
       description:
         "Our social apps are built with an engaging and straightforward user interface that allows millions of users to share pictures, videos, and other media without lag, app crash, or other errors.",
       image: "../../../../../public/Images/aboutUs/social-seoooo11.jpg",
@@ -49,25 +49,25 @@ const EcommerceshopifyWp = () => {
      description: "We offer SMBs, startups, and enterprises, innovation to digitize their businesses, through our expertise in Java for mobile apps, game apps, and much more.<br /> <br /> Java is the easiest official language to work with when developing your first mobile app from our best mobile app development company in USA.",
      image:'../../../../../public/Images/aboutUs/javalogo.png' 
     },
-    kotlin:{
-      head: "Kotlin" ,
+    python:{
+      head: "Python" ,
       description: "With a diverse team of programmers, we offer exceptional skills in Kotlin and other programming languages to design innovative solutions for startups, enterprises, and Fortune 500s.<br /> <br /> Kotlin works well for cross-platform applications, allowing businesses to target both Android and iOS simultaneously.",
-      image:'../../../../../public/Images/aboutUs/kotlin-logo-2.png' 
+      image:'../../../../../public/Images/aboutUs/icons8-python-48.png' 
      },    
      javascript:{
       head:  'Javascript',
       description: "Whether it’s a website or a web app, our designers and developers have experience in designing exceptional solutions using HTML5 and other web programming languages.<br /> <br /> With new elements and attributes, HTML5 offers more creative freedom for designers to craft your app as you imagined it.",
       image:'../../../../../public/Images/aboutUs/js-logo.png' 
      },    
-     swift:{
-      head: 'Swift' ,
+     php:{
+      head: 'PHP' ,
       description: "Are you looking to invest in iOS apps? Cubix offers exceptional iOS app development services, designing mobile games, finance apps, and more for startups, SMBs, and enterprises.<br /> <br /> Swift is easy to use with a simple learning curve and allows agile development, convenient scalability, and flexibility in app design.",
-      image:'../../../../../public/Images/aboutUs/swift-logo.png' 
+      image:'../../../../../public/Images/aboutUs/icons8-php-48.png' 
      },    
-     objectivec:{
-      head:  "Objective C",
+     Csharp:{
+      head:  "C#",
       description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
-      image:'../../../../../public/Images/aboutUs/objective-c.png' 
+      image:'../../../../../public/Images/aboutUs/icons8-c-48.png' 
      }, 
      mongodb:{
       head:  "MongoDB",
@@ -79,20 +79,20 @@ const EcommerceshopifyWp = () => {
       description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
       image:'../../../../../public/Images/aboutUs/mysql.png' 
      }, 
-     react:{
-      head:  "React Js",
+     shopify:{
+      head:  "Shopify",
       description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
-      image:'../../../../../public/Images/aboutUs/icons8-react-80.png' 
+      image:'../../../../../public/Images/aboutUs/icons8-shopify-48.png' 
      }, 
-     vue:{
-      head:  "Vue Js",
+     bigcommerce:{
+      head:  "BigCommerce",
       description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
-      image:'../../../../../public/Images/aboutUs/icons8-vue-js-48.png' 
+      image:'../../../../../public/Images/aboutUs/icons8-bigcommerce-48.png' 
      }, 
-     node:{
-      head:  "Node Js",
+     magento:{
+      head:  "Magento",
       description: "To help startups and enterprises launch an app on the iOS platform, Mac OS, or iPad, Cubix provides a development team specializing in iOS app development.<br /> <br /> Objective C is a general-purpose, object-oriented language that offers convenience and flexibility in design and development.",
-      image:'../../../../../public/Images/aboutUs/icons8-node-js-48.png' 
+      image:'../../../../../public/Images/aboutUs/icons8-magento-48.png' 
      },   
   };
 
@@ -129,7 +129,7 @@ const EcommerceshopifyWp = () => {
               <div>
               <h2>
                 <b style={{ color: "black" }}>
-                  Your Trusted Mobile Application Development Company
+                  Your Trusted Ecommerce Application Development Company
                 </b>
               </h2>
               <p>
@@ -151,33 +151,33 @@ const EcommerceshopifyWp = () => {
               >
                 <li
                   className="underline"
-                  onClick={() => handleTechnologyClick("food")}
+                  onClick={() => handleTechnologyClick("Emerence")}
                 >
-                  Food
+                  Emerence
                 </li>
                 <li
                   className="underline"
-                  onClick={() => handleTechnologyClick("ecommerce")}
+                  onClick={() => handleTechnologyClick("SSFebrics")}
                 >
-                  Ecommerce
+                  SS Febrics
                 </li>
                 <li
                   className="underline"
-                  onClick={() => handleTechnologyClick("marketplace")}
+                  onClick={() => handleTechnologyClick("WalletKing")}
                 >
-                  Marketplaces
+                  Wallet King
                 </li>
                 <li
                   className="underline"
-                  onClick={() => handleTechnologyClick("social")}
+                  onClick={() => handleTechnologyClick("TheJacketMaker")}
                 >
-                  Social
+                  The Jacket Maker
                 </li>
                 <li
                   className="underline"
-                  onClick={() => handleTechnologyClick("education")}
+                  onClick={() => handleTechnologyClick("Madora")}
                 >
-                  Education
+                  Madora
                 </li>
               </ul>
             </div>
@@ -249,10 +249,10 @@ const EcommerceshopifyWp = () => {
               style={{ color: "black", fontWeight: "800" }}
               className="mt--0 mb-3"
             >
-              Mobile App Development - Technology Stack
+              Ecommerce App Development - Technology Stack
             </h2>
             <p className="mb-3">
-              We create mobile apps with scalable and tested technology stack to
+              We create ecommerce apps with scalable and tested technology stack to
               deliver apps par excellence.
             </p>
           </div>
@@ -284,8 +284,8 @@ const EcommerceshopifyWp = () => {
                     </li>
                     <li
                     className="underline"
-                     onClick={() => handleLanguageClick("kotlin")}>
-                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/kotlin-logo-2.png" alt="kotlin-logo" />
+                     onClick={() => handleLanguageClick("python")}>
+                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-python-48.png" alt="python-logo" />
                     </li>
                     <li
                     className="underline"
@@ -308,13 +308,13 @@ const EcommerceshopifyWp = () => {
                   >
                     <li
                     className="underline"
-                     onClick={() => handleLanguageClick("swift")}>
-                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/swift-logo.png" alt="swift-logo" />
+                     onClick={() => handleLanguageClick("php")}>
+                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-php-48.png" alt="php-logo" />
                     </li>
                     <li
                     className="underline"
-                     onClick={() => handleLanguageClick("objectivec")}>
-                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/objective-c.png" alt="objectivec-logo" />
+                     onClick={() => handleLanguageClick("Csharp")}>
+                     <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-c-48.png" alt="csharp-logo" />
                     </li>
                   </ul>
                 </div>
@@ -369,17 +369,17 @@ const EcommerceshopifyWp = () => {
                     }}
                   >
                     <li className="underline"
-                    onClick={() => handleLanguageClick("react")}>
-                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-react-80.png" alt="react" />
+                    onClick={() => handleLanguageClick("shopify")}>
+                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-shopify-48.png" alt="shopify-logo" />
                     </li>
                     <li className="underline"
-                    onClick={() => handleLanguageClick("vue")}>
-                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-vue-js-48.png" alt="vue" />
+                    onClick={() => handleLanguageClick("bigcommerce")}>
+                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-bigcommerce-48.png" alt="bigcommerce" />
                     
                     </li>
                     <li className="underline"
-                    onClick={() => handleLanguageClick("node")}>
-                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-node-js-48.png" alt="node" />
+                    onClick={() => handleLanguageClick("magento")}>
+                    <img style={{width:'40px'}} src="../../../../../public/Images/aboutUs/icons8-magento-48.png" alt="magento" />
                     
                     </li>
                   </ul>

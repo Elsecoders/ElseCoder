@@ -78,7 +78,7 @@ const InformationalBolg = () => {
       {cards.map((card, index) => (
         <div
           key={index}
-          className={`col-8 col-md-4 col-lg-3 mini-card ${hoveredCards[index] ? 'hovered' : ''} ${scrollPosition > 50 ? 'hidden' : ''}`}
+          className={`col-8 col-md-4 col-lg-4 mini-card ${hoveredCards[index] ? 'hovered' : ''} ${scrollPosition > 50 ? 'hidden' : ''}`}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={() => handleMouseLeave(index)}
         >

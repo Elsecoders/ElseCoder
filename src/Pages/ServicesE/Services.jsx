@@ -409,7 +409,7 @@ const Services = () => {
             <Box className="box-1">
               <NavLink
                 className="box-link"
-                to="/socialmediastrategies"
+                to="/socialmediastrategy"
                 style={{
                   textDecoration: "none",
                   color: "#000",

@@ -27,10 +27,10 @@ const MobileApplication = () => {
     {
       title:"Android App Development",
       paragraph:"Utilizing cutting-edge technology to empower businesses in establishing their footprint across diverse Android devices and platforms.",
-      text:["• Android Mobile App Development ",
+      text:["• Android Mobile App Development",
       " • Android TV App Development ",
       " • Android Tablet App Development ",
-      " • Android Wear App Development ",
+     
   ]},
     {
       title:"IOS App Development",

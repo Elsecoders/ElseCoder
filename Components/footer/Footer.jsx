@@ -91,43 +91,43 @@ const Footer = () => {
             <MDBContainer className="text-center text-md-start mt-5">
               <MDBRow className="mt-3">
                 <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-                  <h5 className=" fw-bold mb-4">
+                  <h5 className=" fw-bold " style={{fontWeight:"800", fontSize:"28px"}}>
                     <MDBIcon icon="gem" className="me-3" />
                     <span style={{ color: "black" }}>{`<`}</span>
                     <span style={{ color: "#2CA3CC" }}>{`E!se`}</span>
                     <span style={{ color: "#EA5A1B" }}>{`Coder`}</span>
                     <span style={{ color: "black" }}>{`/>`}</span>
                   </h5>
-                  <p>
+                  <p style={{fontSize:"18px"}}>
                     Get the best services from our experts, who have years of
                     experience when it comes to handling, writing, and deploying
                     top-notch websites.
                   </p>
                 </MDBCol>
 
-                <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-                  <p>
-                    <Link to="/aboutus" className="text-reset">
+                <MDBCol md="3" lg="2" xl="2" className="mx-auto">
+                  <h6 className="text-uppercase fw-bold " style={{fontWeight:"800", color:"black", fontSize:"18px"}}>Useful links</h6>
+                  <p >
+                    <Link to="/aboutus" className="text-reset" style={{textDecoration:"none" , fontSize:"16px"}}>
                       ABOUT US
                     </Link>
                   </p>
                   <p>
-                    <Link to="/services" className="text-reset">
+                    <Link to="/services" className="text-reset" style={{textDecoration:"none" , fontSize:"16px"}}>
                       SERVICES
                     </Link>
                   </p>
                   <p>
-                    <Link to="contactus" className="text-reset">
+                    <Link to="contactus" className="text-reset" style={{textDecoration:"none" , fontSize:"16px"}}>
                       CONTACT US
                     </Link>
                   </p>
                 </MDBCol>
 
                 <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+                  <h6 className="text-uppercase " style={{fontWeight:"800", color:"black" , fontSize:"16px"}}>Contact</h6>
                   <p>
-                    <MDBIcon icon="home" className="me-2" />
+                    <MDBIcon icon="home" className="me-2"  />
                     New York, NY 10012, US
                   </p>
                   <p>

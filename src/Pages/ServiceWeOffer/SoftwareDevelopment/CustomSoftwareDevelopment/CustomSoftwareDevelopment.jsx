@@ -15,12 +15,12 @@ const CustomSoftwareDevelopment = () => {
       
       title: "Wordpress Setup",
       text: "From domain registration and hosting configuration to theme installation and essential plugin setup, our experts guide you through the process, enabling you to focus on crafting captivating content and engaging experiences for your visitors.",
-      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressSetup.png",
+      imageSrc: "/Images/SolutionImplementation/Wordpress/WordpressSetup.png",
     },
     {
       title: "Theme Customization",
       text: "Tailoring your website to reflect your unique vision and brand identity is effortless with our expert assistance. We go beyond the basics, personalizing every aspect of your chosen WordPress theme - from layout and color schemes to fonts and interactive elements.",
-      imageSrc: "public/Images/SolutionImplementation/Wordpress/WordpressThemeSetup.png",
+      imageSrc: "/Images/SolutionImplementation/Wordpress/WordpressThemeSetup.png",
     },
   ]
 
@@ -30,7 +30,7 @@ const CustomSoftwareDevelopment = () => {
     <Navs/>
     <div className="CustomSoftwareDevelopmentSlider mt-2">
         <div className="CustomSoftwareDevelopmentImg">
-          <img src="public/Images/SoftwareDevelopment/CustomSoftwareDevelopment/CustomSoftwareDevelopment.jpg" alt="Slider" />
+          <img src="/Images/SoftwareDevelopment/CustomSoftwareDevelopment/CustomSoftwareDevelopment.jpg" alt="Slider" />
         </div>
         <div className="CustomSoftwareDevelopmentcontent">
           <h1 style={{fontSize:"3.9rem", fontWeight:"800"}}>
@@ -82,11 +82,14 @@ const CustomSoftwareDevelopment = () => {
           <Row xs={1} md={2} className="">
       {boxData.map((card, idx) => (
         <Col key={idx}>
-          <Card style={{height:"270px", width:"320px" , backgroundColor: "#e0e0e0"}}>
-            <Card.Img variant="top"  src={card.imageSrc} style={{height:"170px", width:"160px",marginTop:"-40px"}} />
+          <Card style={{height:"270px", width:"320px" , backgroundColor: "#FFFFFF"}}>
+            <Card.Img variant="top"  src={card.imageSrc} style={{width: "45%",
+                    aspectRatio: "3/2",
+                    objectFit: "contain",
+                    }} />
             <Card.Body>
-              <Card.Title style={{marginTop:"-40px", fontWeight:"800"}}>{card.title}</Card.Title>
-              <Card.Text>
+              <Card.Title style={{ fontWeight:"800"}}>{card.title}</Card.Title>
+              <Card.Text style={{ fontSize: "12px" }}>
               {card.text}
               </Card.Text>
             </Card.Body>

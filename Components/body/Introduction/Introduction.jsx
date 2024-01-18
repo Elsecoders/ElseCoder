@@ -1,8 +1,8 @@
 import React from "react";
 import "./Introduction.css";
 import Card from "react-bootstrap/Card";
-
 const Introduction = () => {
+
   return (
     <>
       <div className="intro-Dock ">
@@ -54,18 +54,19 @@ const Introduction = () => {
             </h1>
           </div>
         </div>
+        
         <div className="projects mt-5 ">
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
               variant="center"
-              src="/public/Images/Intro/emer.png"
+              src="/Images/Intro/emer.png"
               style={{ width: "8rem", height: "8rem" , paddingLeft:"30px", paddingTop:"30px" }}
             />
           </Card>
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
               variant="center"
-              src="/public/Images/Intro/ss.png"
+              src="/Images/Intro/ss.png"
               style={{ width: "10rem", height: "10rem" }}
             />
           </Card>
@@ -80,14 +81,14 @@ const Introduction = () => {
             <Card.Img
           
               variant="center"
-              src="/public/Images/Intro/TJM.svg"
+              src="/Images/Intro/TJM.svg"
               style={{ width: "8rem", height: "8rem" , paddingLeft:"30px", paddingTop:"30px" }}
             />
           </Card>
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img
               variant="center"
-              src="/public/Images/Intro/face3face.png"
+              src="/Images/Intro/face3face.png"
               style={{ width: "8rem", height: "8rem" , paddingLeft:"30px", paddingTop:"30px" }}
             />
           </Card>
@@ -101,6 +102,7 @@ const Introduction = () => {
           
           
         </div>
+        
         {/* <div className="projects mt-5">
           <Card className="jbsaeed" style={{ width: "10rem", height: "10rem" }}>
             <Card.Img

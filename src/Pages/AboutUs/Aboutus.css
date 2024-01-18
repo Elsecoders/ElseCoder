@@ -273,8 +273,10 @@ i {
 .customerreview-content {
   border: 1px solid;
   border-radius: 10px;
-  background-image: url(/public/Images/aboutUs/blue-cement-studio-dark-showroom-background.png);
+  background-image: url(/public/Images/wave.png);
   background-size: cover;
+  object-fit: contain;
+margin: 20px;
   background-position: center;
   display: flex;
   flex-direction: column;
